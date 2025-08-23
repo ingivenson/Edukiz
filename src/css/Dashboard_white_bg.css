@@ -1,0 +1,56 @@
+/* DASHBOARD FON BLAN - OVERRIDE */
+
+/* Force fon blan pou dashboard container */
+.dashboard-container {
+  background: #ffffff !important;
+  min-height: 100vh !important;
+}
+
+/* Kenbe cards yo ak border pi klè pou kontrès */
+.dashboard-header,
+.stat-card,
+.action-card,
+.activity-container,
+.motivation-card,
+.welcome-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Activity item hover ak fon pi klè */
+.activity-item:hover {
+  background-color: #f8fafc !important;
+}
+
+/* Responsive - kenbe menm fon blan yo */
+@media (max-width: 768px) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+}
+
+/* Dark mode override - force fon blan menm nan dark mode */
+@media (prefers-color-scheme: dark) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+  
+  .dashboard-header,
+  .stat-card,
+  .action-card,
+  .activity-container {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  
+  .activity-item:hover {
+    background-color: #f8fafc !important;
+  }
+}

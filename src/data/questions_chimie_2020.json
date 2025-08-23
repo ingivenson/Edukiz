@@ -1,0 +1,125 @@
+[
+  {
+  "texte": "Le paracétamol (CH3-CONH-C6H4-OH) possède une (des) fonction(s) :",
+  "type": "qcm",
+  "choix": [
+    "Amide",
+    "Cétone",
+    "Alcool",
+    "Amine",
+    "Aldéhyde",
+    "Acide"
+  ],
+  "reponsKorek": "0,2"
+},
+
+  {
+    "texte": "Parmi les structures suivantes, laquelle ne correspond pas à un état fondamental ?",
+    "type": "qcm",
+    "choix": [
+      "1s²",
+      "1s² 2s²",
+      "1s² 2s¹",
+      "1s² 2s² 2p¹",
+      "1s² 2s² 2p⁶ 1d¹"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "texte": "Un seul des couples suivants n’est pas redox, lequel ?",
+    "type": "qcm",
+    "choix": [
+      "Cr₂O₇²⁻/Cr³⁺",
+      "H₂O₂/H₂O",
+      "H⁺/H₂",
+      "Fe²⁺/Fe³⁺",
+      "H₂O/H₂O"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "texte": "Dans la liste suivante, quel objet est chiral ?",
+    "type": "qcm",
+    "choix": [
+      "Chaussure",
+      "Cuillère",
+      "Tasse",
+      "Arrosoir",
+      "Fauteuil"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Parmi les matières suivantes, laquelle (lesquelles) est (sont) homogène(s) ?",
+    "type": "qcm",
+    "choix": [
+      "Sol",
+      "Essence",
+      "Atmosphère",
+      "Or",
+      "b et d",
+      "c et d"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Le charbon provient de la décomposition de …………… en milieu humide.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Bois"
+  },
+  {
+    "texte": "Les opérations qui permettent la séparation de différentes longueurs de molécule ou longueur de chaîne s’appelle ……………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Reforming", "Reformage"]
+  },
+  {
+    "texte": "Le phénomène par lequel une substance chimique se décompose par le passage du courant électrique s’appelle ……………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Électrolyse"]
+  },
+  {
+    "texte": "Le test à la …………… met en jeu une réaction d’addition nucléophile et réagit positivement avec les aldéhydes et les cétones (formation d’un précipité orangé).",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["2,4 DNPH"]
+  },
+  {
+    "texte": "…………… est l’action d’un catalyseur sur une transformation chimique.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Accélération", "Diminution"]
+  },
+  {
+    "texte": "Les isomères de constitution qui peuvent se transformer de façon réversible l’un en l’autre sont appelés ……………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Tautomère"]
+  },
+  {
+    "texte": "Au cours d’une réaction chimique se déroulant dans un …………… (pas d’échange de matière avec l’extérieur), la masse de l’ensemble des produits formés est égale à la masse de l’ensemble des réactifs.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Système isolé"]
+  },
+  {
+    "texte": "Une polymérisation par addition est donc une succession de meme molécules.La molécule reproduite plusieurs fois est appelée ……………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Monomère"]
+  },
+  {
+    "texte": "On appelle …………… une région de l’espace (appartenant à une couche électronique) qui peut accueillir au maximum deux électrons.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["Orbitale atomique"]
+  },
+  {
+    "texte": "La formule semi-développée de l’acide 4-méthyl-3-oxopent-4-énoïque est ……………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": ["CH₂(ch3)=C-CO-ch2-cooh"]
+  }
+]

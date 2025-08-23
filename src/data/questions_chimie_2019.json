@@ -1,0 +1,92 @@
+[
+  {
+    "texte": "……………….. est une solution dont le pH varie très peu avec l’ajout d’acide ou de base.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Solution tampon"
+  },
+  {
+    "texte": "……………….. sont des solutions conductrices du courant électrique.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Les électrolytes"
+  },
+  {
+    "texte": "La formule semi-développée de l’iso pentane est : ………………………………",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "CH3 – CH(ch3) – CH2 – CH3"
+  },
+  {
+    "texte": "L’isomérie optique est liée à la présence d’un  …………………… dans la molécule.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "d’un carbone chiral"
+  },
+  {
+    "texte": "………………………. est la réaction qui se déroule entre un acide et un alcool.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Estérification"
+  },
+  {
+    "texte": "La réaction entre un acide gras et une base forte s’appelle la ………………………………..",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Saponification"
+  },
+  {
+    "texte": "L’acier est une solution solide constituée d’un solvant le ……………… et d’un soluté le …………….",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Fer, Carbone"
+  },
+  {
+    "texte": "Les éléments chimiques se forment principalement au niveau du ………..",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Du Noyau"
+  },
+  {
+    "texte": "Un acide …………….. est un acide qui se dissocie totalement dans l’eau.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "fort"
+  },
+  {
+    "texte": "……………….. est le deuxième élément le plus abondant dans l’univers.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Hélium"
+  },
+  {
+    "texte": "La masse réelle d’un million (10⁶) de molécules d’azote (N₂) (M = 28 g•mol⁻¹) est égale à …………………..",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "2.32 × 10⁻¹⁷ g"
+  },
+  {
+    "texte": "La flamme majoritairement jaune des brûleurs caractérise la  ………….. combustible ; elle salit l’espace en rejetant le ……………………………..",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "combustion, gaz carbonique"
+  },
+  {
+    "texte": "L…………….de couleur …………………. est le seul halogène solide dans les conditions normales.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "iode, violette"
+  },
+  {
+    "texte": "Le degré d’oxydation de l’hydrogène vaut −1 dans les  ……………….  dans H₂O₂.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Hydrures métalliques, + I"
+  },
+  {
+    "texte": "Le chlorure d’hydrogène peut s’additionner à l’acétylène pour donner  …………ce compose ; par polymérisation fournit une matière plastique connue le nom de ………………..",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Chlorure de vinyl, Polychlorure de vinyl"
+  }
+]

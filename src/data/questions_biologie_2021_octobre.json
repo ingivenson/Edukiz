@@ -1,0 +1,313 @@
+[
+  {
+    "type": "qcm",
+    "texte": "Transfert d'ADN d'une bactérie à une autre par contact",
+    "choix": [
+      "A. Conjugaison",
+      "B. Traduction",
+      "C. Transformation",
+      "D. Transduction",
+      "E. Réplication"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un père sain épouse une femme porteuse pour l'hémophilie, le risque à chaque grossesse:",
+    "choix": [
+      "A. 75% de garçon malade",
+      "B. 25% de fille malade",
+      "C. 50% de garçon malade",
+      "D. 100% de fille malade"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Concernant la cellule:",
+    "choix": [
+      "A. Ne présente pas de métabolisme intracellulaire",
+      "B. Constitue une unité commune uniquement aux eucaryotes",
+      "C. Est différente chez les virus",
+      "D. Présente la même organisation et la même fonction chez tous les êtres vivants",
+      "E. Présente différentes fonctions qui sont essentielles aux mécanismes de maintien de la vie"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "type": "qcm",
+    "texte": "Concernant le crapaud et la grenouille:",
+    "choix": [
+      "A. La grenouille fait partie de la grande famille des crapauds",
+      "B. La grenouille est la femelle du crapaud",
+      "C. Le crapaud est plus petit que la grenouille",
+      "D. La grenouille est le stade larvaire du crapaud",
+      "E. Ce sont deux espèces distinctes"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "type": "qcm",
+    "texte": "Parmi ces régions, laquelle n'est pas une articulation:",
+    "choix": [
+      "A. Épaule",
+      "B. Cheville",
+      "C. Genou",
+      "D. Pubis",
+      "E. Hanche"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Concernant la transcription:",
+    "choix": [
+      "A. Permet uniquement la synthèse de l'ARNm.",
+      "B. 3 types d'ARN polymérase sont impliqués dans ce processus chez les eucaryotes.",
+      "C. Se déroule toujours dans le noyau d'une cellule",
+      "D. Un seul ARN polymérase est impliqué dans ce processus chez les procaryotes",
+      "E. Permet la réplication de l'ADN"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le pourcentage en eau d'un organisme vivant dépend de plusieurs facteurs:",
+    "choix": [
+      "A. Son niveau d'éducation",
+      "B. L'espèce",
+      "C. L'humeur",
+      "D. La couleur de la peau",
+      "E. Son rang social"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'œsophage est situé entre:",
+    "choix": [
+      "A. Pharynx et l'estomac",
+      "B. Larynx et estomac",
+      "C. Pharynx et larynx",
+      "D. Pharynx et duodénum",
+      "E. Bouche et pharynx"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "En quoi les Métazoaires sont-ils différents de tous les autres organismes?",
+    "choix": [
+      "A. Ils sont pluricellulaires",
+      "B. Ils sont hétérotrophes",
+      "C. Ils produisent du collagène",
+      "D. Ils sont mobiles",
+      "E. Ils ne font pas de photosynthèse"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le brin complémentaire à la suite de la séquence d'ADN: 5'-TTAATATATGCTACTTCGAACA-3' est:",
+    "choix": [
+      "A. 3'-UUA-AUAUACGAUGAAGAAGU-5'",
+      "B. 3'-AATTATACGATGAAGCTTGT-5'",
+      "C. 5'-AATTATACGATGAAGCTTGT-3'",
+      "D. 5'-TTTATACACGATGAAGCTTGT-3'",
+      "E. 3'-TTTATACACGATGAAGCTTGT-5'"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La reproduction sexuée de la plante:",
+    "choix": [
+      "A. Est le seul mode de reproduction des végétaux",
+      "B. Est unique aux plantes sans fleurs",
+      "C. Implique la transformation de la fleur en graine contenant des fruits",
+      "D. Se fait grâce aux fleurs dont le plan d'organisation est contrôlé par des hormones",
+      "E. Nécessite souvent la collaboration d'animaux"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quels éléments contrôlent l'ouverture et la fermeture des stomates au niveau des feuilles:",
+    "choix": [
+      "A. Le calcium",
+      "B. Le fer",
+      "C. Le potassium",
+      "D. Le carbone"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Après la fécondation, la fleur se transforme:",
+    "choix": [
+      "A. L'androcée donne les graines",
+      "B. L'ovaire donne les graines",
+      "C. La carpelle donne les graines",
+      "D. L'ovaire donne les fruits",
+      "E. Aucune de ces réponses"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "À quoi servent les mycorhizes:",
+    "choix": [
+      "A. À favoriser la pousse des champignons sur les troncs d'arbres",
+      "B. À favoriser l'accès des plantes aux minéraux du sol",
+      "C. À se protéger des herbivores",
+      "D. À favoriser l'ancrage de la plante dans le sol",
+      "E. À se protéger des bactéries"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Qu'est-ce qu'une feuille sessile:",
+    "choix": [
+      "A. Une feuille sans pétiole",
+      "B. Une feuille qui ne tombe qu'en fin d'hiver",
+      "C. Une feuille dont les nervures sont très apparentes",
+      "D. Une feuille en forme d'aiguille",
+      "E. Une feuille qui ne tombe qu'en fin d'été"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "La pêche est:",
+    "choix": [
+      "A. Une polydrupe",
+      "B. Une baie",
+      "C. akène",
+      "D. Une drupe",
+      "E. Une silique"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Où se situe la coiffe d'un végétal:",
+    "choix": [
+      "A. Au niveau de la fleur",
+      "B. À l'extrémité des racines",
+      "C. À l'aisselle des branches",
+      "D. À l'extrémité des feuilles",
+      "E. À l'extrémité de la tige, protégeant le bourgeon terminal"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Concernant l'anémogamie, c'est:",
+    "choix": [
+      "A. Le transport du pollen par le vent",
+      "B. Le transport du pollen par l'eau",
+      "C. Le transport du pollen par les animaux",
+      "D. Le transport du pollen par influence humaine",
+      "E. Le transport du pollen par bactéries"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "La phase sombre de la photosynthèse, prend le nom de:",
+    "choix": [
+      "A. Cycle de Krebs",
+      "B. Cycle de l'urée",
+      "C. Cycle de Calvin"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quelles formes d’azote absorbent les plantes dans le sol?",
+    "choix": [
+      "L’azote de l’urée",
+      "L’azote sous forme de nitrate et d’ammonium",
+      "L’azote présent dans la matière organique",
+      "L’azote sous forme d’ammoniac",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "konplete",
+    "texte": "La.................................................. est une lame verte en forme de cœur ou se fait la fécondation.",
+    "reponsKorek": "carpelle"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les plantes à fleurs et à graines appartiennent à l'embranchement des………………………",
+    "reponsKorek": "Spermaphytes"
+  },
+  {
+    "type": "konplete",
+    "texte": "Sont des plantes sans fleurs à appareil végétatif complet, tandis que les ……………………………sont des plantes sans fleurs à appareil végétatif incomplet",
+    "reponsKorek": "Bryophytes"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les spadices.................................................. sont des petits sacs au sein desquels des cellules se transforment en spores.",
+    "reponsKorek": "Sporanges"
+  },
+  {
+    "type": "konplete",
+    "texte": "Le glyoxysome est un organite dans lequel se déroule la........................",
+    "reponsKorek": "transformation des acides gras en glucides"
+  },
+  {
+    "type": "konplete",
+    "texte": "la fleur d'hibiscus possède les deux pièces reproductrices et protectrices, c'est donc ………………..",
+    "reponsKorek": "complète"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les fleurs peuvent être hermaphrodites, elles possèdent à la fois...........................et……………………",
+    "reponsKorek": ["étamines", "carpelles"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Feuilles dont le limbe présente une forme caractéristique de pointe de lance ou de simple flèche, avec une base plus large et une pointe étroite et pointue sont appelés…………….",
+    "reponsKorek": "lancéolées"
+  },
+  {
+    "type": "konplete",
+    "texte": "Chez Les plantes la respiration se fait également par les tiges lignifiées et les orifices respiratoires sont alors appelés............................",
+    "reponsKorek": "lenticelles"
+  },
+  {
+    "type": "konplete",
+    "texte": "Une tige comporte 2 zones principales : .....................et.....................",
+    "reponsKorek": ["écorce", "cylindre central"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Les plantes ont également une croissance...................... pour leurs ramifications, c'est-à-dire elles poussent vers le haut à partir d'un seul point",
+    "reponsKorek": "apicale"
+  },
+  {
+    "type": "konplete",
+    "texte": "Le système ..................................................... est caractérisé par une racine principale qui s'enfonce verticalement dans le sol, sur laquelle se développent des racines secondaires latérales.",
+    "reponsKorek": "pivotant"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les ..................................... qui sont responsable de la distribution de la sève élaborée, tandis que les ..................................... sont responsables de la distribution de la sève brute",
+    "reponsKorek": ["feuilles", "racines"]
+  },
+  {
+    "type": "konplete",
+    "texte": "La partie dénommée tronc chez le bananier est en réalité.....................................",
+    "reponsKorek": "un stipe"
+  },
+  {
+    "type": "konplete",
+    "texte": "L'amidon formé lors de la ................................... peut être identifié par ..................................... qui le colore en bleu.",
+    "reponsKorek": ["photosynthèse", "l'iode"]
+  }
+]

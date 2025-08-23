@@ -1,0 +1,81 @@
+[
+  {
+    "texte": "Voici 5 composés portant une fonction acide carboxylique (COOH) et leur pKa, lequel est le moins acide ?",
+    "type": "qcm",
+    "choix": ["acide lactique 3,86", "acide acétique 4,75", "acide propionique 4,87", "acide pyruvique 2,49", "acide formique 3,75"],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Si la concentration en ions hydroxyde OH⁻ dans l'eau est 10⁻⁹ mol/L, quel est le pH de la solution ?",
+    "type": "qcm",
+    "choix": ["pH = 4", "pH = 5", "pH = 7", "pH = 9", "pH = 10"],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Quelle masse m, de chlorure de sodium faut-il peser pour préparer 250 mL d'une solution de concentration molaire égale à 0,08 mol.L⁻¹ (MNa= 23 g.mol⁻¹ , MCl= 35,5 g.mol⁻¹) ?",
+    "type": "qcm",
+    "choix": ["1,71 g", "11,17 g", "1,77 g", "11,71 g", "1,17 g"],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Dans la molécule suivante H₃C–C≡C–CH=CH–OH, combien y a-t-il de liaisons π (pi) ?",
+    "type": "qcm",
+    "choix": ["2 liaisons π", "3 liaisons π", "4 liaisons π", "5 liaisons π", "1 liaison π"],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Quels sont les couples d'ions isoélectroniques parmi les couples d'ions suivants ?",
+    "type": "qcm",
+    "choix": ["Ca²⁺ et Ba²⁺", "Mg²⁺ et Na⁺", "Al³⁺ et O²⁻", "Ba²⁺ et Na⁺", "Ca²⁺ et Mg²⁺"],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Quelles sont les substances ampholytes parmi les corps chimiques suivants ?",
+    "type": "qcm",
+    "choix": ["H₂SO₄", "HNO₃", "H₂O", "NaOH", "HCO₃⁻"],
+    "reponsKorek": "2,4"
+  },
+  {
+    "texte": "Parmi les configurations électroniques suivantes, quelles sont celles qui représentent la structure des gaz rares ?",
+    "type": "qcm",
+    "choix": ["1s²", "1s²", "1s² 2s¹", "1s² 2s² 2p⁶", "1s² 2s² 2p¹"],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Dans la représentation suivante ¹³²₇At³⁻, il y a :",
+    "type": "qcm",
+    "choix": ["13 protons, 13 électrons et 14 neutrons", "13 protons, 10 électrons et 14 neutrons", "13 protons, 16 électrons et 27 nucléons", "13 protons, 10 électrons et 27 nucléons", "Aucune"],
+    "reponsKorek": "0"
+  },
+  {
+    "texte": "Parmi les affirmations suivantes, lesquelles sont correctes ?",
+    "type": "qcm",
+    "choix": ["La taille des ions isoélectroniques augmente au fur et à mesure que le nombre atomique augmente", "Les isomères de fonction ont des propriétés chimiques et physiques différentes", "Les atomes Cu, O, H et C sont présents dans l'azurite, Cu₃(OH)₂(CO₃)₂, dans le rapport 3:8:2:2", "Deux coquilles d'escargots sont des objets chiraux", "Le composé CH₃–CH₂–CH₂–CH₂–CH₂–CHO est l'hexanal", "C₅H₁₂ est un alcane", "Certaines cétones possèdent une forme tautomère appelée énol"],
+    "reponsKorek": "1,3,4,5,6"
+  },
+  {
+    "texte": "Corps qui est constitué uniquement d'atomes dont les noyaux sont de même charge nucléaire c'est-à-dire ces atomes sont identiques.",
+    "type": "konplete",
+    "reponsKorek": "Élément"
+  },
+  {
+    "texte": "L'ensemble des particules atomiques qui se trouvent dans le noyau de l'atome porte le nom de :",
+    "type": "konplete",
+    "reponsKorek": "Nucléon"
+  },
+  {
+    "texte": "Un composé qui a tendance à capter des doublets d'électrons est appelé :",
+    "type": "konplete",
+    "reponsKorek": "Électrophile"
+  },
+  {
+    "texte": "La réaction qui consiste à fixer de l'oxygène sur un élément métallique ou sur n'importe quel corps s'appelle :",
+    "type": "konplete",
+    "reponsKorek": "Oxydation"
+  },
+  {
+    "texte": "Les composés organiques qui renferment un groupement hydroxyle fixé sur un carbone éthylénique s'appellent :",
+    "type": "konplete",
+    "reponsKorek": "énol"
+  }
+]

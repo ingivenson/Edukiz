@@ -1,0 +1,77 @@
+[
+    {
+        "type": "konplete",
+        "texte": "la ______ d'une solution est l'ajout de solvant à cette solution.",
+        "reponsKorek": "dilution"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ sont constitués d'une seule espèce chimique.",
+        "reponsKorek": "Corps Purs"
+    },
+    {
+        "type": "konplete",
+        "texte": "Lors des transformations exothermiques, le système _______.",
+        "reponsKorek": "Dégage de la chaleur"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ est une solution dont le pH varie très peu avec l'ajout d'acide ou de base.",
+        "reponsKorek": "Solution Tampon"
+    },
+    {
+        "type": "konplete",
+        "texte": "La distillation est un procédé de séparation de mélange qui se base sur la différence des _______.",
+        "reponsKorek": "Points d'ébullition"
+    },
+    {
+        "type": "konplete",
+        "texte": "La formule semi-développée de l'isobutane est _______.",
+        "reponsKorek": "CH3-CH2-CH2-CH3"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le diamant, le graphite, l'anthracite sont des _______ de l'élément carbone.",
+        "reponsKorek": ["Allotropes", "variétés"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La réaction entre un acide gras et une base forte s'appelle _______.",
+        "reponsKorek": "Saponification"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'acier est une solution solide constitué d'un solvant le _______ et d'un soluté le _______.",
+        "reponsKorek": ["Fer", "Carbone"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les éléments chimiques se forment principalement au niveau _______.",
+        "reponsKorek": "Des étoiles"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ est le deuxième élément le plus abondant dans la croûte terrestre.",
+        "reponsKorek": "Silicium"
+    },
+    {
+        "type": "konplete",
+        "texte": "La masse réelle d'un million (10⁶) de molécules d'ozone (composante de la stratosphère qui neutralise les rayons UV) de formule _______ est égale à _______.",
+        "reponsKorek": ["О3", "7,97 10-17"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La flamme majoritairement bleue des brûleurs des fours ne salit pas les ustensiles de cuisine parce que la réaction qui génère cette flamme est _______.",
+        "reponsKorek": "Complète"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ de couleur _______ est le seul halogène liquide dans les conditions standards.",
+        "reponsKorek": ["Dibrome", "rouge"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Le degré d'oxydation de l'élément l'oxygène vaut _______ dans les oxydes et _______ dans les peroxydes.",
+        "reponsKorek": ["-2", "-1"]
+    }
+]

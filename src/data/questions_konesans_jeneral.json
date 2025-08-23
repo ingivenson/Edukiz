@@ -1,0 +1,351 @@
+[
+  {
+    "texte": "Une rue contient 100 maisons. Un peintre doit les numéroter de 1 à 100. Combien de fois il peindra le chiffre 9?",
+    "type": "qcm",
+    "choix": [
+      "Il va donc peindre 10 fois le chiffre 9",
+      "Il va donc peindre 19 fois le chiffre 9",
+      "Il va donc peindre 20 fois le chiffre 9",
+      "Il va donc peindre 15 fois le chiffre 9",
+      "Aucune réponse ne convient."
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Dans un champ, des extra-terrestres ont tiré sur un troupeau de 115 vaches. Elles meurent toutes sauf 46. Combien en reste-t-il ?",
+    "type": "konplete",
+    "reponsKorek": "46"
+  },
+  {
+    "texte": "Qui sont les fondateurs de l'entreprise informatique « Microsoft » ?",
+    "type": "qcm",
+    "choix": [
+      "Rosenberg et Georges Bush",
+      "Bill Gates et Paul Allen",
+      "Bred Pitt et Angelina Julie",
+      "Jean-Claude Van Dame",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Harvard est la plus ancienne université",
+    "type": "qcm",
+    "choix": [
+      "d'Angleterre",
+      "des Etats-Unis d'Amérique",
+      "d'Australie",
+      "d'Ecosse",
+      "aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Comment se nomme la monnaie brésilienne?",
+    "type": "qcm",
+    "choix": [
+      "Le peso",
+      "Le sucre",
+      "Le réal",
+      "Le dollar brésilien",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "L'ouvrage le plus important de toutes les mathématiques grecques est :",
+    "type": "qcm",
+    "choix": [
+      "La géométrie",
+      "L'arithmétique",
+      "L'Iliade et l'Odyssée",
+      "Les éléments d'Euclide",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Définissez, les sigles suivants : NTIC",
+    "type": "konplete",
+    "reponsKorek": "Nouvelles technologies de l'information et de la communication"
+  },
+  {
+    "texte": "Définissez, les sigles suivants : OTAN",
+    "type": "konplete",
+    "reponsKorek": "Organisation de la traité de l'atlantique Nord"
+  },
+  {
+    "texte": "Définissez, les sigles suivants : OVNI",
+    "type": "konplete",
+    "reponsKorek": "objet volant non identifié"
+  },
+  {
+    "texte": "Définissez, les sigles suivants : TIC",
+    "type": "konplete",
+    "reponsKorek": "Technologie de l'information et de la communication"
+  },
+  {
+    "texte": "Définissez, les sigles suivants : CHCL/UEH",
+    "type": "konplete",
+    "reponsKorek": "Campus Henri Christophe de Limonade, Université d'État d'Haïti"
+  },
+  {
+    "texte": "Carthagène est une ville située en:",
+    "type": "qcm",
+    "choix": [
+      "Italie",
+      "Espagne",
+      "Maroc",
+      "Tunisie",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Suite à quel événement, la France déclare-t-elle la guerre à l'Allemagne en 1939?",
+    "type": "qcm",
+    "choix": [
+      "L'invasion des Suèdes",
+      "L'annexion de l'Autriche",
+      "L'invasion de la Pologne",
+      "L'invasion de l'Alsace-Moselle",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "L'os occipital est un os:",
+    "type": "qcm",
+    "choix": [
+      "De la cage thoracique",
+      "De la colonne vertébrale",
+      "De la hanche",
+      "Du crâne",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Quelle est la bonne orthographe?",
+    "type": "qcm",
+    "choix": [
+      "Echauffourrée",
+      "Echaufourrée",
+      "Echauffourée",
+      "Echaufourée",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Pour quel sport, les arbitres sont-ils obligés d'utiliser la langue française ?",
+    "type": "qcm",
+    "choix": [
+      "lutte",
+      "L'équitation",
+      "la boxe",
+      "L'escrime",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Cette date, le 9 novembre 1989, vous rappelle-t-elle un événement ?",
+    "type": "konplete",
+    "reponsKorek": "Chute du mur de Berlin"
+  },
+  {
+    "texte": "En quelle année le canal de Panama a-t-il été ouvert?",
+    "type": "qcm",
+    "choix": [
+      "1884",
+      "1914",
+      "1934",
+      "1944",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Comment se nomme la capitale de la République de l'Equateur?",
+    "type": "qcm",
+    "choix": [
+      "Caracas",
+      "Quito",
+      "Bogotá",
+      "La Paz",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "La crise financière actuelle est provoquée par le crash boursier de...",
+    "type": "qcm",
+    "choix": [
+      "Juin 2000",
+      "Septembre 2004",
+      "Septembre 2008",
+      "Février 2009",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Queensland est un état:",
+    "type": "qcm",
+    "choix": [
+      "D'Australie",
+      "Du Canada",
+      "Des Etats-Unis",
+      "Du Royaume uni",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "texte": "Le plan Marshall, mis en place en 1947 pour l'Europe, visait en premier:",
+    "type": "qcm",
+    "choix": [
+      "La défense",
+      "La politique",
+      "Les transports",
+      "L'économie",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Que signifie « faire preuve d'abnégation » ?",
+    "type": "qcm",
+    "choix": [
+      "Répondre négativement",
+      "Se dévouer avec désintéressement",
+      "Ne rien entendre",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Quel est le premier port mondial pour le trafic maritime?",
+    "type": "qcm",
+    "choix": [
+      "New York",
+      "Rotterdam",
+      "Hong Kong",
+      "Shanghai",
+      "Aucune réponse ne convient"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Les forces Armées d'Haïti ont été démobilisées en",
+    "type": "qcm",
+    "choix": [
+      "1986",
+      "1991",
+      "1995",
+      "2004"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Qui a été champion du monde de Formule 1 en 2001 ?",
+    "type": "qcm",
+    "choix": [
+      "Gilles Villeneuve",
+      "Jacques Laffite",
+      "Alain Prost",
+      "Michael Schumacher"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Quand la charte de l'ONU (organisation des Nations Unies) a-t-elle été adoptée ?",
+    "type": "qcm",
+    "choix": [
+      "1941",
+      "1945",
+      "1947",
+      "1950"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Le gouvernement de l'ancien Président (défunt) Jovenel Moïse a passé plus de Premiers ministre au pouvoir de 2017 à 2021",
+    "type": "qcm",
+    "choix": [
+      "3",
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Le mandateur de la République d'Haïti est nommé pour:",
+    "type": "qcm",
+    "choix": [
+      "4 ans",
+      "5 ans",
+      "6 ans",
+      "8 ans"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Le positivisme est une théorie scientifique prôné par:",
+    "type": "qcm",
+    "choix": [
+      "Isaac Newton",
+      "Thomas Kuhn",
+      "Auguste Comte",
+      "Karl Popper"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "J'existe deux formes de la démonstration géométrique, à savoir:",
+    "type": "qcm",
+    "choix": [
+      "Déduction et Induction",
+      "synthétique et analytique",
+      "raison et conscience",
+      "vrai et faux"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "La loi des trois états a été conçu par:",
+    "type": "qcm",
+    "choix": [
+      "E. Kant",
+      "René Descartes",
+      "Auguste Comte",
+      "Francis Bacon"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "La révolution américaine fut en:",
+    "type": "qcm",
+    "choix": [
+      "1804",
+      "1648",
+      "1789",
+      "1776"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Le paradigme héliocentrisme a été conçu par:",
+    "type": "qcm",
+    "choix": [
+      "M. Foucault",
+      "J. Dewey",
+      "N. Copernic",
+      "K. Popper"
+    ],
+    "reponsKorek": "2"
+  }
+]

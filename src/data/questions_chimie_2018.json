@@ -1,0 +1,87 @@
+[
+  {
+    "texte": "Les objets suivants sont classés par ordre décroissant de taille (du plus grand au plus petit) :",
+    "type": "qcm",
+    "choix": [
+      "Atome – Cellule – Molécule – Nucléon – Quark",
+      "Cellule – Molécule – Atome – Noyau – Nucléon – Quark",
+      "Quark – Noyau – Nucléon – Atome – Cellule – Molécule",
+      "Quark – Atome – Molécule – Cellule – Nucléon – Noyau"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "L'équation-bilan de la réaction entre les ions argent en solution et le cuivre métallique est :",
+    "type": "qcm",
+    "choix": [
+      "Ag⁺(aq) + Cu(s) → Cu²⁺(aq) + Ag(s)",
+      "2Ag⁺(aq) + Cu(s) → Cu²⁺(aq) + 2Ag(s)",
+      "2Ag⁺(aq) + Cu(s) → Cu²⁺(aq) + 2Ag(s) + 2e⁻",
+      "Cu²⁺(aq) + 2Ag(s) → 2Ag⁺(aq) + Cu(s)"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "L'amide tertiaire de la liste ci-dessous est :",
+    "type": "qcm",
+    "choix": [
+      "butylamine",
+      "N-méthylpropanamine",
+      "N,N-diméthylbutylamine",
+      "N-méthylbutylamine"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Parmi les molécules organiques ci-dessous, celle qui renferme uniquement des atomes de carbone primaire est :",
+    "type": "qcm",
+    "choix": [
+      "2-méthylpropane",
+      "2,2-diméthylhexane",
+      "1,2-dichloroéthane",
+      "2-méthylpent-1-ène"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Soient : HClO (KA = 3,2 × 10⁻⁸), HCOOH (KA = 1,8 × 10⁻⁴), H₃PO₄ (KA = 4 × 10⁻¹³), HF (KA = 6,3 × 10⁻⁴). En ordre décroissant de leur acidité, ces espèces chimiques sont arrangées ainsi :",
+    "type": "qcm",
+    "choix": [
+      "HClO > HF > HCOOH > H₃PO₄",
+      "H₃PO₄ > HClO > HCOOH > HF",
+      "HF > HCOOH > HClO > H₃PO₄",
+      "HF > HClO > H₃PO₄ > HCOOH"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "_______ sont des hydrocarbures saturés.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Les alcanes"
+  },
+  {
+    "texte": "La formule semi-développée du 3,4-dichloroheptane est : _______",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "CH₃–CH₂–CHCl–CHCl–CH₂–CH₂–CH₃"
+  },
+  {
+    "texte": "_______ est la réaction qui se déroule entre un acide et un alcool.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "L'estérification"
+  },
+  {
+    "texte": "_______ est le produit final de l'oxydation ménagée du méthanol.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Le méthanal"
+  },
+  {
+    "texte": "_______ est un glucide simple renfermant une fonction aldéhyde et trois fonctions alcools.",
+    "type": "konplete",
+    "choix": [],
+    "reponsKorek": "Le glycérol"
+  }
+]

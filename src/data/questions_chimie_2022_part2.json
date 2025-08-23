@@ -1,0 +1,112 @@
+[
+    {
+        "type": "qcm",
+        "texte": "À température et pression constantes, des volumes égaux de gaz contiennent un nombre égal de moles. C'est la loi:",
+        "choix": [
+            "D'Avogadro",
+            "de Boyle",
+            "de Charles",
+            "de Graham"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Laquelle des affirmations suivantes décrit correctement le rôle du pont salin dans la pile électrochimique?",
+        "choix": [
+            "Il permet le passage de protons",
+            "Il permet le passage d'électrons",
+            "Il permet le flux d'ions",
+            "Il sépare les anions des cations"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "En chimie organique, quand deux atomes partagent une ou plusieurs paires d'électrons, ils forment ce que l'on appelle communément:",
+        "choix": [
+            "Un cristal",
+            "Un composé ionique",
+            "Une liaison covalente",
+            "Une liaison ionique"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "La partie massive d'un atome est concentrée au niveau:",
+        "choix": [
+            "Des électrons",
+            "Des protons",
+            "Des neutrons",
+            "Des nucléons"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Parmi les couples de molécules organiques ci-dessous, celui renfermant deux isomères de chaîne est:",
+        "choix": [
+            "But-1-ène et but-2-ène",
+            "But-1-ène et cyclohexane",
+            "Butan-1-ol et 2-méthylpropan-1-ol",
+            "Propan-1-ol et propan-2-ol"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Dans une solution le soluté peut être:",
+        "choix": [
+            "Uniquement un liquide",
+            "Uniquement un gaz",
+            "Uniquement un solide",
+            "Soit un liquide, soit un solide, soit un gaz"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Laquelle des combinaisons de nombres quantiques ci-dessous décrit mieux la sous couche 4p?",
+        "choix": [
+            "n=2 et l=0",
+            "n=4 et l=0",
+            "n=4 et l=2",
+            "n=4 et l=1"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Dans la structure de Lewis de la molécule H₂O₂ il y a:",
+        "choix": [
+            "Aucun doublet non liant",
+            "1 doublet non liant",
+            "2 doublets non liants",
+            "4 doublets non liants"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Parmi les énoncés ci-dessous, lequel décrit correctement un élément du groupe VII A du tableau périodique?",
+        "choix": [
+            "Ils constituent les éléments ayant la plus faible électronégativité",
+            "Ils ont tendance à former un ion",
+            "Ils sont métalliques et ont une forte tendance à former des cations",
+            "Ils sont tous bivalents"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Lequel des gaz ci-dessous est utilisé pour éteindre le feu?",
+        "choix": [
+            "CH₄",
+            "CO₂",
+            "F₂",
+            "O₂"
+        ],
+        "reponsKorek": "3"
+    }
+]

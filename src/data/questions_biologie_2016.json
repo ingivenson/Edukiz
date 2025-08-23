@@ -1,0 +1,273 @@
+[
+    {
+        "type": "konplete",
+        "texte": "La jonction entre deux neurones se nomme _______.",
+        "reponsKorek": "Synapse"
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est la décomposition des substances organique par les bactéries.",
+        "reponsKorek": "Biodégradation"
+    },
+    {
+        "type": "konplete",
+        "texte": "La couche extérieure d'un fruit charnu se nomme _______.",
+        "reponsKorek": "Péricarpe"
+    },
+    {
+        "type": "konplete",
+        "texte": "Dans une cellule animale l'information génétique siège dans le _______ et dans la _______ alors que la synthèse des protéines se fait dans les _______.",
+        "reponsKorek": ["Noyau", "mitochondrie", "ribosomes"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La respiration est _______ chez les batraciens, tandis qu'elle est _______ chez les poissons et _______ chez les insectes.",
+        "reponsKorek": ["bronchique", "branchiale", "trachéale"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est l'organe énergétique de la cellule.",
+        "reponsKorek": "Mitochondrie"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ c'est l'organite qui se charge de la fonction digestive cellulaire.",
+        "reponsKorek": "Lysosome"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'enveloppe externe d'un virus se nomme _______.",
+        "reponsKorek": "Capside"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le tissu de protection vivante des plantes se nomme _______.",
+        "reponsKorek": "Phelloderme"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les animaux dépourvus des moyens d'autorégulation thermique se nomment _______.",
+        "reponsKorek": "Poïkilotherme"
+    },
+    {
+        "type": "konplete",
+        "texte": "La substitution des plumes chez les oiseaux est une sorte de régénération appelée _______.",
+        "reponsKorek": "Mue"
+    },
+    {
+        "type": "konplete",
+        "texte": "La propriété que possèdent les globules blancs de vivre en dehors des capillaires est _______.",
+        "reponsKorek": "Diapédèse"
+    },
+    {
+        "type": "konplete",
+        "texte": "Hormone sexuelle formée et secrétée par les testicules est la _______.",
+        "reponsKorek": "Testostérone"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les plantes dont les graines sont enfermées dans un fruit clos s'appellent _______.",
+        "reponsKorek": "Angiosperme"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le mode de déplacement des reptiles est la _______.",
+        "reponsKorek": "Reptation"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les trois petits os du squelette sont _______.",
+        "reponsKorek": ["Marteau", "enclume", "étrier"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Les bactéries ont les caractéristiques suivantes sauf:",
+        "choix": [
+            "Sont des êtres unicellulaires",
+            "Sont dépourvus de noyau",
+            "Leur matériel génétique est libre dans le noyau",
+            "Sont essentiellement représentés par les bactéries",
+            "Pas d'organite présent (sauf les ribosomes)"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Elle permet de différencier une bactérie Gram + d'une bactérie Gram-:",
+        "choix": [
+            "La bactériologie",
+            "Le bactériophage",
+            "La coloration de Gram",
+            "La safranine",
+            "La bactérie"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Quelle est l'importance des algues:",
+        "choix": [
+            "Ce sont des organismes photosynthétiques",
+            "Elles produisent de l'oxygène et de la matière organique",
+            "Elles appartiennent au règne des protistes",
+            "a,b et c sont correctes",
+            "a et b sont corrects"
+        ],
+        "reponsKorek": "4"
+    },
+    {
+        "type": "qcm",
+        "texte": "Tous les animaux sont:",
+        "choix": [
+            "multicellulaires, procaryotes, hétérotrophes",
+            "multicellulaires, eucaryotes, autotrophes",
+            "hétérotrophes, eucaryotes, multicellulaires",
+            "unicellulaires et multicellulaires, eucaryotes"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'Étoile de mer est un:",
+        "choix": [
+            "Echinoderme",
+            "Spongiaire",
+            "Mollusque",
+            "Cnidaire"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les descendants de la F1 du croisement mono hybride sont:",
+        "choix": [
+            "Tous AA",
+            "Tous Aa",
+            "Tous aa",
+            "1/2 Aa et 1/2 AA"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Toutes les propriétés suivantes appartiennent aux enzymes sauf:",
+        "choix": [
+            "Les enzymes sont considérées comme des médiateurs chimiques",
+            "Elles sont toutes faites de protéines",
+            "Elles ont une action spécifique",
+            "Elles n'agissent que dans certaines conditions d'acidité ou d'alcalinité (pH)"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'ADN d'une espèce se distingue l'ADN des autres espèces par:",
+        "choix": [
+            "Ses sucres",
+            "Ses séquences de bases",
+            "Sa composition en thymine",
+            "Ses phosphates"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Une graine est un:",
+        "choix": [
+            "Gamétophyte femelle",
+            "Ovule mature",
+            "Tube pollinique mature",
+            "Embryon immature"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Lequel des éléments suivants ne s'applique pas aux gymnospermes et aux angiospermes:",
+        "choix": [
+            "Des tissus conducteurs",
+            "La dominance de la phase diploïde",
+            "Un seul type de spores",
+            "Toutes ces réponses"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Au cours de la division cellulaire, la cellule diploïde se divise pour donner naissance à:",
+        "choix": [
+            "Deux cellules filles à 4n chromosomes",
+            "Deux cellules filles à 3n chromosomes",
+            "Deux cellules filles à 2n chromosomes",
+            "Deux cellules filles à N chromosomes"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "La face est cette partie de la tête constituée de 14 os, alors que l'os médian de la face est:",
+        "choix": [
+            "La mandibule",
+            "Les os propres du nez",
+            "Le vomer",
+            "Le maxillaire supérieur"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Le système ABO constitue l'un des systèmes du groupe sanguin le plus étudié par la physiologie générale, parmi ces groupes quel est le receveur universel:",
+        "choix": [
+            "Le groupe AB, Rhésus positif",
+            "Le groupe Rhésus négatif",
+            "Le groupe Rhésus positif",
+            "Le groupe A, Rhésus positif",
+            "Le groupe AB, Rhésus négatif"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'intestin est une partie du tube digestif pouvant mesurer jusqu'à 7m de long. Quelle région de l'intestin ayant la forme d'un C en rapport avec le canal cholédoque?",
+        "choix": [
+            "Le jéjunum",
+            "L'iléon terminal",
+            "Le duodénum",
+            "Toutes les réponses sont correctes"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Le sternum est l'os plat situé à la partie antérieure du thorax, de ses trois portions deux(2) d'entre elles forment un angle appelé angle de Louis, ce sont:",
+        "choix": [
+            "L'appendice xiphoïde et le sternum",
+            "Le manubrium et le mesosternum",
+            "L'appendice xiphoïde et le mesosternum",
+            "Toutes les réponses"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Le foie est souvent considéré comme le laboratoire du corps humain. Une de ces fonctions n'est pas réalisée par le foie:",
+        "choix": [
+            "la fonction martiale et la glycogénogenèse",
+            "la glycogénogenèse",
+            "la production de la bile",
+            "la formation des cellules sanguines"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "On réalise un croisement Mendélien de deux plantes l'une à fleurs violettes (caractère dominant) et l'autre à fleurs blanches (caractère récessif). À l'analyse de Punett on obtient à la génération F2 les rapports suivants:",
+        "choix": [
+            "¼ dominant et ¼ récessif",
+            "3/4 dominant et 3/4 récessif",
+            "1/2 dominant et 1/2 récessif",
+            "Toutes les réponses sont fausses"
+        ],
+        "reponsKorek": "3"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "type": "qcm",
+        "texte": "La réaction entre l'ester et l'eau qui conduit à un alcool et un acide carboxylique est appelée",
+        "choix": [
+            "Estérification",
+            "Neutralisation", 
+            "Hydrolyse saline",
+            "Hydrolyse d'un ester"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Dans une réaction acido-basique, l'espèce qui capte le proton H+ est:",
+        "choix": [
+            "Une base",
+            "Une base de Bronsted",
+            "Une base de Lewis",
+            "Une base d'Archimède"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les électrons d'un atome sont insérés dans un matériau de charge positive, comme des raisins dans un gâteau. Ce modèle atomique est de:",
+        "choix": [
+            "Antoine Laurent Lavoisier",
+            "JJ Thomson",
+            "John Dalton",
+            "Niels Bohr"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Au cours de la réaction: Zn²⁺ + 2e⁻ → Zn",
+        "choix": [
+            "Zn²⁺ est oxydé",
+            "Zn²⁺ est réduit",
+            "Zn²⁺ est neutralisé",
+            "Zn²⁺ est réduit et neutralisé"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les hydrocarbures acycliques saturés ont pour formule générale:",
+        "choix": [
+            "CnH2n",
+            "CnH2n",
+            "CnH2n+1",
+            "CnH2n+2"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Pour séparer un mélange d'eau et d'alcool la méthode appropriée est:",
+        "choix": [
+            "Aimantation",
+            "Décantation",
+            "Distillation",
+            "Filtration"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'hydratation catalytique de but-1-ene conduit majoritairement à:",
+        "choix": [
+            "Butan-1-ol",
+            "Butan-2-ol",
+            "Butan-2-one",
+            "Butyne"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "La quantité d'énergie nécessaire pour enlever un électron à un atome à l'état gazeux s'appelle",
+        "choix": [
+            "Energie calorifique",
+            "Energie chimique",
+            "Energie électrique",
+            "Energie d'ionisation"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'air est un exemple de mélange gazeux constitué principalement de:",
+        "choix": [
+            "Environ 78% d'O₂ et de 21% de N₂",
+            "Environ 78% d'O₂ et 21% de CO₂",
+            "Environ 78% de N₂ et de 21% de O₂",
+            "Environ 78% de N₂ et de 21% de CO₂"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "La formule brute du plus simple des acides carboxyliques est:",
+        "choix": [
+            "CHO",
+            "CHO₂",
+            "CHO",
+            "C₂H₂O₂"
+        ],
+        "reponsKorek": "3"
+    }
+]

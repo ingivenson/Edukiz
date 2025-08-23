@@ -1,0 +1,158 @@
+[
+  {
+    "texte": "Parmi les molécules suivantes, indiquer celle qui est aromatique",
+    "type": "qcm",
+    "choix": [
+      "CH₄",
+      "C₂H₆", 
+      "C₆H₆",
+      "H₂O"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "La masse d'un atome est égale environ à celle :",
+    "type": "qcm",
+    "choix": [
+      "des protons",
+      "des neutrons",
+      "du noyau",
+      "des électrons",
+      "d'un quark"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Parmi les triplets de nombres quantiques (n, l, m) suivants, déterminez celui qui est possible :",
+    "type": "qcm",
+    "choix": [
+      "(2, 1, 2)",
+      "(3, 2, 1)",
+      "(3, 0, 1)",
+      "(2, 2, 1)",
+      "(0, 0, 0)"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Le test à la liqueur de Fehling est un test caractéristique des :",
+    "type": "qcm",
+    "choix": [
+      "cétones",
+      "alcools",
+      "aldéhydes",
+      "acides carboxyliques"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "Lequel parmi les groupes d'éléments suivants est un halogène ?",
+    "type": "qcm",
+    "choix": [
+      "Fe et O",
+      "Cl et S",
+      "Br et N",
+      "Li et S",
+      "Br et I"
+    ],
+    "reponsKorek": "4"
+  },
+  {
+    "texte": "Parmi les molécules suivantes, déterminer celle qui est polaire :",
+    "type": "qcm",
+    "choix": [
+      "C₆H₁₂O₆",
+      "H₂O",
+      "CO₂",
+      "CH₄",
+      "BF₂"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "La molécule de méthane comporte un carbone :",
+    "type": "qcm",
+    "choix": [
+      "primaire",
+      "secondaire",
+      "tertiaire",
+      "quaternaire"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "texte": "Les isomères ramifiés de composés linéaires ont une température d'ébullition plus élevée que ces composés sans ramifications",
+    "type": "vre_fo",
+    "reponsKorek": "false"
+  },
+  {
+    "texte": "Dans la représentation suivante P⁷, il y a 15 protons, 15 électrons, 16 neutrons et 31 nucléons",
+    "type": "vre_fo",
+    "reponsKorek": "false"
+  },
+  {
+    "texte": "Au cours d'une réaction chimique se déroulant dans n'importe quel système, la masse de l'ensemble des produits formés est égale à la masse de l'ensemble des réactifs",
+    "type": "vre_fo",
+    "reponsKorek": "false"
+  },
+  {
+    "texte": "Deux molécules énantiomères ont les mêmes propriétés chimiques mais peuvent avoir des propriétés physiologiques différentes",
+    "type": "vre_fo",
+    "reponsKorek": "true"
+  },
+  {
+    "texte": "Les alcynes sont des hydrocarbures insaturés de formule brute CₙH₂ₙ₋₂ comportant une liaison triple",
+    "type": "vre_fo",
+    "reponsKorek": "true"
+  },
+  {
+    "texte": "Le processus qui permet aux végétaux de transformer le dioxyde de carbone (CO₂) en glucide (sucre) porte le nom de",
+    "type": "konplete",
+    "reponsKorek": "photosynthèse"
+  },
+  {
+    "texte": "Dans l'équation HCl(aq) + Fe(s) → FeCl₂(g) + H₂(g), la solution d'acide chlorhydrique joue le rôle de",
+    "type": "konplete",
+    "reponsKorek": "réactif"
+  },
+  {
+    "texte": "Le passage de l'état solide à l'état gazeux sans passer par l'état liquide s'appelle",
+    "type": "konplete",
+    "reponsKorek": "sublimation"
+  },
+  {
+    "texte": "On appelle ... deux molécules qui possèdent la même formule brute mais ont des formules développées planes différentes",
+    "type": "konplete",
+    "reponsKorek": "isomères"
+  },
+  {
+    "texte": "La solution chimique dans laquelle la concentration des ions H₃O⁺ est supérieure à la concentration OH⁻ est",
+    "type": "konplete",
+    "reponsKorek": "acide"
+  },
+  {
+    "texte": "... est la quantité de matière d'un système contenant autant d'entités élémentaires qu'il y a d'atomes dans 12 g de carbone-12",
+    "type": "konplete",
+    "reponsKorek": "la mole"
+  },
+  {
+    "texte": "Le pH d'un jus de citron est de 3,5. La concentration molaire des ions hydronium est ... mol·L⁻¹",
+    "type": "konplete",
+    "reponsKorek": "3.16 × 10⁻⁴"
+  },
+  {
+    "texte": "Un objet est ... s'il n'est pas superposable à son image dans un miroir plan",
+    "type": "konplete",
+    "reponsKorek": "chiral"
+  },
+  {
+    "texte": "Dans l'équation NH₃(aq) + H₂O(aq) ⇌ NH₄⁺(aq) + OH⁻(aq), l'espèce qui joue le rôle de base conjuguée est",
+    "type": "konplete",
+    "reponsKorek": "OH⁻"
+  },
+  {
+    "texte": "Les alcools sont des composés ... ils peuvent se comporter à la fois comme des bases et comme des acides",
+    "type": "konplete",
+    "reponsKorek": "amphotères"
+  }
+]

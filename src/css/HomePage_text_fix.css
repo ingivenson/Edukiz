@@ -1,0 +1,110 @@
+/* FIKSE TÈKS YO POU YO PI LISIB - VERSION FINALE */
+
+/* Tèks nan seksyon yo ki te gri ak kounye a pi fonse */
+.section-subtitle {
+  color: #2c3e50 !important; /* Pi fonse pase #6b7280 */
+  font-weight: 500 !important;
+}
+
+.problem-engagement .section-subtitle {
+  color: #2c3e50 !important;
+  font-weight: 500 !important;
+}
+
+/* Tèks nan about cards yo */
+.about-content p {
+  color: #2c3e50 !important; /* Pi fonse pase #4b5563 */
+  font-weight: 500 !important;
+}
+
+/* Tèks nan feature cards yo */
+.feature-desc {
+  color: #2c3e50 !important; /* Pi fonse pase #6b7280 */
+  font-weight: 500 !important;
+}
+
+/* Tèks nan step cards yo */
+.step-desc {
+  color: #2c3e50 !important; /* Pi fonse pase #6b7280 */
+  font-weight: 500 !important;
+}
+
+/* Temwayaj yo - fikse tèks ki pa klè yo */
+.t-quote {
+  color: #2c3e50 !important; /* Pi fonse pase #374151 */
+  font-weight: 500 !important;
+  font-size: 15px !important; /* Pi gwo tou */
+}
+
+.t-name {
+  color: #1a202c !important; /* Nwa prèske */
+  font-weight: 800 !important;
+  font-size: 16px !important;
+}
+
+.t-meta {
+  color: #1e5bbf !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+
+/* Bouton "Konekte" ak koule pi bon */
+.btn-secondary {
+  background: rgba(30, 91, 191, 0.15) !important; /* Ble klè */
+  color: #1e5bbf !important; /* Ble fonse */
+  border: 2px solid #1e5bbf !important;
+  font-weight: 700 !important;
+}
+
+.btn-secondary:hover {
+  background: rgba(30, 91, 191, 0.25) !important;
+  color: #184b9d !important;
+}
+
+/* Hero text yo pi klè */
+.hero-text {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+  font-weight: 500 !important;
+}
+
+/* Stats yo pi klè */
+.stat-label {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+  font-weight: 600 !important;
+}
+
+/* Footer tèks yo pi klè */
+.footer-desc {
+  color: #cbd5e0 !important; /* Pi klè pase #a0aec0 */
+  font-weight: 500 !important;
+}
+
+.course-text {
+  color: #e2e8f0 !important;
+  font-weight: 500 !important;
+}
+
+/* Responsive - kenbe menm koule yo sou mobile */
+@media (max-width: 768px) {
+  .section-subtitle,
+  .about-content p,
+  .feature-desc,
+  .step-desc,
+  .t-quote {
+    color: #2c3e50 !important;
+    font-weight: 500 !important;
+  }
+  
+  .t-name {
+    color: #1a202c !important;
+    font-weight: 800 !important;
+  }
+  
+  .btn-secondary {
+    background: rgba(30, 91, 191, 0.15) !important;
+    color: #1e5bbf !important;
+    border: 2px solid #1e5bbf !important;
+  }
+}

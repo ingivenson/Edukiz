@@ -1,0 +1,25 @@
+{
+  "universiteId": "universite_chimi_id",
+  "matiereId": "matiere_chimi_id",
+  "nom": "Examen Chimie 2018",
+  "annee": 2018,
+  "duree": 90,
+  "questions": [
+    {
+      "type": "qcm",
+      "texte": "Quelle est la formule chimique de l'eau ?",
+      "choix": ["H2O", "CO2", "O2", "H2"],
+      "correct": ["0"]
+    },
+    {
+      "type": "vrai_faux",
+      "texte": "Le dioxyde de carbone est un gaz.",
+      "correct": "vrai"
+    },
+    {
+      "type": "konplete",
+      "texte": "Complétez : La formule chimique du sel de table est ______.",
+      "correct": "NaCl"
+    }
+  ]
+}

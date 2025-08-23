@@ -1,0 +1,206 @@
+[
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent les œufs oligolécithes:",
+        "choix": [
+            "Vitellus assez abondant",
+            "Dépourvus de vitellus",
+            "Pauvre en vitellus",
+            "Très riche en vitellus",
+            "Toutes les propositions sont fausses"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent le périanthe:",
+        "choix": [
+            "Ensemble des organes femelle d'une fleur",
+            "Ensemble des enveloppes florales",
+            "Ensemble des organes reproducteurs de la feuille",
+            "B et D sont vrais"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent un disaccharide:",
+        "choix": [
+            "Il est constitué de trois oses",
+            "L'amidon en est un exemple",
+            "Il est constitué d'un seul ose",
+            "Le saccharose en est un exemple",
+            "B et C sont vrais"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent les cellules de soutien des végétaux:",
+        "choix": [
+            "Les cellules du méristème en est un exemple",
+            "Les cellules du sclérenchyme en est un exemple",
+            "Les cellules du collenchyme en est un exemple",
+            "A et C sont faux"
+        ],
+        "reponsKorek": ["1", "2"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent la mitochondrie:",
+        "choix": [
+            "Siège de la respiration cellulaire chez les cellules procaryotes",
+            "Siège de la digestion cellulaire",
+            "Siège de la photosynthèse",
+            "Renferme de l'ADN",
+            "Ils ne peuvent pas se dupliquer"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent les virus:",
+        "choix": [
+            "Ils renferment trois types d'acides nucléiques",
+            "Leur structure se résume à deux ou trois éléments",
+            "Ils sont constitués d'une coque protéique : capsule",
+            "Ce sont des parasites extracellulaires obligatoires",
+            "Ils possèdent une organisation cellulaire"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent le réceptacle floral, lorsque l'ovaire est placé au-dessus il est dit:",
+        "choix": [
+            "Uniovaire",
+            "Pluri ovaire",
+            "Ovaire infère",
+            "Ovaire supère",
+            "A et B sont faux"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les propositions suivantes concernent la méiose:",
+        "choix": [
+            "L'anaphase suit la prophase",
+            "La métaphase suit la prophase",
+            "L'anaphase suit la métaphase",
+            "La télophase suit l'anaphase",
+            "L'anaphase suit la télophase"
+        ],
+        "reponsKorek": ["1", "2", "3"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les muscles _______ produisent des mouvements dans le sens contraire.",
+        "reponsKorek": "antagonistes"
+    },
+    {
+        "type": "konplete",
+        "texte": "La formule dentaire d'un enfant s'écrit _______ tandis que celle d'un adulte s'écrit _______.",
+        "reponsKorek": ["2/2 H 1/1 C + 2/2 PM", "2/2 H 1/1 C + 2/2 PM + 3/3 M"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ se produit lorsqu'un flux d'eau sort par osmose de la vacuole et de la cellule végétale tandis que la _______ est due à l'entrée par osmose d'un flux d'eau dans la cellule végétale et sa vacuole.",
+        "reponsKorek": ["plasmolyse", "turgescence"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Le processus de production de fruits sans fécondation de l'ovule prend le nom de _______.",
+        "reponsKorek": "parthénocarpie"
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est une structure de l'œil riche en cellules pigmentées, en élément vasculaire et nerveux.",
+        "reponsKorek": "rétine"
+    },
+    {
+        "type": "konplete",
+        "texte": "On parle de _______ quand sur chaque nœud s'insère une feuille unique, de _______ quand sur chaque nœud s'insère deux feuilles diamétralement opposées et de _______ quand sur chaque nœud s'insère plus de deux feuilles.",
+        "reponsKorek": ["phyllotaxie alternée", "phyllotaxie opposée", "phyllotaxie verticillée"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les radiolaires se déplacent à l'aide de _______, les trypanosomes se déplacent à l'aide de _______, et la paramécie se déplace à l'aide de _______.",
+        "reponsKorek": ["pseudopode", "flagelle", "cils"]
+    },
+    {
+        "type": "konplete",
+        "texte": "On dit anémie à cellule falciforme ou _______ ou _______.",
+        "reponsKorek": ["drépanocytose", "sicklémie"]
+    },
+    {
+        "type": "konplete",
+        "texte": "L'_______ est un feuillet embryonnaire qui conduit à la formation des muqueuses digestives, poumon, foie, pancréas.",
+        "reponsKorek": "endoderme"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'incapacité de différencier le vert du rouge prend le nom de _______.",
+        "reponsKorek": "daltonisme"
+    },
+    {
+        "type": "konplete",
+        "texte": "Un nucléotide est constitué d'une _______, d'un _______, d'un _______.",
+        "reponsKorek": ["base azotée", "ose", "groupement phosphate"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les deux brins d'une molécule d'ADN sont _______ et _______.",
+        "reponsKorek": ["antiparallèles", "enroulés l'un autour de l'autre"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est le mécanisme de synthèse de l'ADN, la _______ est la synthèse d'ARN tandis que la _______ conduit à la synthèse des protéines.",
+        "reponsKorek": ["réplication", "transcription", "traduction"]
+    },
+    {
+        "type": "konplete",
+        "texte": "L'union du gamète mâle et du gamète femelle donne naissance à une cellule unique appelée _______.",
+        "reponsKorek": "zygote"
+    },
+    {
+        "type": "konplete",
+        "texte": "La dixième paire de nerfs crâniens est appelée _______ ou _______.",
+        "reponsKorek": ["pneumogastrique", "nerf vague"]
+    },
+    {
+        "type": "konplete",
+        "texte": "L'_______ est une membrane permettant de boucher l'accès aux voies aériennes supérieures lors de la déglutition.",
+        "reponsKorek": "épiglotte"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'hormone qui stimule la production de lait par les glandes mammaires s'appelle _______.",
+        "reponsKorek": "prolactine"
+    },
+    {
+        "type": "konplete",
+        "texte": "Chez les insectes, le stade intermédiaire entre la larve et l'adulte prend le nom de _______.",
+        "reponsKorek": "nymphe"
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ occupe la majeure partie du cytoplasme de la cellule végétale.",
+        "reponsKorek": "vacuole"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'_______ est composé de trois éléments : le cerveau, le cervelet et le bulbe rachidien.",
+        "reponsKorek": "encéphale"
+    },
+    {
+        "type": "konplete",
+        "texte": "Une carence en vitamine _______ provoque des troubles de coagulation du sang.",
+        "reponsKorek": "K"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le crocodile est un reptile tandis que le dauphin est un _______.",
+        "reponsKorek": "mammifère"
+    }
+]

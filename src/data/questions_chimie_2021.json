@@ -1,0 +1,107 @@
+[
+    {
+        "type": "qcm",
+        "texte": "Les espèces chimiques consommées lors d'une transformation chimique sont appelées:",
+        "choix": [
+            "Ions",
+            "Molécules",
+            "Produits",
+            "Réactifs"
+        ],
+        "reponsKorek": "3"
+    },
+    {
+        "type": "qcm",
+        "texte": "Une quantité de 3,5 mol de NH₃ occupe 5,20 L à 47 °C. La pression du gaz est :",
+        "choix": [
+            "1,7 atm",
+            "17,7 atm",
+            "177 atm",
+            "177 kPa"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Dans le tableau périodique, les éléments les plus stables appartiennent à la famille :",
+        "choix": [
+            "Métaux alcalins",
+            "Gaz rares",
+            "Halogènes",
+            "des transition"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'essence de rose, le géraniol, est un alcool naturel de formule semi-développée : H₃C–C=CH(CH₃)–CH–CH₂–C=CH(CH₃)–CH₂OH. Son nom IUPAC est :",
+        "choix": [
+            "2,6-diméthylocta-2,6-diène-8-ol",
+            "3,7-diméthylocta-2,6-dièn-1-ol",
+            "3,7-diméthylocta-2,6-1-ol",
+            "3,7-méthylocta-3,7-dièn-1-ol"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Le nombre de liaisons π qu'il contient est :",
+        "choix": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "konplete",
+        "texte": "Parmi les composés Na₂O₂, H₂SO₄, OF₂, l'oxygène a le nombre d'oxydation le plus élevé dans ...............",
+        "reponsKorek": "OF₂"
+    },
+    {
+        "type": "konplete",
+        "texte": "Entre le chlorure de sodium et le fluorure de sodium, celui qui possède le caractère ionique le plus élevé est ...............",
+        "reponsKorek": "NaF"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le composé organique N-éthylbutamine a pour formule semi-développée ...............",
+        "reponsKorek": "CH₃–CH₂–NH–CH₂–CH₂–CH₂–CH₃"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'acide conjugué de la base CO₃²⁻ est ...............",
+        "reponsKorek": "HCO₃⁻"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le césium appartient à la première colonne du tableau périodique, c'est un ...............",
+        "reponsKorek": "alcalin"
+    },
+    {
+        "type": "konplete",
+        "texte": "Un solide ionique est formé d'ions (cations et anions) régulièrement disposés pour former un ...............",
+        "reponsKorek": "sel"
+    },
+    {
+        "type": "konplete",
+        "texte": "La valeur de l pour la sous-couche 4d est ...............",
+        "reponsKorek": "3"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le test à la 2,4-DNPH est utilisé pour identifier les composés possédant le groupe ...............",
+        "reponsKorek": "Carbonyl"
+    },
+    {
+        "type": "konplete",
+        "texte": "Parmi les composés suivants : C₃H₈ ; C₂H₂ ; C₆H₆ ; C₂H₄, celui qui ne possède que des carbones tétraédriques est ...............",
+        "reponsKorek": "C₃H₈"
+    },
+    {
+        "type": "konplete",
+        "texte": "La jonction électrolytique qui permet le passage du courant par mouvement d'ions entre deux compartiments s'appelle ...............",
+        "reponsKorek": "Pont électrolytique"
+    }
+]

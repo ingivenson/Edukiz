@@ -1,0 +1,172 @@
+[
+    {
+        "type": "qcm",
+        "texte": "Concernant les caractéristiques générales des arachnides:",
+        "choix": [
+            "Possèdent 1 paire d'antennes",
+            "Respiration Branchiale",
+            "Pas d'antenne mais chélicères",
+            "Corps divisés en 4 parties",
+            "Corps divisé en 6 parties"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Cette anomalie de l'œil se corrige à l'aide de lentilles convergentes:",
+        "choix": [
+            "Myopie",
+            "Astigmatisme",
+            "Glaucome",
+            "Presbytie",
+            "Hypermétropie"
+        ],
+        "reponsKorek": ["3", "4"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Les vertébrés qui marchent sur les doigts sont appelés:",
+        "choix": [
+            "Plantigrades",
+            "Digitigrades",
+            "Doigtigrades",
+            "Onguligrades",
+            "Aucune de ces réponses"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Concernant le serpent et la couleuvre:",
+        "choix": [
+            "Ce sont deux espèces distinctes",
+            "La couleuvre est la femelle du serpent",
+            "Le serpent est plus petit que la couleuvre",
+            "La couleuvre est plus petite que le serpent",
+            "La couleuvre fait partie de la grande famille des serpents"
+        ],
+        "reponsKorek": "4"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les œufs avec du vitellus assez abondant sont appelés:",
+        "choix": [
+            "Oeufs alécithes",
+            "Oeufs oligolécithes",
+            "Oeufs hétérolecithes",
+            "Oeufs mérolécithes",
+            "Oeufs vitelolécithes"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Ce constituant cellulaire joue un rôle essentiel dans la dégradation de H2O2:",
+        "choix": [
+            "Peroxysomes",
+            "Lysosomes",
+            "Mitochondrie",
+            "Appareil de Golgi",
+            "Réticulum endoplasmique"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Hormone contrôlant l'augmentation du taux de calcium et la diminution du phosphore dans le sang:",
+        "choix": [
+            "Corticotropine",
+            "Progestérone",
+            "Parathormone",
+            "Insuline",
+            "Somatotropine"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Concernant la réplication:",
+        "choix": [
+            "C'est un phénomène conservatif",
+            "Se déroule lors de la phase S du cycle cellulaire",
+            "Se réalise grâce à des ARN polymérases",
+            "C'est un phénomène semi-conservatif",
+            "Se réalise uniquement chez les eucaryotes"
+        ],
+        "reponsKorek": ["3", "1"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Concernant la cellule animale / Cellule végétale:",
+        "choix": [
+            "La cellule animale et la cellule végétale sont des cellules procaryotes",
+            "Les cellules végétales possèdent les mêmes organites que les cellules animales",
+            "Les chloroplastes, présents dans les cellules animales, sont le siège de la photosynthèse",
+            "La cellule végétale a une forme anguleuse, géométrique par rapport à une cellule animale",
+            "Les oléoplastes, présents dans les cellules végétales, assurent le stockage de lipides"
+        ],
+        "reponsKorek": ["3", "4"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Concernant les virus:",
+        "choix": [
+            "Ce sont des symbiotes obligatoires des cellules",
+            "Ils renferment toujours un seul type d'acide nucléique",
+            "Ils n'ont pas de métabolisme propre",
+            "Les bactériophages sont des bactéries infectant des virus",
+            "Ils présentent une organisation cellulaire"
+        ],
+        "reponsKorek": ["0", "1", "2"]
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ est un agglutinogène des globules rouges de 85 % des êtres humains.",
+        "reponsKorek": ["Agglutinogène A", "Agglutinogène B"]
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ produit des troubles graves de croissance et de la vision crépusculaire, tandis que _______ peut conduire à des douleurs articulaires, perte de cheveux et épaississement du périoste des os longs.",
+        "reponsKorek": ["Carence en vitamine A", "Carence en vitamine D"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les cellules sexuelles des organismes pluricellulaires se reproduisent par _______ tandis que leurs cellules somatiques se reproduisent par _______.",
+        "reponsKorek": ["méiose", "mitose"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La substance attractive que met le gamète femelle afin d'attirer les spermatozoïdes prend le nom de _______.",
+        "reponsKorek": "phéromone"
+    },
+    {
+        "type": "konplete",
+        "texte": "La gastrulation est complète lorsque le _______ est apparu.",
+        "reponsKorek": "blastocèle"
+    },
+    {
+        "type": "konplete",
+        "texte": "Quand la parthénogenèse aboutit uniquement à des individus mâles, on parle de _______ tandis que si elle aboutit uniquement à des individus femelles on parle de _______.",
+        "reponsKorek": ["arrhénotoque", "thélytoque"]
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ est la science qui s'intéresse à l'étude des reptiles.",
+        "reponsKorek": "Herpétologie"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'_______ c'est l'inhabilité de la coagulation du sang qui est causée par une déficience en _______.",
+        "reponsKorek": ["hémophilie", "facteur VII"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Les nucléotides que l'on retrouve dans une molécule d'ARN sont les suivantes: _______.",
+        "reponsKorek": ["Adénosine", "Guanine", "Cytosine", "Uracile"]
+    },
+    {
+        "type": "konplete",
+        "texte": "Entre le premier bruit, le deuxième bruit et le premier bruit du cœur il y a _______ tandis qu'entre le deuxième bruit et le premier bruit du cœur il y a _______.",
+        "reponsKorek": ["0,04 seconde", "diastole"]
+    }
+]

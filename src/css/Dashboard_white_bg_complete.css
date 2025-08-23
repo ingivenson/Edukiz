@@ -1,0 +1,450 @@
+/* DASHBOARD FON BLAN AK T√àKS LISIB - VERSION KONPL√à */
+
+/* Force fon blan pou dashboard container */
+.dashboard-container {
+  background: #ffffff !important;
+  min-height: 100vh !important;
+}
+
+/* Kenbe cards yo ak border pi kl√® pou kontr√®s */
+.dashboard-header,
+.stat-card,
+.action-card,
+.activity-container,
+.motivation-card,
+.welcome-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Activity item hover ak fon pi kl√® */
+.activity-item:hover {
+  background-color: #f8fafc !important;
+}
+
+/* T√àKS KOULE YO - PI FONSE POU LISIBILITE */
+
+/* Dashboard title ak welcome text */
+.dashboard-title {
+  color: #1a202c !important;
+  font-weight: 800 !important;
+}
+
+.welcome-text {
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+/* Section titles */
+.section-title {
+  color: #1a202c !important;
+  font-weight: 700 !important;
+}
+
+/* Stat cards */
+.stat-number {
+  color: #1a202c !important;
+  font-weight: 800 !important;
+}
+
+.stat-label {
+  color: #2d3748 !important;
+  font-weight: 600 !important;
+}
+
+.stat-sublabel {
+  color: #1e5bbf !important;
+  font-weight: 600 !important;
+}
+
+/* Action cards */
+.action-title {
+  color: #1a202c !important;
+  font-weight: 700 !important;
+}
+
+.action-desc {
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+/* Activity items */
+.activity-university {
+  color: #1e5bbf !important;
+  font-weight: 700 !important;
+}
+
+.activity-subject {
+  color: #1a202c !important;
+  font-weight: 600 !important;
+}
+
+.activity-score {
+  color: #1e5bbf !important;
+  font-weight: 700 !important;
+}
+
+.activity-details {
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+.activity-date {
+  color: #4a5568 !important;
+  font-weight: 500 !important;
+}
+
+.activity-separator {
+  color: #4a5568 !important;
+}
+
+/* Empty state */
+.empty-title {
+  color: #1a202c !important;
+  font-weight: 700 !important;
+}
+
+.empty-desc {
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+/* Welcome section */
+.welcome-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.welcome-desc {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  opacity: 0.95 !important;
+}
+
+/* Motivation section */
+.motivation-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.motivation-text {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  opacity: 0.95 !important;
+}
+
+.streak-number {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.streak-label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  opacity: 0.9 !important;
+}
+
+/* Loading state */
+.loading-state p {
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+/* Badge text */
+.badge-text {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Responsive - kenbe menm fon blan yo */
+@media (max-width: 768px) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+  
+  /* Kenbe menm koule t√®ks yo sou mobile */
+  .dashboard-title,
+  .section-title,
+  .stat-number,
+  .action-title,
+  .activity-university,
+  .activity-subject,
+  .empty-title {
+    color: #1a202c !important;
+  }
+  
+  .welcome-text,
+  .stat-label,
+  .action-desc,
+  .activity-details,
+  .empty-desc {
+    color: #2d3748 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+}
+
+/* Dark mode override - force fon blan ak t√®ks fonse menm nan dark mode */
+@media (prefers-color-scheme: dark) {
+  .dashboard-container {
+    background: #ffffff !important;
+  }
+  
+  .dashboard-header,
+  .stat-card,
+  .action-card,
+  .activity-container {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  
+  .activity-item:hover {
+    background-color: #f8fafc !important;
+  }
+  
+  /* Force t√®ks fonse menm nan dark mode */
+  .dashboard-title,
+  .section-title,
+  .stat-number,
+  .action-title,
+  .activity-university,
+  .activity-subject,
+  .empty-title {
+    color: #1a202c !important;
+  }
+  
+  .welcome-text,
+  .stat-label,
+  .action-desc,
+  .activity-details,
+  .empty-desc,
+  .loading-state p {
+    color: #2d3748 !important;
+  }
+  
+  .activity-score,
+  .stat-sublabel {
+    color: #1e5bbf !important;
+  }
+  
+  .activity-date,
+  .activity-separator {
+    color: #4a5568 !important;
+  }
+}
+/* IK“N KOLOR» - RANPLASE IK“N BLE YO */
+
+/* Stats icons ak koule diferan yo */
+.stat-card:nth-child(1) .stat-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(76, 175, 80, 0.3)) !important;
+}
+
+.stat-card:nth-child(2) .stat-icon {
+  background: linear-gradient(135deg, #FF9800, #FFB74D) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(255, 152, 0, 0.3)) !important;
+}
+
+.stat-card:nth-child(3) .stat-icon {
+  background: linear-gradient(135deg, #F44336, #EF5350) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(244, 67, 54, 0.3)) !important;
+}
+
+.stat-card:nth-child(4) .stat-icon {
+  background: linear-gradient(135deg, #9C27B0, #BA68C8) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(156, 39, 176, 0.3)) !important;
+}
+
+/* Action icons ak koule diferan yo */
+.action-card:nth-child(1) .action-icon {
+  background: linear-gradient(135deg, #2196F3, #64B5F6) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(33, 150, 243, 0.3)) !important;
+}
+
+.action-card:nth-child(2) .action-icon {
+  background: linear-gradient(135deg, #FF5722, #FF8A65) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(255, 87, 34, 0.3)) !important;
+}
+
+/* Activity icons ak koule diferan yo */
+.activity-icon {
+  background: linear-gradient(135deg, #00BCD4, #4DD0E1) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 1px 3px rgba(0, 188, 212, 0.3)) !important;
+}
+
+/* Section icons ak koule diferan yo */
+.section-title:nth-of-type(1) .section-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.section-title:nth-of-type(2) .section-icon {
+  background: linear-gradient(135deg, #FF9800, #FFB74D) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.section-title:nth-of-type(3) .section-icon {
+  background: linear-gradient(135deg, #9C27B0, #BA68C8) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Dashboard title icon */
+.title-icon {
+  background: linear-gradient(135deg, #1e5bbf, #667eea) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(30, 91, 191, 0.3)) !important;
+}
+
+/* Welcome ak motivation icons */
+.welcome-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 6px rgba(76, 175, 80, 0.4)) !important;
+}
+
+.motivation-icon {
+  background: linear-gradient(135deg, #FF9800, #FFB74D) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 6px rgba(255, 152, 0, 0.4)) !important;
+}
+
+/* Empty state icon */
+.empty-icon {
+  background: linear-gradient(135deg, #9E9E9E, #BDBDBD) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(158, 158, 158, 0.3)) !important;
+}
+
+/* Loading spinner ak koule */
+.loading-spinner {
+  background: linear-gradient(135deg, #2196F3, #64B5F6) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 4px rgba(33, 150, 243, 0.3)) !important;
+}
+
+/* Refresh icon ak koule */
+.refresh-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 1px 3px rgba(76, 175, 80, 0.3)) !important;
+}
+
+/* Activity badges ak koule yo */
+.activity-badge.success {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3) !important;
+}
+
+.activity-badge.warning {
+  background: linear-gradient(135deg, #FF9800, #FFB74D) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3) !important;
+}
+
+.activity-badge.danger {
+  background: linear-gradient(135deg, #F44336, #EF5350) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.3) !important;
+}
+
+/* CTA icon ak koule */
+.cta-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 1px 3px rgba(76, 175, 80, 0.4)) !important;
+}
+
+/* Hover effects pou icons yo */
+.stat-card:hover .stat-icon,
+.action-card:hover .action-icon {
+  transform: scale(1.1) !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* Fallback pou navigatË ki pa sipÚte background-clip */
+@supports not (background-clip: text) {
+  .stat-card:nth-child(1) .stat-icon { color: #4CAF50 !important; }
+  .stat-card:nth-child(2) .stat-icon { color: #FF9800 !important; }
+  .stat-card:nth-child(3) .stat-icon { color: #F44336 !important; }
+  .stat-card:nth-child(4) .stat-icon { color: #9C27B0 !important; }
+  
+  .action-card:nth-child(1) .action-icon { color: #2196F3 !important; }
+  .action-card:nth-child(2) .action-icon { color: #FF5722 !important; }
+  
+  .activity-icon { color: #00BCD4 !important; }
+  .title-icon { color: #1e5bbf !important; }
+  .welcome-icon { color: #4CAF50 !important; }
+  .motivation-icon { color: #FF9800 !important; }
+  .refresh-icon { color: #4CAF50 !important; }
+  .loading-spinner { color: #2196F3 !important; }
+  .empty-icon { color: #9E9E9E !important; }
+  .cta-icon { color: #4CAF50 !important; }
+}

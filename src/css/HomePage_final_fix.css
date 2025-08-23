@@ -1,0 +1,109 @@
+/* FORCE COULEURS BLANCHES PARTOUT - VERSION FINALE */
+
+/* Force les couleurs blanches pour problem-card et solution-card sur TOUS les appareils */
+.problem-card,
+.solution-card {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border: 3px solid #e0e0e0 !important;
+  border-color: #e0e0e0 !important;
+  color: #000000 !important;
+}
+
+.problem-card::before,
+.solution-card::before {
+  background-color: #666666 !important;
+  background: linear-gradient(90deg, #666666, #999999) !important;
+}
+
+.problem-title,
+.solution-title {
+  color: #000000 !important;
+}
+
+.problem-content,
+.solution-content {
+  color: #333333 !important;
+}
+
+.problem-list li,
+.solution-list li {
+  color: #444444 !important;
+}
+
+.problem-icon,
+.solution-icon {
+  background-color: #f5f5f5 !important;
+  border: 2px solid #cccccc !important;
+}
+
+/* RESPONSIVE - Force les mêmes couleurs sur mobile */
+@media (max-width: 480px) {
+  .problem-card,
+  .solution-card {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 3px solid #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+  }
+  
+  .problem-title,
+  .solution-title {
+    color: #000000 !important;
+  }
+  
+  .problem-content,
+  .problem-list li,
+  .solution-content,
+  .solution-list li {
+    color: #333333 !important;
+  }
+}
+
+/* RESPONSIVE - Force les mêmes couleurs sur tablette */
+@media (min-width: 481px) and (max-width: 768px) {
+  .problem-card,
+  .solution-card {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 3px solid #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+  }
+}
+
+/* RESPONSIVE - Force les mêmes couleurs sur très petits écrans */
+@media (max-width: 320px) {
+  .problem-card,
+  .solution-card {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 3px solid #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+  }
+}
+
+/* DARK MODE - Force les mêmes couleurs blanches même en mode sombre */
+@media (prefers-color-scheme: dark) {
+  .problem-card,
+  .solution-card {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 3px solid #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+  }
+  
+  .problem-title,
+  .solution-title {
+    color: #000000 !important;
+  }
+  
+  .problem-content,
+  .solution-content {
+    color: #333333 !important;
+  }
+  
+  .problem-list li,
+  .solution-list li {
+    color: #444444 !important;
+  }
+}

@@ -1,0 +1,213 @@
+[
+    {
+        "type": "konplete",
+        "texte": "La jonction entre deux neurones consécutifs d'un circuit se nomme _______.",
+        "reponsKorek": "synapse"
+    },
+    {
+        "type": "konplete", 
+        "texte": "La première partie de l'intestin grêle s'articulant à l'estomac s'appelle _______.",
+        "reponsKorek": "duodénum"
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est la décomposition des substances organiques par les bactéries.",
+        "reponsKorek": "biodégradation"
+    },
+    {
+        "type": "konplete",
+        "texte": "La couche extérieure d'un fruit charnu se nomme _______.",
+        "reponsKorek": "péricarpe"
+    },
+    {
+        "type": "konplete",
+        "texte": "Dans une cellule animale, l'information génétique siège dans _______ et dans _______.",
+        "reponsKorek": ["noyau", "mitochondrie", "ribosomes"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La respiration est _______ et _______ chez les batraciens, tandis qu'elle est _______ chez les poissons et _______ chez les insectes.",
+        "reponsKorek": ["trachéenne", "pulmonaire", "branchique", "trachéenne"]
+    },
+    {
+        "type": "konplete",
+        "texte": "La _______ est l'organite énergétique de la cellule.",
+        "reponsKorek": "mitochondrie"
+    },
+    {
+        "type": "konplete",
+        "texte": "_______ est l'organite qui se charge de la fonction digestion cellulaire.",
+        "reponsKorek": "lysosome"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'enveloppe externe d'un virus se nomme _______.",
+        "reponsKorek": "capside"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les animaux dépourvus des moyens d'autorégulation thermique s'appellent _______.",
+        "reponsKorek": "poïkilotherme"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le tissu de protection vivant des plantes s'appelle _______.",
+        "reponsKorek": "épiderme"
+    },
+    {
+        "type": "konplete",
+        "texte": "La substitution des plumes chez les oiseaux est une sorte de régénération _______.",
+        "reponsKorek": "mue"
+    },
+    {
+        "type": "konplete",
+        "texte": "La propriété que possèdent les globules blancs de vivre en dehors des capillaires est _______.",
+        "reponsKorek": "diapédèse"
+    },
+    {
+        "type": "konplete",
+        "texte": "L'hormone sexuelle formée et sécrétée par des testicules est _______.",
+        "reponsKorek": "testostérone"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les plantes dont les graines sont enfermées dans un fruit s'appellent _______.",
+        "reponsKorek": "angiosperme"
+    },
+    {
+        "type": "konplete",
+        "texte": "Le mode de déplacement des reptiles est _______.",
+        "reponsKorek": "reptation"
+    },
+    {
+        "type": "konplete",
+        "texte": "Les trois petits os du squelette sont: _______.",
+        "reponsKorek": ["marteau", "enclume", "étrier"]
+    },
+    {
+        "type": "qcm",
+        "texte": "Les bactéries ont les caractéristiques suivantes, sauf:",
+        "choix": [
+            "Sont des êtres unicellulaires",
+            "Sont des êtres vivants acaryotes",
+            "Leur matériel génétique est libre dans le noyau",
+            "Pas d'organites présents (sauf ribosomes)"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Quelle est l'importance des algues?",
+        "choix": [
+            "Elles produisent de l'oxygène et de la matière organique",
+            "Elles appartiennent au règne des protistes",
+            "a et b sont corrects"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "Toutes les plantes sont:",
+        "choix": [
+            "Multicellulaires, procaryotes, hétérotrophes",
+            "Multicellulaires, eucaryotes, autotrophes",
+            "Hétérotrophes, eucaryotes, multicellulaires"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'organite assurant la photosynthèse chez les plantes s'appelle:",
+        "choix": [
+            "Mitochondrie",
+            "Chloroplaste",
+            "Ribosome"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'étoile de mer est un:",
+        "choix": [
+            "Echinoderme",
+            "Spongiaire",
+            "Mollusques"
+        ],
+        "reponsKorek": "0"
+    },
+    {
+        "type": "qcm",
+        "texte": "Les descendants de la F1 du croisement mono hybride de AA et aa sont:",
+        "choix": [
+            "Tous AA",
+            "Tous Aa",
+            "Tous aa"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Toutes les propriétés suivantes appartiennent aux enzymes, sauf:",
+        "choix": [
+            "Elles sont considérées comme des médiateurs chimiques",
+            "Elles sont toutes faites de protéine",
+            "Elles ont une action spécifique",
+            "Elles n'agissent que dans certaines conditions d'acidité ou d'alcalinité (ph)"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'ADN d'une espèce se distingue de l'ADN des autres espèces par:",
+        "choix": [
+            "Ses sucres",
+            "Sa séquence de base",
+            "Sa composition en thymine",
+            "Ses phosphates"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "Au cours de la division méiotique, la cellule diploïde se divise pour donner naissance à:",
+        "choix": [
+            "Deux cellules filles à 4n chromosomes",
+            "Quatre cellules filles à n chromosomes",
+            "Deux cellules filles à 2n chromosomes",
+            "Deux cellules filles à n chromosomes"
+        ],
+        "reponsKorek": "1"
+    },
+    {
+        "type": "qcm",
+        "texte": "La face est cette partie de la tête constituée de 14 os, alors l'os médian de la face est:",
+        "choix": [
+            "La mandibule",
+            "Les os propres du nez",
+            "Le vomer",
+            "Le maxillaire supérieur"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "L'intestin grêle est une partie du tube digestif pouvant mesurer jusqu'à 7m de long, quelle région de l'intestin ayant la forme de C en rapport avec le Cholédoque?",
+        "choix": [
+            "Le jéjunum",
+            "L'iléon terminal",
+            "Le duodénum",
+            "Toutes les réponses sont correctes"
+        ],
+        "reponsKorek": "2"
+    },
+    {
+        "type": "qcm",
+        "texte": "On réalise un croisement mendélien de deux plantes, l'une à fleurs violettes (caractère dominant) et l'autre à fleurs blanche (caractère récessif). A l'analyse de Punnett on obtient à la génération F2 les rapports suivants:",
+        "choix": [
+            "¼ dominant et ¼ récessif",
+            "½ dominant et ½ récessif",
+            "Toutes les reponses sont fausses"
+        ],
+        "reponsKorek": "2"
+    }
+]
