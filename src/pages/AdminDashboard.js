@@ -207,6 +207,27 @@ function AdminDashboard() {
             </div>
           </button>
           
+          <button onClick={() => {
+            if (window.confirm('Ou vle preranpli kesyon konesans jeneral yo?')) {
+              const script = document.createElement('script');
+              script.src = '/efase_preranpli_qcm_konesans_jeneral.js';
+              document.body.appendChild(script);
+              script.onload = () => {
+                alert('Kesyon yo preranpli ak siksè!');
+                loadAdminStats();
+              };
+              script.onerror = () => {
+                alert('Gen yon erè ki fèt pandan preranplisman an');
+              };
+            }
+          }} className="admin-action-card">
+            <div className="action-icon">📚</div>
+            <div className="action-content">
+              <h3 className="action-title">Preranpli Konesans Jeneral</h3>
+              <p className="action-desc">Ajoute kesyon konesans jeneral yo</p>
+            </div>
+          </button>
+          
           <button onClick={exportData} className="admin-action-card export">
             <div className="action-icon">📤</div>
             <div className="action-content">

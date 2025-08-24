@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { db } from "../firebase/config";
 import { collection, getDocs, query, where, doc, getDoc } from "firebase/firestore";
 import BottomNavbar from "../components/BottomNavbar";
+import LoadingSpinner from "../components/LoadingSpinner";
 import '../css/QuizListMatiere.css';
 
 function QuizListMatiere() {
@@ -15,57 +16,64 @@ function QuizListMatiere() {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
+      setQuizList([]); // Reset quiz list before fetching
+      
       try {
-        console.log("🔍 Kap chèche kiz yo ak egzamen pase yo pou matye:", matiereId);
+        // Fetch matiere info first
+        const matiereRef = doc(db, "matieres", matiereId);
+        const matiereSnap = await getDoc(matiereRef);
+        if (matiereSnap.exists()) {
+          const matiereData = matiereSnap.data();
+          setMatiereNom(matiereData.nom || "Matye");
+        } else {
+          console.error("Matye pa jwenn");
+          setMatiereNom("Matye");
+        }
         
-        // Chache kiz yo ak egzamen pase yo
+        // Fetch universite info
+        const univRef = doc(db, "universites", universiteId);
+        const univSnap = await getDoc(univRef);
+        if (univSnap.exists()) {
+          const univData = univSnap.data();
+          setUniversiteNom(univData.nom || "Inivèsite");
+        } else {
+          console.error("Inivèsite pa jwenn");
+          setUniversiteNom("Inivèsite");
+        }
+        
+        // Fetch quizzes and exams
         const q = query(
           collection(db, "examens"),
           where("universiteId", "==", universiteId),
           where("matiereId", "==", matiereId)
         );
+        
         const snap = await getDocs(q);
         const list = snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         
-        console.log("📝 Kiz ak egzamen pase yo jwenn:", list.length);
-        setQuizList(list.sort((a, b) => (b.annee || 0) - (a.annee || 0)));
+        // Sort by year in descending order and update state
+        const sortedList = list.sort((a, b) => {
+          const yearA = a.annee || 0;
+          const yearB = b.annee || 0;
+          return yearB - yearA;
+        });
         
-        // Chache non matye a
-        const matiereRef = doc(db, "matieres", matiereId);
-        const matiereSnap = await getDoc(matiereRef);
-        if (matiereSnap.exists()) {
-          const matiereData = matiereSnap.data();
-          console.log("📚 Matye jwenn:", matiereData.nom);
-          setMatiereNom(matiereData.nom || "Matye");
-        }
-        
-        // Chache non inivèsite a
-        const univRef = doc(db, "universites", universiteId);
-        const univSnap = await getDoc(univRef);
-        if (univSnap.exists()) {
-          const univData = univSnap.data();
-          console.log("🏛️ Inivèsite jwenn:", univData.nom);
-          setUniversiteNom(univData.nom || "Inivèsite");
-        }
+        setQuizList(sortedList);
         
       } catch (error) {
-        console.error("❌ Error fetching data:", error);
+        console.error("❌ Erè nan chèche done yo:", error);
+        setQuizList([]); // Reset on error
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     };
+
     fetchData();
   }, [universiteId, matiereId]);
 
   if (loading) {
-    return (
-      <div className="loading-container">
-        <div className="loading-spinner">
-          <div className="spinner"></div>
-          <p className="loading-text">Kap chèche kiz ak egzamen pase yo...</p>
-        </div>
-        <BottomNavbar />
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   return (
@@ -162,14 +170,24 @@ function QuizListMatiere() {
                   </div>
                   
                   <div className="card-footer">
-                    <button
-                      className="play-button"
-                      onClick={() => navigate(`/universites/${universiteId}/matieres/${matiereId}/quiz/${quiz.id}`)}
-                    >
-                      <span className="button-icon">🎯</span>
-                      <span className="button-text">Pratike Egzamen</span>
-                      <span className="button-arrow">→</span>
-                    </button>
+                    <div className="button-group">
+                      <button
+                        className="practice-button"
+                        onClick={() => navigate(`/universites/${universiteId}/matieres/${matiereId}/egzamen/${quiz.id}/etidye`)}
+                      >
+                        <span className="button-icon">📚</span>
+                        <span className="button-text">Etidye</span>
+                        <span className="button-arrow">→</span>
+                      </button>
+                      <button
+                        className="quiz-button"
+                        onClick={() => navigate(`/universites/${universiteId}/matieres/${matiereId}/quiz/${quiz.id}`)}
+                      >
+                        <span className="button-icon">🎯</span>
+                        <span className="button-text">Fè Tès</span>
+                        <span className="button-arrow">→</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}

@@ -16,10 +16,13 @@ import AjouteExamen from "./pages/AjouteExamen";
 import QuizListMatiere from "./pages/QuizListMatiere";
 import FeQuiz from "./pages/FèQuiz";
 import HistorikQuiz from "./pages/HistorikQuiz";
+import EtidyeEgzamen from "./pages/EtidyeEgzamen";
 
 // Import Admin pages
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+
+
 
 // Error Boundary Component
 class ErrorBoundary extends React.Component {
@@ -169,6 +172,8 @@ function App() {
             <Route path="/historik" element={<HistorikQuiz />} />
             <Route path="/results" element={<Navigate to="/historik" replace />} />
             
+
+            
             {/* University & Subject Routes */}
             <Route 
               path="/universites/:id/matieres" 
@@ -185,6 +190,10 @@ function App() {
             <Route 
               path="/universites/:universiteId/matieres/:matiereId/quiz/:quizId" 
               element={<FeQuiz />} 
+            />
+            <Route 
+              path="/universites/:universiteId/matieres/:matiereId/egzamen/:quizId/etidye" 
+              element={<EtidyeEgzamen />} 
             />
             
             {/* Admin Routes */}

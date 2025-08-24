@@ -3,7 +3,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { db } from "../firebase/config";
 import { collection, getDocs, query, where, doc, getDoc } from "firebase/firestore";
 import BottomNavbar from "../components/BottomNavbar";
+import LoadingSpinner from "../components/LoadingSpinner";
 import '../css/MatieresUniversite.css';
+import '../css/buttons.css';
 
 function MatieresUniversite() {
   const { id: universiteId } = useParams();
@@ -42,19 +44,9 @@ function MatieresUniversite() {
       setLoading(false);
     };
     fetchData();
-  }, [universiteId]);
+  }, [universiteId, navigate]);
 
-  if (loading) {
-    return (
-      <div className="loading-container">
-        <div className="loading-spinner">
-          <div className="spinner"></div>
-          <p className="loading-text">Kap chèche matye yo...</p>
-        </div>
-        <BottomNavbar />
-      </div>
-    );
-  }
+  if (loading) return <LoadingSpinner />;
 
   return (
     <div className="matieres-container">
@@ -131,8 +123,8 @@ function MatieresUniversite() {
                       className="quiz-button"
                       onClick={() => navigate(`/universites/${universiteId}/matieres/${matiere.id}/quiz-list`)}
                     >
-                      <span className="button-icon">🎯</span>
-                      <span className="button-text">Kòmanse Kiz</span>
+                      <span className="button-icon">📝</span>
+                      <span className="button-text">Egzamen ak Tès yo</span>
                       <span className="button-arrow">→</span>
                     </button>
                   </div>

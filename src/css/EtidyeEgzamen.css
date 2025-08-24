@@ -1,0 +1,133 @@
+.etidye-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.header-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.quiz-info {
+  color: #666;
+  margin-top: 8px;
+}
+
+.question-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.question-number {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.question-type {
+  background: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.question-text {
+  margin-bottom: 16px;
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.choice-item.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+  font-weight: bold;
+}
+
+.choice-letter {
+  background: #f3f4f6;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.true-false-container {
+  display: flex;
+  gap: 16px;
+}
+
+.tf-option {
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.tf-option.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+  font-weight: bold;
+}
+
+.blank-answer {
+  margin-top: 12px;
+  padding: 8px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.correct-answer {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+}

@@ -12,6 +12,8 @@ import questionsBiologie2017 from "../data/questions_biologie_2017.json";
 import questionsBiologie2020 from "../data/questions_biologie_2020.json";
 import questionsBiologie2021 from "../data/questions_biologie_2021.json";
 import questionsBiologie2021Octobre from "../data/questions_biologie_2021_octobre.json";
+import questionsBiologie2022 from "../data/questions_biologie_2022.json";
+import questionsKonesansJeneral from "../data/questions_konesans_jeneral.json";
 
 // Fonksyon pou jere repons miltip yo
 const formatReponsKorek = (repons) => {
@@ -86,7 +88,20 @@ function AjouteExamen() {
   const removeQuestion = (idx) => setQuestions(prev => prev.filter((_, i) => i !== idx));
 
   const updateQuestion = (idx, patch) => {
-    setQuestions(prev => prev.map((q, i) => i === idx ? { ...q, ...patch } : q));
+    setQuestions(prev => prev.map((q, i) => {
+      if (i !== idx) return q;
+      const newQ = { ...q, ...patch };
+      
+      // Si se yon kesyon konplete, prepare tèks la
+      if (newQ.type === "konplete" && newQ.texte) {
+        // Ranplase [blank] ak ___ (3 underscore)
+        if (!newQ.texte.includes("___")) {
+          newQ.texte = newQ.texte.replace(/\[blank\]/g, "___");
+        }
+      }
+      
+      return newQ;
+    }));
   };
 
   const changeType = (idx, type) => {
@@ -160,13 +175,13 @@ function AjouteExamen() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const err = validate();
-    if (err) { alert(err); return; }
+        e.preventDefault();
+        const err = validate();
+        if (err) { alert(err); return; }
 
-    setLoading(true);
-    try {
-        const payloadQuestions = questions.map(q => {
+        setLoading(true);
+        try {
+            const payloadQuestions = questions.map(q => {
             if (q.type === "qcm") {
                 const reponsKorek = (Array.isArray(q.correct) ? q.correct : []).sort((a, b) => Number(a) - Number(b)).join(",");
                 return {
@@ -202,6 +217,7 @@ function AjouteExamen() {
             matiereId,
             universite: selectedUniversite?.nom || "",
             matiere: selectedMatiere?.nom || "",
+
             nom: nom ? nom.trim() : "",
             annee: Number(annee),
             duree: duree ? Number(duree) : null,
@@ -347,6 +363,32 @@ function AjouteExamen() {
     );
   };
 
+  const prefillBiologie2022 = () => {
+    setUniversiteId("universite_bio_id");
+    setMatiereId("matiere_bio_id");
+    setNom("Examen Biologie 2022");
+    setAnnee(2022);
+    setQuestions(
+      questionsBiologie2022.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
+
+  const prefillKonesansJeneral = () => {
+    setUniversiteId("universite_kj_id");
+    setMatiereId("matiere_kj_id");
+    setNom("Tès Konesans Jeneral");
+    setAnnee(new Date().getFullYear());
+    setQuestions(
+      questionsKonesansJeneral.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
+
 const saveQuestionsToDatabase = async () => {
     try {
         setLoading(true);
@@ -474,6 +516,13 @@ const saveQuestionsToDatabase = async () => {
           <div style={{ display: "flex", gap: 10, marginTop: 16, flexWrap: "wrap" }}>
             <button
               type="button"
+              onClick={prefillKonesansJeneral}
+              style={{ background: "#f97316", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Tès Konesans Jeneral
+            </button>
+            <button
+              type="button"
               onClick={prefillChimi2020}
               style={{ background: "#34d399", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
             >
@@ -534,6 +583,13 @@ const saveQuestionsToDatabase = async () => {
               style={{ background: "#60a5fa", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
             >
               Pré-remplir ak Egzamen Biologie Octobre 2021
+            </button>
+            <button
+              type="button"
+              onClick={prefillBiologie2022}
+              style={{ background: "#60a5fa", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Egzamen Biologie 2022
             </button>
           </div>
 
@@ -618,6 +674,9 @@ const saveQuestionsToDatabase = async () => {
                 {/* Konplete */}
                 {q.type === 'konplete' && (
                   <div style={{ marginTop: 6 }}>
+                    <div style={{ fontSize: 13, color: '#4b5563', marginBottom: 8 }}>
+                      Ekri [blank] nan tèks kesyon an kote ou vle mete espas pou konplete a. Li pral parèt kòm ___ lè kesyon an afiche.
+                    </div>
                     <input
                       value={q.correct || ''}
                       onChange={e => updateQuestion(idx, { correct: e.target.value })}

@@ -571,7 +571,39 @@ body {
   justify-content: center;
 }
 
+.button-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.practice-button,
 .quiz-button {
+  flex: 1;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light));
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  color: var(--primary-white);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-blue);
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-button {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.practice-button::before{
   width: 100%;
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light));
   border: none;

@@ -1,0 +1,246 @@
+[
+  {
+    "type": "vrai_faux",
+    "texte": "Les virus sont considérés comme des êtres vivants parce qu'ils possèdent au moins des protéines et des enzymes.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les virus ne sont pas considérés comme des êtres vivants car ils ne peuvent pas se reproduire par eux-mêmes et n'ont pas de machinerie cellulaire propre. Ils ont besoin d'une cellule hôte pour se multiplier. Ils ne possèdent pas d'enzymes pour leur propre métabolisme."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les bactéries inférieures ne sont pas des êtres vivants puisqu'elles exigent un parasitisme intracellulaire obligatoire.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les bactéries, même si certaines sont des parasites intracellulaires obligatoires, sont bel et bien des êtres vivants unicellulaires."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les protistes sont des êtres unicellulaires procaryotes et eucaryotes.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les protistes sont uniquement des êtres unicellulaires eucaryotes. Les procaryotes sont les bactéries et les archées."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les décomposeurs ne sont que des bactéries et des insectes qui perfectionnent le recyclage des éléments au niveau des écosystèmes terrestres et maritimes.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les décomposeurs sont principalement des bactéries et des champignons. Les insectes ne sont pas les seuls décomposeurs."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les œufs embryonnés peuvent être utilisés comme milieu de culture pour faciliter la multiplication des virus.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, les virus ne peuvent se multiplier que dans des cellules vivantes. Les œufs embryonnés sont un milieu de culture très utilisé en virologie pour la production de vaccins par exemple."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les ribosomes sont considérés comme étant un organite sur le plan structural ainsi que sur le plan physiologique.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, les ribosomes sont des organites non-membranaires qui jouent un rôle crucial dans la synthèse des protéines."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "La mitose et la méiose mettent l'accent sur la division du noyau et le brassage du matériel génétique.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, la mitose et la méiose impliquent la division du noyau. La méiose est spécifiquement responsable du brassage génétique qui mène à la diversité génétique des gamètes."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "En cas d'une infection virale, les leucocytes et les lymphocytes augmentent dans le sang.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, en cas d'infection virale, le système immunitaire réagit en augmentant la production de globules blancs (leucocytes) et de lymphocytes pour combattre l'agent pathogène."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "L'ADN peut normalement quitter le noyau de la cellule à partir de l'ARN de transfert puisqu'il existe des pores au niveau de l'enveloppe nucléaire.",
+    "reponsKorek": "faux",
+    "justification": "Faux, l'ADN ne quitte jamais le noyau. C'est l'ARN messager (ARNm) qui est synthétisé à partir de l'ADN et qui sort du noyau par les pores nucléaires pour aller vers le ribosome pour la traduction."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Toutes les protéines peuvent être considérées comme étant des enzymes et elles sont fabriquées au niveau du REL.",
+    "reponsKorek": "faux",
+    "justification": "Faux, pas toutes les protéines sont des enzymes. De plus, les enzymes (protéines) sont synthétisées par les ribosomes qui sont soit libres, soit fixés au RER (réticulum endoplasmique rugueux), et non pas au REL (réticulum endoplasmique lisse)."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les lichens sont des organismes complexes formés d'un oomycète et d'un organisme photosynthétique.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les lichens sont formés d'un champignon (le plus souvent un ascomycète) et d'une algue ou d'une cyanobactérie."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les cellules animales et végétales possèdent toutes les deux des mitochondries et des grandes vacuoles.",
+    "reponsKorek": "faux",
+    "justification": "Faux, seules les cellules végétales possèdent une grande vacuole centrale."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les mésosomes constituent une sorte d'invagination de la membrane plasmique et qui est en contact avec l'ADN chromosomique chez les cellules procaryotes.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, bien que leur existence et leur fonction soient encore débattues, les mésosomes sont des invaginations de la membrane plasmique observées chez les bactéries (procaryotes)."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "Les végétaux sont autotrophes et sont considérés comme étant des producteurs et décomposeurs au niveau de la chaîne trophique.",
+    "reponsKorek": "faux",
+    "justification": "Faux, les végétaux sont des producteurs (autotrophes) mais ne sont pas des décomposeurs. Les décomposeurs sont les bactéries et les champignons qui se nourrissent de matière organique morte."
+  },
+  {
+    "type": "vrai_faux",
+    "texte": "La membrane plasmique a le goût de la sélectivité à travers la fonction de phagocytose et de semi-perméabilité.",
+    "reponsKorek": "vrai",
+    "justification": "Vrai, la membrane plasmique est sélectivement perméable. La phagocytose est un mécanisme par lequel la cellule engloutit des particules solides, ce qui est une forme de sélectivité."
+  },
+  {
+    "type": "konplete",
+    "texte": "Un épithélium constitué de deux couches ou plus est un ----------------.",
+    "reponsKorek": "Stratifié squameux"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les----------------- du neurone reçoivent le stimulus et propagent l'influx nerveux jusqu'au corps.",
+    "reponsKorek": "Dendrites"
+  },
+  {
+    "type": "konplete",
+    "texte": "Le tissu musculaire----------------est composé de fibres cylindriques, striées, multi nucléées et organisées en faisceaux.",
+    "reponsKorek": "Squelettique"
+  },
+  {
+    "type": "konplete",
+    "texte": "La jonction entre les neurones ou l'activité électrique du premier neurone entraîne l'activation du second est appelée----------------.",
+    "reponsKorek": "Synapse"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les cellules de Schwann forment une gaine protéo-lipidique, la------------------ autour du corps de l'axone.",
+    "reponsKorek": "Gaine de myéline"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les filaments musculaires sont entourés de------------------.",
+    "reponsKorek": "Sarcolemme"
+  },
+  {
+    "type": "konplete",
+    "texte": "Le derme de la peau est composé d'une couche supérieure---------------- et d'une couche plus profonde----------------.",
+    "reponsKorek": ["Hypoderme", "couche basale"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'épiderme de la peau est constitué d'un épithélium-----------------.",
+    "reponsKorek": "Pluri stratifié"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les extrémités proximales et distales d'un os long sont------------------.",
+    "reponsKorek": "Epiphyses"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les vertèbres cervicales sont caractérisées par la présence de------------------.",
+    "reponsKorek": ["Atlas et axis"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'être humain possède----- paires de vraies côtes et------ paires de fausses côtes.",
+    "reponsKorek": ["7", "3"]
+  },
+  {
+    "type": "konplete",
+    "texte": "---------------- est le rapprochement d'un plan médian du corps.",
+    "reponsKorek": "Adduction"
+  },
+  {
+    "type": "konplete",
+    "texte": "Les pronateurs et les supinateurs qui assurent la pronation et la------------------ de l'avant-bras.",
+    "reponsKorek": "Supination"
+  },
+  {
+    "type": "qcm",
+    "texte": "Les cavités du corps sont des espaces confinés dans lesquels les organes sont protégés, séparés et maintenus par des membranes. Ainsi, la cavité dorsale ou postérieure est composée.",
+    "choix": [
+      "a) Cavité crânienne et vertébrale",
+      "b) Cavité abdominale",
+      "c) Cavités pleurales et thoracique"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Les acides nucléiques comme l'ADN et l'ARN sont formés de nucléotides. Un nucléotide est formé de trois éléments :",
+    "choix": [
+      "a) Un groupement phosphate, un pentose et une base azotée",
+      "b) Un nucléotide et un sucre",
+      "c) Acide phosphorique et nucléoside",
+      "d) Un groupement phosphatase pentose ATGC"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un des muscles fléchisseurs de l'articulation de l'épaule est :",
+    "choix": [
+      "a) L'infra épineux",
+      "b) Le trapèze",
+      "c) Le grand pectoral",
+      "d) Le grand rond"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Est un muscle de la mastication :",
+    "choix": [
+      "a) Buccinateur",
+      "b) Temporal",
+      "c) Mentonnier",
+      "d) Zygomatique"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La membrane cellulaire met en jeu les mécanismes ci-dessous :",
+    "choix": [
+      "a) Pinocytose et transport facilité",
+      "b) Osmose et phagocytose",
+      "c) Endocytose et exocytose",
+      "d) Diffusion, osmose et phagocytose"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Les mitochondries et les plastes sont des organites semi-autonomes parce qu'elles possèdent :",
+    "choix": [
+      "a) Leur propre machinerie cellulaire",
+      "a) Leur propre machinerie énergétique",
+      "a) Leur propre noyau et ribosomes",
+      "a) Leur propre machinerie métabolique"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "La photosynthèse",
+    "choix": [
+      "a) Permet la capture d'énergie dans la lumière du soleil",
+      "b) Se déroule dans un organisme présent chez les végétaux",
+      "c) Est une réaction chimique qui est la réaction opposée à la photosynthèse",
+      "d) Consomme des glucides et de l'eau pour former de l'amidon",
+      "e) Est une réaction qui libère globalement de l'énergie"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "La méiose",
+    "choix": [
+      "a) Est une division cellulaire qui donne des cellules identiques à la cellule de départ",
+      "b) Commence par une première division cellulaire qui donne deux cellules à n chromosomes",
+      "c) Est une différenciation cellulaire qui permet la formation d'organes comme le foie et l'estomac après la fécondation",
+      "d) Permet d'expliquer pourquoi les mêmes parents peuvent engendrer des enfants différents génétiquement",
+      "e) Se déroule en deux divisions dont la deuxième ne change pas le nombre de chromosomes mais la taille mais permet à avoir qu'une molécule d'ADN par chromosome"
+    ],
+    "reponsKorek": "3"
+  }
+]

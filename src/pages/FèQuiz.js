@@ -4,6 +4,17 @@ import { db } from "../firebase/config";
 import { doc, getDoc } from "firebase/firestore";
 import { UserContext } from "../UserContext";
 import BottomNavbar from "../components/BottomNavbar";
+import LoadingSpinner from "../components/LoadingSpinner";
+
+// Fonksyon pou melanje kesyon yo
+const shuffleQuestions = (questions) => {
+  const shuffled = [...questions];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
 
 function FeQuiz() {
   const { quizId } = useParams();
@@ -14,24 +25,43 @@ function FeQuiz() {
   const [score, setScore] = useState(0);
   const [current, setCurrent] = useState(0);
   const [multipleAnswers, setMultipleAnswers] = useState({});
+  const [questions, setQuestions] = useState([]);
   const { user } = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchQuiz = async () => {
+      setLoading(true);
       try {
         const ref = doc(db, "examens", quizId);
         const snap = await getDoc(ref);
         if (snap.exists()) {
           const quizData = snap.data();
-          console.log("Quiz data:", quizData); // Debug
-          setQuiz(quizData);
-          setAnswers(Array(quizData.questions.length).fill(""));
+          
+          // Asire ke questions yo egziste epi yo pa vid
+          if (quizData.questions && quizData.questions.length > 0) {
+            // Melanje kesyon yo
+            const shuffledQuestions = shuffleQuestions(quizData.questions);
+            setQuestions(shuffledQuestions);
+            
+            // Mete done quiz la ak nouvo kesyon melanje yo
+            const { questions, ...quizWithoutQuestions } = quizData;
+            setQuiz({ ...quizWithoutQuestions, questions: shuffledQuestions });
+            
+            // Inisyalize repons yo
+            setAnswers(Array(shuffledQuestions.length).fill(""));
+            setMultipleAnswers({}); // Reset multiple answers
+          } else {
+            console.error("No questions found in quiz data");
+          }
+        } else {
+          console.error("Quiz not found");
         }
       } catch (error) {
         console.error("Error fetching quiz:", error);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     };
     fetchQuiz();
   }, [quizId]);
@@ -69,79 +99,153 @@ function FeQuiz() {
     // eslint-disable-next-line
   }, [current, quiz]);
 
-  const handleNext = (e) => {
-    e.preventDefault();
-    if (!answers[current] || answers[current] === "") {
-      alert("Tanpri chwazi repons ou avan ou kontinye.");
-      return;
-    }
-    if (current < quiz.questions.length - 1) {
-      setCurrent(prevCurrent => prevCurrent + 1);
-    } else {
-      let sc = 0;
-      quiz.questions.forEach((q, idx) => {
-        if (!q.reponsKorek) {
-          console.warn(`Question ${idx + 1} n'a pas de réponse correcte définie.`);
-          return;
-        }
+  const [feedback, setFeedback] = useState("");
+  const [feedbackType, setFeedbackType] = useState("");
 
-        if (q.type === "vrai_faux" || q.type === "konplete") {
-          if (
-            answers[idx] && answers[idx].toLowerCase().trim() === (q.reponsKorek || "").toLowerCase().trim()
-          ) {
-            sc++;
-          }
-        } else if (q.type === "qcm") {
-          if (answers[idx] !== "") {
-            if (q.reponsKorek.length === 1 && !q.reponsKorek.includes(',')) {
-              if (isNaN(q.reponsKorek)) {
-                const letterIndex = q.reponsKorek.charCodeAt(0) - 97;
-                if (answers[idx] === String(letterIndex)) {
+  const playSound = (isCorrect) => {
+    const audio = new Audio(isCorrect ? '/sounds/correct.mp3' : '/sounds/incorrect.mp3');
+    audio.play();
+  };
+
+  const calculateScore = () => {
+    let sc = 0;
+    questions.forEach((q, idx) => {
+      if (!q.reponsKorek) {
+        console.warn(`Question ${idx + 1} n'a pas de réponse correcte définie.`);
+        return;
+      }
+
+      if (q.type === "vrai_faux" || q.type === "konplete") {
+        if (answers[idx] && String(answers[idx]).toLowerCase().trim() === String(q.reponsKorek || "").toLowerCase().trim()) {
+          sc++;
+        }
+      } else if (q.type === "qcm") {
+        if (answers[idx] !== "") {
+          const userAnswer = String(answers[idx]);
+          const correctAnswer = String(q.reponsKorek);
+          
+          // Konesans Jeneral kesyon yo deja nan fòma endèks 0-based
+          if (quiz.nom && quiz.nom.toLowerCase().includes("konesans jeneral")) {
+            if (userAnswer === correctAnswer) {
+              sc++;
+            }
+          } else {
+            // Pou lòt tip kesyon yo
+            if (correctAnswer.length === 1 && !correctAnswer.includes(',')) {
+              if (isNaN(correctAnswer)) {
+                const letterIndex = correctAnswer.charCodeAt(0) - 97;
+                if (userAnswer === String(letterIndex)) {
                   sc++;
                 }
               } else {
-                // Convert 1-based index to 0-based index
-                const zeroBasedIndex = parseInt(q.reponsKorek, 10) - 1;
-                if (answers[idx] === String(zeroBasedIndex)) {
+                const zeroBasedIndex = parseInt(correctAnswer, 10) - 1;
+                if (userAnswer === String(zeroBasedIndex)) {
                   sc++;
                 }
               }
-            } else if (String(q.reponsKorek) === String(answers[idx])) {
+            } else if (userAnswer === correctAnswer) {
               sc++;
             }
           }
         }
-      });
-      setScore(sc);
-      setShowResult(true);
-      if (user) {
-        const userKey = `quiz_history_${user.uid}`;
-        const existingHistory = JSON.parse(localStorage.getItem(userKey) || "[]");
-        const historyEntry = {
-          date: new Date().toISOString(),
-          quizId,
-          quizName: quiz.nom || quiz.annee || "Kiz san non",
-          score: sc,
-          total: quiz.questions.length,
-          answers,
-          questions: quiz.questions
-        };
-        existingHistory.unshift(historyEntry);
-        localStorage.setItem(userKey, JSON.stringify(existingHistory));
       }
-    }
+    });
+    return sc;
   };
 
-  if (loading) return (
-    <div style={{minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{textAlign:"center", padding:20}}>Chajman...</div>
-      <BottomNavbar />
-    </div>
-  );
+  const handleNext = (e) => {
+    e.preventDefault();
+    if (!answers[current] || answers[current] === "") {
+      alert("Tanpri, chwazi yon repons!");
+      return;
+    }
+
+    // Verifye si repons lan bon
+    const currentQuestion = questions[current];
+    let isCorrect = false;
+
+    if (currentQuestion.type === "vrai_faux" || currentQuestion.type === "konplete") {
+      isCorrect = String(answers[current]).toLowerCase().trim() === String(currentQuestion.reponsKorek || "").toLowerCase().trim();
+    } else if (currentQuestion.type === "qcm") {
+      const userAnswer = String(answers[current]);
+      const correctAnswer = String(currentQuestion.reponsKorek);
+      
+      // Konesans Jeneral kesyon yo deja nan fòma endèks 0-based
+      if (quiz.nom && quiz.nom.toLowerCase().includes("konesans jeneral")) {
+        isCorrect = userAnswer === correctAnswer;
+      } else {
+        // Pou lòt tip kesyon yo
+        if (correctAnswer.length === 1 && !correctAnswer.includes(',')) {
+          if (isNaN(correctAnswer)) {
+            const letterIndex = correctAnswer.charCodeAt(0) - 97;
+            isCorrect = userAnswer === String(letterIndex);
+          } else {
+            const zeroBasedIndex = parseInt(correctAnswer, 10) - 1;
+            isCorrect = userAnswer === String(zeroBasedIndex);
+          }
+        } else {
+          isCorrect = userAnswer === correctAnswer;
+        }
+      }
+    }
+
+    // Jwe son epi montre tèks
+    playSound(isCorrect);
+    setFeedback(isCorrect ? "Bravo! Ou jwenn bon repons lan! 🎉" : "Ou pa jwenn bon repons lan. Pa dekouraje! 😕");
+    setFeedbackType(isCorrect ? "correct" : "incorrect");
+
+    // Tann 1.5 segonn anvan pwochen kesyon an
+    setTimeout(() => {
+      setFeedback("");
+      setFeedbackType("");
+      if (current < questions.length - 1) {
+        setCurrent(prevCurrent => prevCurrent + 1);
+      } else {
+        const sc = calculateScore();
+        setScore(sc);
+        setShowResult(true);
+        if (user) {
+          const userKey = `quiz_history_${user.uid}`;
+          const existingHistory = JSON.parse(localStorage.getItem(userKey) || "[]");
+          const historyEntry = {
+            date: new Date().toISOString(),
+            quizId,
+            quizName: quiz.nom || quiz.annee || "Kiz san non",
+            score: sc,
+            total: quiz.questions.length,
+            answers,
+            questions: questions
+          };
+          existingHistory.unshift(historyEntry);
+          localStorage.setItem(userKey, JSON.stringify(existingHistory));
+        }
+      }
+    }, 1500);
+  };
+
+  if (loading) return <LoadingSpinner />;
   
   if (!quiz) return (
-    <div style={{minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{textAlign:"center", padding:20}}>Quiz pa jwenn.</div>
+    <div style={{
+      minHeight: '100vh', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      flexDirection: 'column',
+      background: '#f1f5f9'
+    }}>
+      <div style={{
+        background: '#fff',
+        padding: '20px 30px',
+        borderRadius: '12px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+        textAlign: 'center',
+        color: '#1e293b',
+        fontSize: '16px',
+        fontWeight: '500'
+      }}>
+        Quiz pa jwenn 😕
+      </div>
       <BottomNavbar />
     </div>
   );
@@ -233,7 +337,7 @@ function FeQuiz() {
     );
   }
 
-  const q = quiz.questions[current];
+  const q = questions[current];
   
   // Get real data from quiz object
   const getQuizInfo = () => {
@@ -373,7 +477,7 @@ function FeQuiz() {
               color: '#6b7280',
               fontWeight: '600'
             }}>
-              Kesyon {current + 1} nan {quiz.questions?.length || 0}
+              Kesyon {current + 1} nan {questions.length || 0}
             </span>
             <span style={{
               fontSize: '14px',
@@ -383,7 +487,7 @@ function FeQuiz() {
               padding: '4px 8px',
               borderRadius: '12px'
             }}>
-              {Math.round(((current + 1) / (quiz.questions?.length || 1)) * 100)}%
+              {Math.round(((current + 1) / (questions.length || 1)) * 100)}%
             </span>
           </div>
           
@@ -399,7 +503,7 @@ function FeQuiz() {
               height: '100%',
               background: 'linear-gradient(90deg, #4095ff, #1e5bbf)',
               borderRadius: 8,
-              width: `${((current + 1) / (quiz.questions?.length || 1)) * 100}%`,
+              width: `${((current + 1) / (questions.length || 1)) * 100}%`,
               transition: 'width 0.5s ease',
               boxShadow: '0 1px 3px rgba(64, 149, 255, 0.4)'
             }}/>
@@ -530,38 +634,31 @@ function FeQuiz() {
           )}
         </div>
 
+        {/* Feedback mesaj */}
+        {feedback && (
+          <div style={{
+            textAlign: 'center',
+            margin: '20px 16px 0',
+            padding: '10px',
+            borderRadius: '8px',
+            backgroundColor: feedbackType === 'correct' ? '#dcfce7' : '#fee2e2',
+            color: feedbackType === 'correct' ? '#166534' : '#991b1b',
+            fontWeight: '600',
+            fontSize: '16px',
+            animation: 'fadeIn 0.3s ease-in'
+          }}>
+            {feedback}
+          </div>
+        )}
+
         {/* Bouton navigasyon */}
         <div style={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'flex-end',
           alignItems: 'center',
-          gap: 16,
-          margin: '30px 24px 0 24px'
+          margin: '30px 24px 30px 24px'
         }}>
-          {/* Bouton Dèyè nan pwent gòch */}
-          <button
-            type="button"
-            disabled={current === 0}
-            onClick={()=> setCurrent(current-1)}
-            style={{
-              background: current === 0 ? '#f1f5f9' : '#e5e7eb',
-              color: current === 0 ? '#b0b3bc' : '#374151',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 600,
-              fontSize: 15,
-              padding: '12px 20px',
-              minWidth: 80,
-              opacity: current === 0 ? 0.5 : 1,
-              cursor: current === 0 ? 'not-allowed' : 'pointer',
-              outline: "none",
-              transition: 'all 0.3s ease'
-            }}
-          >
-            ← Dèyè
-          </button>
-          
-          {/* Bouton Kontinye/Voye nan pwent dwat */}
+          {/* Bouton Kontinye/Voye */}
           <button
             type="button"
             onClick={handleNext}
@@ -663,7 +760,13 @@ function FeQuiz() {
           }
         }
         
-        /* Very small screens */
+        /* Animasyon pou feedback */
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+      /* Very small screens */
         @media (max-width: 320px) {
           .header-title {
             font-size: 14px !important;

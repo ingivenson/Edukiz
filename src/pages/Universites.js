@@ -3,6 +3,7 @@ import { db } from "../firebase/config";
 import { collection, getDocs } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import BottomNavbar from "../components/BottomNavbar";
+import LoadingSpinner from "../components/LoadingSpinner";
 import '../css/Universites.css';
 
 function Universites() {
@@ -17,11 +18,14 @@ function Universites() {
       try {
         console.log("🔍 Kap chèche inivèsite yo ak foto yo...");
         const querySnapshot = await getDocs(collection(db, "universites"));
-        const list = querySnapshot.docs.map(doc => {
+        // Map Firebase data
+        const listFromFirebase = querySnapshot.docs.map(doc => {
           const data = { id: doc.id, ...doc.data() };
           console.log("📄 Inivèsite:", data.nom, "- Logo URL:", data.logoUrl || "Pa gen foto");
           return data;
         });
+
+        const list = [...listFromFirebase];
         
         console.log("📋 Total inivèsite yo:", list.length);
         setUniversites(list);
@@ -53,18 +57,7 @@ function Universites() {
     u.ville?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  if (loading) {
-    return (
-      <div className="universites-container">
-        <div className="loading">
-          <div className="loading-spinner"></div>
-          <h3>Kap chèche inivèsite yo...</h3>
-          <p>Tanpri tann yon ti kras</p>
-        </div>
-        <BottomNavbar />
-      </div>
-    );
-  }
+  if (loading) return <LoadingSpinner />;
 
   return (
     <div className="universites-container">
