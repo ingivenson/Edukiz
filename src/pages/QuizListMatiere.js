@@ -79,7 +79,11 @@ function QuizListMatiere() {
   return (
     <div className="quiz-list-container">
       {/* Header Section */}
-      <div className="header-section">
+      <div className="header-section" style={{
+        backgroundImage:
+          'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)'
+      }}>
+        <div className="header-overlay" aria-hidden="true" />
         <div className="header-top">
           <button 
             onClick={() => navigate(-1)}
@@ -184,7 +188,7 @@ function QuizListMatiere() {
                         onClick={() => navigate(`/universites/${universiteId}/matieres/${matiereId}/quiz/${quiz.id}`)}
                       >
                         <span className="button-icon">🎯</span>
-                        <span className="button-text">Fè Tès</span>
+                        <span className="button-text">Jwe Kiz</span>
                         <span className="button-arrow">→</span>
                       </button>
                     </div>

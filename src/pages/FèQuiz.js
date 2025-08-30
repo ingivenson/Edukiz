@@ -120,33 +120,10 @@ function FeQuiz() {
           sc++;
         }
       } else if (q.type === "qcm") {
-        if (answers[idx] !== "") {
-          const userAnswer = String(answers[idx]);
-          const correctAnswer = String(q.reponsKorek);
-          
-          // Konesans Jeneral kesyon yo deja nan fòma endèks 0-based
-          if (quiz.nom && quiz.nom.toLowerCase().includes("konesans jeneral")) {
-            if (userAnswer === correctAnswer) {
-              sc++;
-            }
-          } else {
-            // Pou lòt tip kesyon yo
-            if (correctAnswer.length === 1 && !correctAnswer.includes(',')) {
-              if (isNaN(correctAnswer)) {
-                const letterIndex = correctAnswer.charCodeAt(0) - 97;
-                if (userAnswer === String(letterIndex)) {
-                  sc++;
-                }
-              } else {
-                const zeroBasedIndex = parseInt(correctAnswer, 10) - 1;
-                if (userAnswer === String(zeroBasedIndex)) {
-                  sc++;
-                }
-              }
-            } else if (userAnswer === correctAnswer) {
-              sc++;
-            }
-          }
+        const userAnswer = String(answers[idx] || "").trim();
+        const correctAnswer = String(q.reponsKorek || "").trim();
+        if (userAnswer && userAnswer === correctAnswer) {
+          sc++;
         }
       }
     });
@@ -167,26 +144,9 @@ function FeQuiz() {
     if (currentQuestion.type === "vrai_faux" || currentQuestion.type === "konplete") {
       isCorrect = String(answers[current]).toLowerCase().trim() === String(currentQuestion.reponsKorek || "").toLowerCase().trim();
     } else if (currentQuestion.type === "qcm") {
-      const userAnswer = String(answers[current]);
-      const correctAnswer = String(currentQuestion.reponsKorek);
-      
-      // Konesans Jeneral kesyon yo deja nan fòma endèks 0-based
-      if (quiz.nom && quiz.nom.toLowerCase().includes("konesans jeneral")) {
-        isCorrect = userAnswer === correctAnswer;
-      } else {
-        // Pou lòt tip kesyon yo
-        if (correctAnswer.length === 1 && !correctAnswer.includes(',')) {
-          if (isNaN(correctAnswer)) {
-            const letterIndex = correctAnswer.charCodeAt(0) - 97;
-            isCorrect = userAnswer === String(letterIndex);
-          } else {
-            const zeroBasedIndex = parseInt(correctAnswer, 10) - 1;
-            isCorrect = userAnswer === String(zeroBasedIndex);
-          }
-        } else {
-          isCorrect = userAnswer === correctAnswer;
-        }
-      }
+      const userAnswer = String(answers[current] || "").trim();
+      const correctAnswer = String(currentQuestion.reponsKorek || "").trim();
+      isCorrect = userAnswer === correctAnswer;
     }
 
     // Jwe son epi montre tèks
@@ -376,7 +336,9 @@ function FeQuiz() {
         <div style={{
           borderTopLeftRadius: '20px',
           borderTopRightRadius: '20px',
-          background: 'linear-gradient(135deg, #1e5bbf 0%, #4095ff 100%)',
+          backgroundImage: 'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
           padding: '15px 20px',
           color: '#fff',
           position: 'relative',
@@ -384,6 +346,15 @@ function FeQuiz() {
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
+          <div className="header-overlay" aria-hidden="true" style={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            right: 0, 
+            bottom: 0, 
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+            borderRadius: '20px 20px 0 0' 
+          }} />
           {/* Bouton tounen nan kwen gòch */}
           <button 
             onClick={() => navigate(-1)}

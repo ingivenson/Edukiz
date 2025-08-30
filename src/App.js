@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { UserProvider } from "./UserContext";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 // Import all pages
 import HomePage from "./pages/HomePage";
@@ -156,9 +157,10 @@ function App() {
     <ErrorBoundary>
       <UserProvider>
         <div className="App">
+          <ScrollToTopButton />
           <Routes>
-            {/* Public Routes */}
-            <Route path="/" element={<HomePage />} />
+              {/* Public Routes */}
+              <Route path="/" element={<HomePage />} />
             <Route path="/accueil" element={<Navigate to="/" replace />} />
             <Route path="/home" element={<Navigate to="/" replace />} />
             
@@ -175,6 +177,10 @@ function App() {
 
             
             {/* University & Subject Routes */}
+            <Route 
+              path="/universites/:universiteId/departements/:departementId/matieres" 
+              element={<MatieresUniversite />} 
+            />
             <Route 
               path="/universites/:id/matieres" 
               element={<MatieresUniversite />} 
@@ -213,7 +219,7 @@ function App() {
             
             {/* 404 Route - Must be last */}
             <Route path="*" element={<NotFound />} />
-          </Routes>
+            </Routes>
         </div>
       </UserProvider>
     </ErrorBoundary>

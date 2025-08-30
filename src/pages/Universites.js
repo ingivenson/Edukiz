@@ -69,7 +69,11 @@ function Universites() {
         ← Tounen
       </button>
 
-      <div className="header">
+      <div className="header" style={{
+        backgroundImage:
+          'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)'
+      }}>
+        <div className="header-overlay" aria-hidden="true" />
         <h1 className="title">🏛️ Chwazi Inivèsite ou</h1>
         <p className="subtitle">
           Chwazi inivèsite kote ou vle pratike ak prepare pou egzamen yo

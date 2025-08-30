@@ -1,0 +1,404 @@
+[
+  {
+    "type": "qcm",
+    "texte": "Il est l'auteur du texte intitulé : « Ainsi parla l'oncle », quel est son nom?",
+    "choix": [
+      "Jacques Roumain",
+      "Jean Price-Mars",
+      "Edmond Paul",
+      "Roger Bastide"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il est considéré comme le père de la négritude dans le monde, son nom est:",
+    "choix": [
+      "Aimé Césaire",
+      "Raphael Confiant",
+      "Alexandre Dumas",
+      "Léon Laleau"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Elle est appelée l'âge de la pierre taillée:",
+    "choix": [
+      "Paléolithique",
+      "Néolithique",
+      "Antiquité",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Elle fut la première femme à être admise à l'académie française.",
+    "choix": [
+      "Simone de Beauvoir",
+      "Marguerite Yourcenar",
+      "Hanna Arendt",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel est le pays le plus proche des États-Unis après le Canada et le Mexique?",
+    "choix": [
+      "Le Panama",
+      "La Russie",
+      "L'Uruguay",
+      "Le Costa Rica"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le plus haut sommet du monde porte le nom de:",
+    "choix": [
+      "Mont Everest",
+      "Mont Blanc",
+      "Pic Macaya",
+      "Mont la Selle"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Elle fut gouverneur du Canada et est aujourd'hui la secrétaire générale de l'OIF.",
+    "choix": [
+      "Michelle Jean",
+      "Nancy Rock",
+      "Michaëlle Jean",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le premier janvier 2004 marquait le de l'indépendance de la république d'Haïti.",
+    "choix": [
+      "Centenaire",
+      "Tricentenaire",
+      "Bicentenaire",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quelle est la capitale du Rwanda?",
+    "choix": [
+      "Tripoli",
+      "Ouagadougou",
+      "Kigali",
+      "Kingston"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Elle était qualifiée de \"reine de la soul\", tendance musicale populaire aux États-Unis. Elle est morte le 16 août 2018, son nom est:",
+    "choix": [
+      "Whitney Houston",
+      "Lauryn Hills",
+      "Aretha Franklin",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "La monnaie de l'Angleterre est:",
+    "choix": [
+      "L'Euro",
+      "Le livre sterling",
+      "Le Livre",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il est considéré comme le père de la philosophie, son nom est:",
+    "choix": [
+      "Platon",
+      "Aristote",
+      "Socrate",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Les deux seuls pays qui n'ont pas été colonisés en Afrique sont:",
+    "choix": [
+      "Ghana et Libye",
+      "Ethiopie et Bénin",
+      "Libye et Ethiopie",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Faire l'apologie de quelqu'un veut dire:",
+    "choix": [
+      "Faire son éloge",
+      "Faire mea-culpa",
+      "Le critiquer",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le Département des Nippes a été créé en:",
+    "choix": [
+      "2003",
+      "1987",
+      "2006",
+      "2010"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "En Haïti, ces deux rivières servent de frontière avec la République dominicaine:",
+    "choix": [
+      "La Voldrogue et la Rouyonne",
+      "La Quinte et l'Estère",
+      "La Rivière Blanche et la Rivière des Matheux",
+      "La Rivière du Massacre et la Rivière des Pedernales"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "La République dominicaine a déclaré son indépendance en:",
+    "choix": [
+      "1844",
+      "1924",
+      "1954",
+      "1970"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'OMC a été créée en:",
+    "choix": [
+      "1995",
+      "2004",
+      "1954",
+      "1970"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le Gulf Stream désigne:",
+    "choix": [
+      "Un terrain de jeu de golf",
+      "Le nom d'un courant marin qui remonte l'Océan atlantique",
+      "Le nom d'un fleuve de l'Afrique",
+      "Le nom d'un lac russe"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le FMI et la Banque Mondiale ont été créés:",
+    "choix": [
+      "En 1944",
+      "En 1948",
+      "En 2000",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "La chute de l'Empire romain d'Orient a eu lieu:",
+    "choix": [
+      "En 1492",
+      "En 1453",
+      "En 476",
+      "Au Néolithique"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il est le conquérant du Mexique pour le compte de l'Espagne:",
+    "choix": [
+      "Hernan Cortés",
+      "Christophe Colomb",
+      "Amerigo Vespucci",
+      "Isabelle la Catholique"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "La surface d’un cercle de rayon π est :",
+    "choix": [
+      "π^3",
+      "3π",
+      "3πr^3",
+      "4π"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le volume d’une sphère est donné par la formule :",
+    "choix": [
+      "πr^2",
+      "4/3πr^3",
+      "2π",
+      "3π"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La valeur en watts de cents 100 chevaux est:",
+    "choix": [
+      "73600 watts",
+      "0.736 watts",
+      "100 watts"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le coefficient de Gini mesure:",
+    "choix": [
+      "Le taux de croissance annuel d'un pays",
+      "Les inégalités de niveau de vie dans une population",
+      "Le taux d'ouverture commerciale d'un pays",
+      "La balance commerciale d'un pays"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'Indice de Développement Humain mesure:",
+    "choix": [
+      "La qualité de vie moyenne dans une population",
+      "Le nombre d'enfants par femme",
+      "Le niveau d'instabilité politique",
+      "Le poids de l'agriculture dans l'économie"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Chez l'homme, les sublinguales sont:",
+    "choix": [
+      "Des glandes salivaires",
+      "Des organes reproducteurs",
+      "Des pathologies",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "konplete",
+    "texte": "Le 17 octobre 1806 marque la date de l'assassinat de ...",
+    "reponsKorek": ["Jean Jacques Dessalines"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le 18 novembre 1803 marque la date de ...",
+    "reponsKorek": ["Bataille de Vertières"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Les deux seuls pays ayant combattus la France pour leurs indépendances sont... et...",
+    "reponsKorek": ["Algérie", "Haïti"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'actuel secrétaire général des Nations Unies s'appelle ...",
+    "reponsKorek": ["Antonio Guterres"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'auteur du texte intitulé: « L'espace d'un cillement » se nomme...",
+    "reponsKorek": ["Jacques Stephen Alexis"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'accord Petro Caribe entre Haïti et le Venezuela a été signé sous la présidence de...",
+    "reponsKorek": ["Michel Joseph Martelly"]
+  },
+  {
+    "type": "konplete",
+    "texte": "L'occupation américaine débuta en Haïti le...",
+    "reponsKorek": ["28 juillet 1915"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Faustin fut le nom accordé à l'Empereur...",
+    "reponsKorek": ["Faustin Soulouque"]
+  },
+  {
+    "type": "konplete",
+    "texte": "La devise d'Haïti est...",
+    "reponsKorek": ["L'union fait la force"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Dans le traité de Ryswick marque la cession du 1/3 occidental de l'île d'Hispaniola à l'...",
+    "reponsKorek": ["France"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le multinational « Samsung » a son siège social en...",
+    "reponsKorek": ["Séoul", "Corée du Sud"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le premier haïtien à accéder à l'Académie Française se nomme...",
+    "reponsKorek": ["Dany Laferrière"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le seul État francophone de la Caraïbe est...",
+    "reponsKorek": ["Haïti"]
+  },
+  {
+    "type": "konplete",
+    "texte": "La commune de Limonade est limitrophe du département du...",
+    "reponsKorek": ["Nord"]
+  },
+  {
+    "type": "konplete",
+    "texte": "« Peau noire, masque blanc » et « Les damnés de la terre » sont les œuvres de...",
+    "reponsKorek": ["Frantz Fanon"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le département du Nord comprend......... communes",
+    "reponsKorek": ["19 communes"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le dernier pays indépendant de l'Afrique est.......",
+    "reponsKorek": ["Namibie"]
+  },
+  {
+    "type": "konplete",
+    "texte": "« L'homme sur lequel » et « Lumumba » sont les œuvres de...",
+    "reponsKorek": ["Patrice Lumumba"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Il fut l'initiateur du mouvement « Saint Soleil » dans la ceinture haïtienne, son nom complet est..............",
+    "reponsKorek": ["Jean Claude Garoute"]
+  }
+]

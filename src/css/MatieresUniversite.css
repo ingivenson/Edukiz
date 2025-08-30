@@ -58,7 +58,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: var(--primary-black);
-  background: var(--gray-50);
+  background: var(--primary-white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +68,9 @@ body {
 /* Container Principal */
 .matieres-container {
   min-height: 100vh;
-  background: var(--gray-100);
+  background-image: url('https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2');
+  background-size: cover;
+  background-position: center;
   font-family: 'Inter', sans-serif;
   padding-bottom: 100px;
   position: relative;
@@ -84,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--gray-100);
+  background: var(--primary-white);
   padding: 20px;
   padding-bottom: 100px;
   width: 100%;
@@ -264,6 +266,171 @@ body {
   margin: 0 0 16px 0;
   font-weight: 500;
   text-align: center;
+}
+
+.departement-subtitle {
+  font-size: clamp(14px, 3.5vw, 18px);
+  color: var(--accent-blue);
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  text-align: center;
+  background: var(--accent-blue-lighter);
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--accent-blue);
+  display: inline-block;
+}
+
+/* Filtre Depatman yo pou CHCL */
+.department-filters {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--gray-100);
+  padding: 8px;
+  border-radius: 40px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+}
+
+.filter-button {
+  background: transparent;
+  border: none;
+  color: var(--gray-600);
+  padding: 16px 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 120px;
+  min-height: 56px;
+  position: relative;
+  font-family: inherit;
+}
+
+.filter-button::before {
+  content: '';
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+/* Icônes pour chaque bouton */
+.filter-button:nth-child(1)::before {
+  content: '📚';
+  font-size: 18px;
+  opacity: 1;
+}
+
+.filter-button:nth-child(2)::before {
+  content: '🔬';
+  font-size: 18px;
+  opacity: 1;
+}
+
+.filter-button:nth-child(3)::before {
+  content: '📖';
+  font-size: 18px;
+  opacity: 1;
+}
+
+.filter-button:hover {
+  background: var(--gray-200);
+  color: var(--gray-700);
+  transform: translateY(-1px);
+}
+
+.filter-button:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.filter-button.active {
+  background: var(--accent-blue);
+  color: var(--primary-white);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+.filter-button.active::before {
+  opacity: 1;
+  transform: scale(1);
+  filter: brightness(0) invert(1);
+}
+
+.filter-button.active:hover {
+  background: var(--accent-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.filter-button:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Bouton Depatman yo (Legacy - pour compatibilité) */
+.departements-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.departement-btn {
+  background: var(--gray-100);
+  border: 2px solid var(--gray-300);
+  color: var(--gray-600);
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.departement-btn:hover {
+  background: var(--gray-200);
+  border-color: var(--gray-400);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.departement-btn.active {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.departement-btn.active:hover {
+  background: var(--accent-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
 }
 
 .subjects-count {
@@ -702,6 +869,47 @@ body {
     padding-bottom: 100px;
   }
   
+  /* Filtre Depatman yo - Mobile */
+  .department-filters {
+    margin: 16px 0;
+  }
+  
+  .filter-buttons {
+    gap: 8px;
+    padding: 8px;
+    border-radius: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  
+  .filter-button {
+    padding: 18px 32px;
+    font-size: 17px;
+    font-weight: 800;
+    min-width: 140px;
+    min-height: 60px;
+    flex-shrink: 0;
+  }
+  
+  .filter-button::before {
+    font-size: 20px;
+    opacity: 1;
+  }
+  
+  .departements-buttons {
+    flex-direction: column;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  
+  .departement-btn {
+    min-width: 100%;
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+  
   .header-section {
     margin: 15px;
     padding: 20px 16px;
@@ -1005,4 +1213,29 @@ body {
   .subject-icon-container:hover::before {
     opacity: 0;
   }
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top-btn.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
 }

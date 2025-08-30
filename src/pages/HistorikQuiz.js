@@ -317,7 +317,11 @@ function HistorikQuiz() {
 
   return (
     <div className="historik-container">
-      <header className="historik-header">
+      <header className="historik-header" style={{
+        backgroundImage:
+          'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)'
+      }}>
+        <div className="header-overlay" aria-hidden="true" />
         <h1 className="historik-title">
           <span className="title-icon">📈</span>
           Istorik Kiz Ou

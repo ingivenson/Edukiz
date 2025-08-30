@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase/config";
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
@@ -14,16 +14,21 @@ import questionsBiologie2021 from "../data/questions_biologie_2021.json";
 import questionsBiologie2021Octobre from "../data/questions_biologie_2021_octobre.json";
 import questionsBiologie2022 from "../data/questions_biologie_2022.json";
 import questionsKonesansJeneral from "../data/questions_konesans_jeneral.json";
+import questionsKonesans2021 from "../data/questions_konesans_2021.json";
+import questionsFizik2018 from "../data/questions_fizik_2018.json";
+import questionsCultureGenerale2020 from "../data/questions_culture_generale_2020.json";
+import questionsCultureGenerale2018 from "../data/questions_culture_generale_2018.json";
+import questionsKonesans2017 from "../data/questions_konesans_2017.json";
 
 // Fonksyon pou jere repons miltip yo
 const formatReponsKorek = (repons) => {
-    if (!repons) return [];
-    if (Array.isArray(repons)) return repons;
-    if (typeof repons === "string") {
-        if (repons.includes(",")) return repons.split(",");
-        return [repons];
-    }
-    return [];
+  if (!repons) return [];
+  if (Array.isArray(repons)) return repons;
+  if (typeof repons === "string") {
+    if (repons.includes(",")) return repons.split(",");
+    return [repons];
+  }
+  return [];
 };
 
 function AjouteExamen() {
@@ -91,7 +96,6 @@ function AjouteExamen() {
     setQuestions(prev => prev.map((q, i) => {
       if (i !== idx) return q;
       const newQ = { ...q, ...patch };
-      
       // Si se yon kesyon konplete, prepare tèks la
       if (newQ.type === "konplete" && newQ.texte) {
         // Ranplase [blank] ak ___ (3 underscore)
@@ -99,7 +103,6 @@ function AjouteExamen() {
           newQ.texte = newQ.texte.replace(/\[blank\]/g, "___");
         }
       }
-      
       return newQ;
     }));
   };
@@ -175,84 +178,84 @@ function AjouteExamen() {
   };
 
   const handleSubmit = async (e) => {
-        e.preventDefault();
-        const err = validate();
-        if (err) { alert(err); return; }
+    e.preventDefault();
+    const err = validate();
+    if (err) { alert(err); return; }
 
-        setLoading(true);
-        try {
-            const payloadQuestions = questions.map(q => {
-            if (q.type === "qcm") {
-                const reponsKorek = (Array.isArray(q.correct) ? q.correct : []).sort((a, b) => Number(a) - Number(b)).join(",");
-                return {
-                    type: "qcm",
-                    texte: q.texte,
-                    choix: q.choix,
-                    reponsKorek,
-                };
-            }
-            if (q.type === "vrai_faux") {
-                return {
-                    type: "vrai_faux",
-                    texte: q.texte,
-                    reponsKorek: q.correct === "vrai" ? "vrai" : "faux",
-                };
-            }
-            if (q.type === "konplete") {
-                return {
-                    type: "konplete",
-                    texte: q.texte,
-                    reponsKorek: Array.isArray(q.correct) ? q.correct : [q.correct],
-                };
-            }
-            return {
-                type: "ouve",
-                texte: q.texte,
-                reponsKorek: "",
-            };
-        });
-
-        const docData = {
-            universiteId,
-            matiereId,
-            universite: selectedUniversite?.nom || "",
-            matiere: selectedMatiere?.nom || "",
-
-            nom: nom ? nom.trim() : "",
-            annee: Number(annee),
-            duree: duree ? Number(duree) : null,
-            createdAt: new Date(),
-            questions: payloadQuestions,
+    setLoading(true);
+    try {
+      const payloadQuestions = questions.map(q => {
+        if (q.type === "qcm") {
+          const reponsKorek = (Array.isArray(q.correct) ? q.correct : []).sort((a, b) => Number(a) - Number(b)).join(",");
+          return {
+            type: "qcm",
+            texte: q.texte,
+            choix: q.choix,
+            reponsKorek,
+          };
+        }
+        if (q.type === "vrai_faux") {
+          return {
+            type: "vrai_faux",
+            texte: q.texte,
+            reponsKorek: q.correct === "vrai" ? "vrai" : "faux",
+          };
+        }
+        if (q.type === "konplete") {
+          return {
+            type: "konplete",
+            texte: q.texte,
+            reponsKorek: Array.isArray(q.correct) ? q.correct : [q.correct],
+          };
+        }
+        return {
+          type: "ouve",
+          texte: q.texte,
+          reponsKorek: "",
         };
+      });
 
-        await addDoc(collection(db, "examens"), docData);
-        alert("✅ Egzamen/Quiz ajoute ak siksè !");
-        setNom("");
-        setAnnee("");
-        setDuree("");
-        setUniversiteId("");
-        setMatiereId("");
-        setMatieres([]);
-        setQuestions([{ ...emptyQcm }]);
+      const docData = {
+        universiteId,
+        matiereId,
+        universite: selectedUniversite?.nom || "",
+        matiere: selectedMatiere?.nom || "",
+
+        nom: nom ? nom.trim() : "",
+        annee: Number(annee),
+        duree: duree ? Number(duree) : null,
+        createdAt: new Date(),
+        questions: payloadQuestions,
+      };
+
+      await addDoc(collection(db, "examens"), docData);
+      alert("✅ Egzamen/Quiz ajoute ak siksè !");
+      setNom("");
+      setAnnee("");
+      setDuree("");
+      setUniversiteId("");
+      setMatiereId("");
+      setMatieres([]);
+      setQuestions([{ ...emptyQcm }]);
     } catch (e) {
-        console.error(e);
-        alert("❌ Pa rive anrejistre egzamen an.");
+      console.error(e);
+      alert("❌ Pa rive anrejistre egzamen an.");
     } finally {
-        setLoading(false);
+      setLoading(false);
     }
   };
 
- 
+  // Prefill functions...
   const prefillChimi2020 = () => {
     setUniversiteId("universite_chimi_id");
     setMatiereId("matiere_chimi_id");
     setNom("Examen Chimie 2020");
     setAnnee(2020);
     setQuestions(
-        questionsChimie2020.map((question) => ({
-            ...question,
-            correct: formatReponsKorek(question.reponsKorek)
-        }))
+      questionsChimie2020.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
     );
   };
 
@@ -260,13 +263,13 @@ function AjouteExamen() {
     setUniversiteId("universite_chimi_id");
     setMatiereId("matiere_chimi_id");
     setNom("Examen Chimie 2021");
-    setDuree(60); // 1h selon l'énoncé
+    setDuree(60);
     setAnnee(2021);
     setQuestions(
-        questionsChimie2021.map((question) => ({
-            ...question,
-            correct: formatReponsKorek(question.reponsKorek)
-        }))
+      questionsChimie2021.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
     );
   };
 
@@ -276,10 +279,10 @@ function AjouteExamen() {
     setNom("Examen Chimie Octobre 2021");
     setAnnee(2021);
     setQuestions(
-        questionsChimie2021Octobre.map((question) => ({
-            ...question,
-            correct: formatReponsKorek(question.reponsKorek)
-        }))
+      questionsChimie2021Octobre.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
     );
   };
 
@@ -327,7 +330,7 @@ function AjouteExamen() {
     setMatiereId("matiere_bio_id");
     setNom("Concours Admission Biologie 2020");
     setAnnee(2020);
-    setDuree(60);  // 60 minutes selon l'énoncé
+    setDuree(60);
     setQuestions(
       questionsBiologie2020.map((question) => ({
         ...question,
@@ -341,7 +344,7 @@ function AjouteExamen() {
     setMatiereId("matiere_bio_id");
     setNom("Concours Admission Biologie 2021");
     setAnnee(2021);
-    setDuree(60);  // 60 minutes selon l'énoncé
+    setDuree(60);
     setQuestions(
       questionsBiologie2021.map((question) => ({
         ...question,
@@ -389,49 +392,119 @@ function AjouteExamen() {
     );
   };
 
-const saveQuestionsToDatabase = async () => {
-    try {
-        setLoading(true);
-        const payloadQuestions = questions.map(q => {
-            if (q.type === "qcm") {
-                const reponsKorek = (Array.isArray(q.correct) ? q.correct : []).sort((a, b) => Number(a) - Number(b)).join(",");
-                return {
-                    type: "qcm",
-                    texte: q.texte,
-                    choix: q.choix,
-                    reponsKorek,
-                };
-            }
-            if (q.type === "vrai_faux") {
-                return {
-                    type: "vrai_faux",
-                    texte: q.texte,
-                    reponsKorek: q.correct === "vrai" ? "vrai" : "faux",
-                };
-            }
-            if (q.type === "konplete") {
-                return {
-                    type: "konplete",
-                    texte: q.texte,
-                    reponsKorek: Array.isArray(q.correct) ? q.correct : [q.correct],
-                };
-            }
-            return {
-                type: "ouve",
-                texte: q.texte,
-                reponsKorek: "",
-            };
-        });
+  // NOUVO PREFILL 2021
+  const prefillKonesans2021 = () => {
+    setUniversiteId("universite_kj_id");
+    setMatiereId("matiere_kj_id");
+    setNom("Tès Konesans Jeneral 2021");
+    setAnnee(2021);
+    const source = Array.isArray(questionsKonesans2021)
+      ? questionsKonesans2021
+      : (questionsKonesans2021.questions || []);
+    setQuestions(
+      source.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
 
-        await addDoc(collection(db, "questions"), { questions: payloadQuestions });
-        alert("✅ Kesyon yo ak repons yo sove nan baz done a avèk siksè!");
+  // NOUVO PREFILL 2017
+  const prefillKonesans2017 = () => {
+    setUniversiteId("universite_kj_id");
+    setMatiereId("matiere_kj_id");
+    setNom("Tès Konesans Jeneral 2017");
+    setAnnee(2017);
+    setQuestions(
+      questionsKonesans2017.map((question) => ({
+        ...question
+        // Pa gen besoin de correct paske estrikti ou a ka gen konplete-multi, tabl, elatriye
+      }))
+    );
+  };
+
+  const prefillFizik2018 = () => {
+    setUniversiteId("universite_fizik_id");
+    setMatiereId("matiere_fizik_id");
+    setNom("Concours d'Admission Physique Septembre 2018");
+    setAnnee(2018);
+    setQuestions(
+      questionsFizik2018.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
+
+  const prefillCultureGenerale2020 = () => {
+    setUniversiteId("universite_cg_id");
+    setMatiereId("matiere_cg_id");
+    setNom("Culture Générale Janvier 2020");
+    setAnnee(2020);
+    setQuestions(
+      questionsCultureGenerale2020.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
+
+  const prefillCultureGenerale2018 = () => {
+    setUniversiteId("universite_cg_id");
+    setMatiereId("matiere_cg_id");
+    setNom("Culture Générale 2018 (Concours Admission)");
+    setAnnee(2018);
+    setQuestions(
+      questionsCultureGenerale2018.map((question) => ({
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
+      }))
+    );
+  };
+
+  const saveQuestionsToDatabase = async () => {
+    try {
+      setLoading(true);
+      const payloadQuestions = questions.map(q => {
+        if (q.type === "qcm") {
+          const reponsKorek = (Array.isArray(q.correct) ? q.correct : []).sort((a, b) => Number(a) - Number(b)).join(",");
+          return {
+            type: "qcm",
+            texte: q.texte,
+            choix: q.choix,
+            reponsKorek,
+          };
+        }
+        if (q.type === "vrai_faux") {
+          return {
+            type: "vrai_faux",
+            texte: q.texte,
+            reponsKorek: q.correct === "vrai" ? "vrai" : "faux",
+          };
+        }
+        if (q.type === "konplete") {
+          return {
+            type: "konplete",
+            texte: q.texte,
+            reponsKorek: Array.isArray(q.correct) ? q.correct : [q.correct],
+          };
+        }
+        return {
+          type: "ouve",
+          texte: q.texte,
+          reponsKorek: "",
+        };
+      });
+
+      await addDoc(collection(db, "questions"), { questions: payloadQuestions });
+      alert("✅ Kesyon yo ak repons yo sove nan baz done a avèk siksè!");
     } catch (e) {
-        console.error(e);
-        alert("❌ Pa rive sove kesyon yo nan baz done a.");
+      console.error(e);
+      alert("❌ Pa rive sove kesyon yo nan baz done a.");
     } finally {
-        setLoading(false);
+      setLoading(false);
     }
-};
+  };
 
   return (
     <div className="container">
@@ -521,6 +594,22 @@ const saveQuestionsToDatabase = async () => {
             >
               Pré-remplir ak Tès Konesans Jeneral
             </button>
+            {/* NOUVO BOUTON KONESANS 2021 */}
+            <button
+              type="button"
+              onClick={prefillKonesans2021}
+              style={{ background: "#f59e42", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Tès Konesans 2021
+            </button>
+            {/* NOUVO BOUTON KONESANS 2017 */}
+            <button
+              type="button"
+              onClick={prefillKonesans2017}
+              style={{ background: "#f472b6", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Tès Konesans Jeneral 2017
+            </button>
             <button
               type="button"
               onClick={prefillChimi2020}
@@ -575,6 +664,7 @@ const saveQuestionsToDatabase = async () => {
               onClick={prefillBiologie2021}
               style={{ background: "#60a5fa", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
             >
+
               Pré-remplir ak Concours Biologie 2021
             </button>
             <button
@@ -590,6 +680,27 @@ const saveQuestionsToDatabase = async () => {
               style={{ background: "#60a5fa", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
             >
               Pré-remplir ak Egzamen Biologie 2022
+            </button>
+            <button
+              type="button"
+              onClick={prefillFizik2018}
+              style={{ background: "#8b5cf6", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Concours Physique 2018
+            </button>
+            <button
+              type="button"
+              onClick={prefillCultureGenerale2020}
+              style={{ background: "#f59e0b", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Culture Générale 2020
+            </button>
+            <button
+              type="button"
+              onClick={prefillCultureGenerale2018}
+              style={{ background: "#fbbf24", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Culture Générale 2018
             </button>
           </div>
 
@@ -719,4 +830,3 @@ const saveQuestionsToDatabase = async () => {
 }
 
 export default AjouteExamen;
-  

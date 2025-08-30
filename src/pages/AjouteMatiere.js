@@ -6,6 +6,7 @@ function AjouteMatiere() {
   const [universites, setUniversites] = useState([]);
   const [universiteId, setUniversiteId] = useState("");
   const [matiereNom, setMatiereNom] = useState("");
+  const [departement, setDepartement] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -23,22 +24,29 @@ function AjouteMatiere() {
     e.preventDefault();
     setLoading(true);
     setMessage("");
+    const universite = universites.find(u => u.id === universiteId);
     if (!universiteId || !matiereNom) {
       setMessage("Veuillez choisir une université et entrer le nom de la matière.");
       setLoading(false);
       return;
     }
-    const universite = universites.find(u => u.id === universiteId);
+    if (universite?.nom === 'CHCL' && !departement) {
+      setMessage("Veuillez choisir un département pour CHCL.");
+      setLoading(false);
+      return;
+    }
     try {
       await addDoc(collection(db, "matieres"), {
         nom: matiereNom,
         universiteId,
         universiteNom: universite ? universite.nom : "",
+        departement: departement || "",
         createdAt: new Date(),
       });
       setMessage("Matière ajoutée avec succès !");
       setMatiereNom("");
       setUniversiteId("");
+      setDepartement("");
     } catch (err) {
       setMessage("Erreur : " + err.message);
     }
@@ -69,6 +77,13 @@ function AjouteMatiere() {
           ))}
         </select>
         <input value={matiereNom} onChange={e => setMatiereNom(e.target.value)} placeholder="Nom de la matière" required style={{ width: "100%", marginBottom: 10, padding: 8, borderRadius: 6, border: '1px solid #ccc' }} />
+        {universites.find(u => u.id === universiteId)?.nom === 'CHCL' && (
+          <select value={departement} onChange={e => setDepartement(e.target.value)} required style={{ width: "100%", marginBottom: 10, padding: 8, borderRadius: 6, border: '1px solid #ccc' }}>
+            <option value="">-- Chwazi depatman --</option>
+            <option value="ST">ST (Syans ak Teknoloji)</option>
+            <option value="SH">SH (Syans ak Imen)</option>
+          </select>
+        )}
         <button type="submit" disabled={loading} style={{ width: "100%", background: "#1e5bbf", color: "#fff", border: "none", borderRadius: 6, padding: 10, fontWeight: 600, fontSize: 16, cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.7 : 1 }}>
           {loading ? "Ajout..." : "Ajouter la Matière"}
         </button>

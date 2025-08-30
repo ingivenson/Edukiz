@@ -1,0 +1,290 @@
+ [
+  {
+    "texte": "Associez chaque auteur à son œuvre.",
+    "type": "matching",
+    "gauche": [
+      "Albert Camus",
+      "Etzer Vilaire",
+      "Gustave Flaubert",
+      "Gary Victor",
+      "Lyonel Trouillot"
+    ],
+    "droite": [
+      "L'étranger",
+      "Dix hommes noirs",
+      "Madame Bovary",
+      "Le diable dans un thé à la citronnelle",
+      "Kannjawou"
+    ],
+    "matching_repons": [0,1,2,3,4],
+    "reponsKorek": [0,1,2,3,4]
+  },
+  {
+    "texte": "Associez chaque œuvre suivante à son auteur.",
+    "type": "matching",
+    "gauche": [
+      "Tragédie du roi Henry Christophe",
+      "Radiographie d'une dictature",
+      "La cause de nos malheurs",
+      "Les mains sales",
+      "Les Misérables",
+      "Compère Général Soleil",
+      "Eventail d’histoire vivante"
+    ],
+    "droite": [
+      "Edmond Paul",
+      "Gérard Pierre-Charles",
+      "Leslie François Manigat",
+      "Jean Paul Sartre",
+      "Victor Hugo",
+      "Aimé Césaire",
+      "Jacques Stephen Alexis"
+    ],
+    "matching_repons": [5,1,0,3,4,6,2],
+    "reponsKorek": [5,1,0,3,4,6,2]
+  },
+  {
+    "texte": "Associez chaque œuvre à sa femme haïtienne auteure.",
+    "type": "matching",
+    "gauche": [
+      "L'autre moitié du développement",
+      "L'économie informelle en Haïti"
+    ],
+    "droite": [
+      "Nathalie L. Brisson",
+      "Mireille N. Anglade",
+      "Marie Chauvet",
+      "Myrlande H. Manigat",
+      "Yanick Lahens"
+    ],
+    "matching_repons": [0,1],
+    "reponsKorek": [0,1]
+  },
+  {
+    "texte": "Donnez le titre de trois audiences (piécettes) de Maurice A. Sixto :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a)", "reponsKorek": "Ti Sentaniz" },
+      { "texte": "b)", "reponsKorek": "Grèv Ayisyen" },
+      { "texte": "c)", "reponsKorek": "Enquête au Bel-Air" }
+    ],
+    "correct": [
+      "Ti Sentaniz",
+      "Grèv Ayisyen",
+      "Enquête au Bel-Air"
+    ]
+  },
+  {
+    "texte": "Quel est le cinéaste haïtien qui a réalisé, durant l'année 2017, le film documentaire « I am not your negro » ?",
+    "type": "konplete",
+    "reponsKorek": "Raoul Peck",
+    "correct": "Raoul Peck"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouvent les lieux historiques suivants ?",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a) Fort de la Crête-à-Pierrot", "reponsKorek": "Artibonite" },
+      { "texte": "b) Palais de Sans Souci", "reponsKorek": "Nord" },
+      { "texte": "c) Bassin Zim", "reponsKorek": "Centre" },
+      { "texte": "d) Grotte Marie-Jeanne", "reponsKorek": "Sud" },
+      { "texte": "e) Vertières", "reponsKorek": "Nord" }
+    ],
+    "correct": [
+      "Artibonite",
+      "Nord",
+      "Centre",
+      "Sud",
+      "Nord"
+    ]
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve chacune des communes suivantes ?",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a) Thomonde", "reponsKorek": "Centre" },
+      { "texte": "b) Lascahobas", "reponsKorek": "Centre" },
+      { "texte": "c) Torbeck", "reponsKorek": "Sud" },
+      { "texte": "d) Jacmel", "reponsKorek": "Sud-Est" },
+      { "texte": "e) Dame-Marie", "reponsKorek": "Grand’Anse" }
+    ],
+    "correct": [
+      "Centre",
+      "Centre",
+      "Sud",
+      "Sud-Est",
+      "Grand’Anse"
+    ]
+  },
+  {
+    "texte": "Indiquez le chef-lieu des départements suivants :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a) Centre", "reponsKorek": "Hinche" },
+      { "texte": "b) Grand’Anse", "reponsKorek": "Jérémie" },
+      { "texte": "c) Sud-Est", "reponsKorek": "Jacmel" },
+      { "texte": "d) Artibonite", "reponsKorek": "Gonaïves" }
+    ],
+    "correct": [
+      "Hinche",
+      "Jérémie",
+      "Jacmel",
+      "Gonaïves"
+    ]
+  },
+  {
+    "texte": "Reliez chaque date à l'évènement correspondant.",
+    "type": "matching",
+    "gauche": [
+      "1937",
+      "1776",
+      "1789",
+      "1986"
+    ],
+    "droite": [
+      "Massacre des Haïtiens en République Dominicaine",
+      "Indépendance des États-Unis d’Amérique",
+      "Prise de la Bastille",
+      "Chute des Duvalier"
+    ],
+    "matching_repons": [0,1,2,3],
+    "reponsKorek": [0,1,2,3]
+  },
+  {
+    "texte": "Indiquez la date et les départements d'Haïti ayant été frappés par les cyclones suivants :",
+    "type": "table-konplete",
+    "rows": [
+      "Hazel",
+      "Jeanne",
+      "Georges",
+      "Matthew"
+    ],
+    "cols": [
+      "Date",
+      "Département(s)"
+    ],
+    "reponsKorek": [
+      ["11 octobre 1954", "Grand-Anse"],
+      ["18 septembre 2004", "Artibonite et Nord-Ouest"],
+      ["23 septembre 1998", "Sud-Est, Nord-Ouest"],
+      ["octobre 2016", "Grand’Anse, Sud, Nippes"]
+    ]
+  },
+  {
+    "texte": "Donnez le nom de deux îles de la Caraïbe ayant été violemment ravagées par l'ouragan Irma :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a)", "reponsKorek": "Saint-Martin" },
+      { "texte": "b)", "reponsKorek": "Les îles Vierges" }
+    ],
+    "correct": [
+      "Saint-Martin",
+      "Les îles Vierges"
+    ]
+  },
+  {
+    "texte": "Les femmes ont accédé au droit de vote en Haïti :",
+    "type": "qcm",
+    "choix": ["1986", "1950", "1970", "1934"],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Le régime dictatorial des Duvalier a duré :",
+    "type": "qcm",
+    "choix": ["15 ans", "30 ans", "29 ans", "25 ans"],
+    "reponsKorek": "0"
+  },
+  {
+    "texte": "La première occupation américaine d'Haïti a duré :",
+    "type": "qcm",
+    "choix": ["10 ans", "4 ans", "19 ans"],
+    "reponsKorek": "2"
+  },
+  {
+    "texte": "La révolte des piquets dirigée par Acaau a eu lieu en :",
+    "type": "qcm",
+    "choix": ["1843", "1875", "1915", "1844"],
+    "reponsKorek": "3"
+  },
+  {
+    "texte": "Indiquez l'année du triomphe des révolutions suivantes :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a) Cubaine", "reponsKorek": "1959" },
+      { "texte": "b) Bolchevique", "reponsKorek": "1917" },
+      { "texte": "c) Américaine", "reponsKorek": "1783" },
+      { "texte": "d) Française", "reponsKorek": "1799" }
+    ],
+    "correct": [
+      "1959",
+      "1917",
+      "1783",
+      "1799"
+    ]
+  },
+  {
+    "texte": "Indiquez le nom des ministres occupant actuellement les ministères suivants au sein du cabinet ministériel de Jack Guy Lafontant :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "Ministre des affaires sociales et du travail", "reponsKorek": "Roosevelt Bellevue" },
+      { "texte": "Ministre de l'éducation nationale et de la formation professionnelle", "reponsKorek": "Pierre Josué Agénor Cadet" },
+      { "texte": "Ministre de l'économie et des finances", "reponsKorek": "Jude Alix Patrick Salomon" }
+    ],
+    "correct": [
+      "Roosevelt Bellevue",
+      "Pierre Josué Agénor Cadet",
+      "Jude Alix Patrick Salomon"
+    ]
+  },
+  {
+    "texte": "Indiquez, parmi ces personnalités : Claudette Werleigh, Ertha Pascal Trouillot, Pierre Louis, Myrlande Hyppolite Manigat, Florence Élie, celle ayant occupé la première, les fonctions suivantes :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "a) Première ministre de la république d'Haïti", "reponsKorek": "Claudette Werleigh" },
+      { "texte": "b) Présidente de la république d'Haïti", "reponsKorek": "Ertha Pascal-Trouillot" }
+    ],
+    "correct": [
+      "Claudette Werleigh",
+      "Ertha Pascal-Trouillot"
+    ]
+  },
+  {
+    "texte": "L'actuel secrétaire général des Nations-Unies est l'espagnol :",
+    "type": "konplete",
+    "reponsKorek": "António Guterres"
+  },
+  {
+    "texte": "Indiquez les noms des scientifiques qui ont fait les interventions suivantes :",
+    "type": "konplete-multi",
+    "subQuestions": [
+      { "texte": "La formule E=mc²", "reponsKorek": "Albert Einstein" },
+      { "texte": "Téléphone", "reponsKorek": "Alexander Graham Bell" },
+      { "texte": "Imprimerie", "reponsKorek": "Johannes Gutenberg" }
+    ],
+    "correct": [
+      "Albert Einstein",
+      "Alexander Graham Bell",
+      "Johannes Gutenberg"
+    ]
+  },
+  {
+    "texte": "Quel est le nom complet de l'actuel dirigeant de la Corée du Nord ?",
+    "type": "konplete",
+    "reponsKorek": "Kim Jong-un"
+  },
+  {
+    "texte": "Quel est le nom complet de l'actuel vice-président des États-Unis d'Amérique ?",
+    "type": "konplete",
+    "reponsKorek": "Mike Pence"
+  },
+  {
+    "texte": "Quelle est la ville du monde qui organisera les jeux olympiques de 2024 ?",
+    "type": "konplete",
+    "reponsKorek": "Paris"
+  },
+  {
+    "texte": "Quel est le nom du pays qui organisera la coupe du monde 2022 ?",
+    "type": "konplete",
+    "reponsKorek": "Qatar"
+  }
+]

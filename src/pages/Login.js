@@ -107,13 +107,24 @@ function Login() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'linear-gradient(180deg, #0a2a5c 0%, #1e5bbf 100%)',
+      backgroundImage: 'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '20px'
+      padding: '20px',
+      position: 'relative'
     }}>
+      <div className="header-overlay" aria-hidden="true" style={{ 
+        position: 'absolute', 
+        top: 0, 
+        left: 0, 
+        right: 0, 
+        bottom: 0, 
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+      }} />
       <div style={{
         background: '#fff',
         borderRadius: '2rem',

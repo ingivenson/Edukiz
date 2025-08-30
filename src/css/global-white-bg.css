@@ -1,0 +1,287 @@
+/* Global White Background CSS - Pou tout paj yo gen background blan */
+
+/* Reset global background pou tout body ak html */
+html, body {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Container yo ki gen background gri oswa nwa */
+.container,
+.main-container,
+.app-container,
+.page-container,
+.content-container,
+.universites-container,
+.matieres-container,
+.quiz-list-container,
+.dashboard-container,
+.home-container,
+.admin-container,
+.loading-container {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Div yo ak class ki gen background gri */
+div[class*="bg-gray"],
+div[class*="bg-grey"],
+div[class*="background-gray"],
+div[class*="background-grey"],
+.bg-gray-50,
+.bg-gray-100,
+.bg-gray-200,
+.bg-grey-50,
+.bg-grey-100,
+.bg-grey-200 {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Section yo ak background gri */
+section,
+.section,
+.main-section,
+.content-section {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Wrapper yo */
+.wrapper,
+.page-wrapper,
+.content-wrapper,
+.main-wrapper {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* App yo ak root containers */
+#root,
+#app,
+.App,
+.app {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Loading states */
+.loading,
+.loading-screen,
+.loading-page {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Dashboard ak admin pages */
+.dashboard,
+.admin-dashboard,
+.admin-panel {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* HomePage ak final pages */
+.home-page,
+.homepage,
+.landing-page,
+.final-page,
+div[class*="final"],
+div[class*="complete"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Pou mobile responsive */
+@media (max-width: 768px) {
+  html, body,
+  .container,
+  .main-container,
+  .page-container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* Pou tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html, body,
+  .container,
+  .main-container,
+  .page-container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* Pou desktop */
+@media (min-width: 1025px) {
+  html, body,
+  .container,
+  .main-container,
+  .page-container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* Override pou dark mode si li gen */
+@media (prefers-color-scheme: dark) {
+  html, body,
+  .container,
+  .main-container,
+  .page-container,
+  .universites-container,
+  .matieres-container,
+  .quiz-list-container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* Cards ak containers pou matye yo ak egzamen yo */
+.subject-card,
+.quiz-card,
+.exam-card,
+.matiere-card,
+.university-card,
+.card,
+.content-card,
+.item-card {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2px solid #2563eb !important;
+  color: #000000 !important;
+}
+
+/* Card headers */
+.card-header,
+.subject-header,
+.quiz-header,
+.exam-header {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Card body */
+.card-body,
+.subject-body,
+.quiz-body,
+.exam-body {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Card footer */
+.card-footer,
+.subject-footer,
+.quiz-footer,
+.exam-footer {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Titles ak text nan cards yo */
+.subject-title,
+.quiz-title,
+.exam-title,
+.card-title,
+.university-name,
+.matiere-name {
+  color: #000000 !important;
+}
+
+/* Descriptions */
+.subject-description,
+.quiz-description,
+.exam-description,
+.card-description,
+.university-location {
+  color: #4b5563 !important;
+}
+
+/* Grid containers */
+.subjects-grid,
+.quiz-grid,
+.exam-grid,
+.universities-grid,
+.cards-grid {
+  background: transparent !important;
+}
+
+/* List items */
+.subject-item,
+.quiz-item,
+.exam-item,
+.university-item,
+.list-item {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2px solid #2563eb !important;
+  color: #000000 !important;
+}
+
+/* Hover states pou cards yo */
+.subject-card:hover,
+.quiz-card:hover,
+.exam-card:hover,
+.matiere-card:hover,
+.university-card:hover,
+.card:hover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Active states */
+.subject-card.active,
+.quiz-card.active,
+.exam-card.active,
+.card.active {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+}
+
+/* Empty states */
+.empty-state,
+.no-results,
+.no-content {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2px solid #2563eb !important;
+  color: #000000 !important;
+}
+
+/* Loading states pou cards */
+.loading-card,
+.skeleton-card,
+.placeholder-card {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2px solid #e5e7eb !important;
+}
+
+/* Print styles */
+@media print {
+  html, body,
+  .container,
+  .main-container,
+  .page-container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+  
+  .subject-card,
+  .quiz-card,
+  .exam-card,
+  .card {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+  }
+}

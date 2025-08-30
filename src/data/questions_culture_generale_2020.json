@@ -1,0 +1,293 @@
+
+[
+  {
+    "type": "qcm",
+    "texte": "L'année 2020 marque les . . . . . . . . . . ans de la mort de Henry Christophe.",
+    "choix": ["150", "200", "350", "100"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Comment s'appelle la croyance qui attribue une âme à tous les phénomènes naturels ?",
+    "choix": ["Hindouisme", "Islamisme", "Bouddhisme", "Animisme"],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il a fondé la ville de Chicago aux États-Unis en 1833, son nom est :",
+    "choix": ["Jean-Baptiste P. du Sable", "John Kinzie", "Estevanico", "Edward Bennett"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il est l'initiateur du courant évolutionniste au début du XIXème siècle, son nom est :",
+    "choix": ["Charles Darwin", "Jean-Baptiste Lamarck", "Louis Pasteur", "Alexis Carrel"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Dans ce pays, au XIIIème siècle, l'Empire Ottoman a été fondé, il s'agit de :",
+    "choix": ["Turquie", "Moldavie", "Iran", "Russie"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il a réalisé une sculpture emblématique de l'histoire d'Haïti : le Marron Inconnu, son nom est :",
+    "choix": ["Albert Mangonès", "Léon Mathon", "Georges Baussan", "Robert Baussan"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Attitude philosophique recourant à la notion de matière pour expliquer la totalité des phénomènes du monde physique et du monde moral.",
+    "choix": ["Individualisme", "Matérialisme", "Humanisme", "Holisme"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La plus grande forêt d'Afrique est :",
+    "choix": ["Bassin du Congo", "Daïntree", "Forêt de nuage", "Amazonie"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Laquelle de ces villes n'est pas une capitale ?",
+    "choix": ["Rome", "Cracovie", "Chisinau", "Vaduz"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Trouvez le mot du genre masculin.",
+    "choix": ["Victime", "Orbite", "Entracte", "Oasis"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Sur quel continent se trouve la Terre-Adélie ?",
+    "choix": ["Asie", "Afrique", "Antarctique", "Europe"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel est le pays natal de Wolfgang Amadeus Mozart ?",
+    "choix": ["Allemagne", "Autriche", "Italie", "Hongrie"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Comment a été nommé le plus vieux crâne hominidé trouvé par les paléontologues en 2001 ?",
+    "choix": ["Lucy", "Toumaï", "Georges", "Marc"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "En quoi s'exprime l'énergie ?",
+    "choix": ["En volts", "En watts", "En joules", "En kilowatts"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "La première déclaration des droits de l'homme et du citoyen date de quelle année ?",
+    "choix": ["1789", "1948", "1848", "1941"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "À partir de quelle source l'électricité était-elle majoritairement produite dans le monde en 2019 ?",
+    "choix": ["Charbon", "Pétrole", "Nucléaire", "Hydraulique"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel est l'autre nom de l'ocytocine ?",
+    "choix": ["Hormone de croissance", "Hormone du sommeil", "Hormone du bonheur", "Aucune de ces réponses"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'autre nom de la Chine est :",
+    "choix": ["Hexagone", "L'empire du milieu", "Nippon", "Aucune de ces réponses"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "De quoi est composé le noyau de l'atome ?",
+    "choix": ["Protons et neutrons", "Électrons et neutrons", "Électrons", "Électrons"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un des personnages n'est pas un spécialiste des sciences sociales, lequel ?",
+    "choix": ["Sigmund Freud", "Karl Marx", "Edgar Morin", "Stephen Hawking"],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'onomastique qui a pour objet l'étude des noms propres de personnes, régions, etc. est :",
+    "choix": ["L'anthroponymie", "L'ethnologie", "La cosmonymie", "La cosmogonie"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Il fut chanteur d'Opéra et a été considéré comme le grand ténor du XXème siècle.",
+    "choix": ["Luciano Pavarotti", "Andrea Bocelli", "Placido Domingo", "Jonas Koffman"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le terme <<multipartisme >> désigne :",
+    "choix": ["Un État ayant plusieurs nationalités", "Un État dans lequel il existe plus d'un parti", "Système interdisant le droit d'association", "Aucune de ces réponses"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La période de l'histoire des États-Unis durant laquelle furent traqués, dénoncés, et arrêtés les sympathisants du communisme est connue sous le nom de :",
+    "choix": ["New Deal", "Watergate", "Prohibition", "Maccarthysme"],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "La route de la soie, le projet économique le plus ambitieux du monde actuel entre :",
+    "choix": ["Les États-Unis", "Le Japon", "La Chine", "La Russie"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel genre d'animal est un silure ?",
+    "choix": ["Un oiseau", "Un serpent", "Un insecte", "Un poisson"],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quelle est la troisième personne du singulier du présent de l'indicatif de sourdre ?",
+    "choix": ["Il sourt", "Il sourd", "Il sourde", "Il sourre"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "De quel pays Dubaï fait-elle partie ?",
+    "choix": ["Qatar", "Arabie Saoudite", "Émirats Arabes Unis", "Koweït"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel président a été renversé par la guerre américaine en Irak en 2003 ?",
+    "choix": ["Mouammar Khadafi", "Saddam Hussein", "Hassan Rohani", "Bachar al-Assad"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Entreprise fondée par Larry Page et Sergueï Brin dominant le secteur technologique aux États-Unis :",
+    "choix": ["Facebook", "Google", "Amazon", "Alibaba"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La capitale du Soudan du Sud est :",
+    "choix": ["Kampala", "Djouba", "Lusaka", "Dongola"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'année de création de l'Académie du Créole haïtien est :",
+    "choix": ["2004", "2010", "2014", "2006"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "À l'exception de l'homme, quel est le primate le plus septentrional ?",
+    "choix": ["Le ouistiti", "Le lémurien", "Le macaque", "Le gorille"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'écrivain haïtien ayant décroché le prix de Renaudot pour Hadriana dans tous mes rêves est :",
+    "choix": ["Dany Laferrière", "Lionel Trouillot", "Yannick Lahens", "René Depestre"],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel titan de la mythologie grecque est condamné à soutenir le ciel pour l'éternité ?",
+    "choix": ["Hadès", "Atlas", "Rhéa", "Cronos"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le dernier pays a avoir aboli l'esclavage en 1982 est :",
+    "choix": ["Le Bénin", "Le Congo", "Le Soudan", "La Mauritanie"],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un film produit par Bollywood est :",
+    "choix": ["Australien", "Américain", "Indien", "Français"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Lorsque dans un marché quelques vendeurs obtiennent l'exclusivité de vente face à un nombre important de demandeurs, on parle de :",
+    "choix": ["Monopole", "Oligopole", "Duopole", "Aucune de ces réponses"],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La photographie a été inventé le 7 janvier 1829 par :",
+    "choix": ["Louis Daguerre", "Nadar", "Joseph Nicéphore Niépce", "Johann Zahn"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quelle est la distance entre la terre et le soleil ?",
+    "choix": ["155 million km", "100 million km", "149,6 million km", "120 million km"],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "konplete",
+    "texte": "L'année 2020 marque les ___ ans de la fondation de la ville du Cap-Haïtien.",
+    "reponsKorek": ["350"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le sommet de la République d'Haïti est ___ , il s'élève à ___ mètres d'altitudes.",
+    "reponsKorek": ["Le pic la Selle", "2680"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Cette partie des mathématiques qui étudie l'infiniment petit, le microscopique est appelé ___.",
+    "reponsKorek": ["Analyse"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Avant la création de l'ONU, l'organisme qui s'occupait de la préservation de la paix et la sécurité internationales s'appelait ___.",
+    "reponsKorek": ["SDN"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Haïti a été exclu du premier congrès panaméricain à Panama en date du ___.",
+    "reponsKorek": ["22 février 1826"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le nouvelliste a été fondé en ___ et son actuel rédacteur en chef est ___.",
+    "reponsKorek": ["1898", "Frantz Duval"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le Conseil de Sécurité des Nations Unies est composé de ___ membres permanents.",
+    "reponsKorek": ["5"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Il fut un critique littéraire et écrivain haïtien, il est l'auteur de L'échec d'une Élite (indigénisme, noirisme, marxisme), il est mort le 17 décembre 2019, son nom est ___.",
+    "reponsKorek": ["Dr Eddy Arnold Jean"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Une personne qui a peur des lieux clos et de l'enfermement est dite ___.",
+    "reponsKorek": ["Claustrophobe"]
+  },
+  {
+    "type": "konplete",
+    "texte": "Le Vaudou a été reconnu comme religion officielle en Haïti en ___ sous la présidence de ___.",
+    "reponsKorek": ["2003", "Jean Bertrand Aristide"]
+  }
+]

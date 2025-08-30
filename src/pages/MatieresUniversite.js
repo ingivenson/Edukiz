@@ -12,6 +12,7 @@ function MatieresUniversite() {
   const [matieres, setMatieres] = useState([]);
   const [loading, setLoading] = useState(true);
   const [universiteNom, setUniversiteNom] = useState("");
+  const [selectedDepartement, setSelectedDepartement] = useState("Tout");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -46,12 +47,21 @@ function MatieresUniversite() {
     fetchData();
   }, [universiteId, navigate]);
 
+  // Filtre matye yo selon depatman ki chwazi a (selman pou CHCL)
+  const filteredMatieres = universiteNom === "CHCL" && selectedDepartement !== "Tout"
+    ? matieres.filter(matiere => matiere.departement === selectedDepartement)
+    : matieres;
+
   if (loading) return <LoadingSpinner />;
 
   return (
     <div className="matieres-container">
       {/* Header Section */}
-      <div className="header-section">
+      <div className="header-section" style={{
+        backgroundImage:
+          'url(https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2)'
+      }}>
+        <div className="header-overlay" aria-hidden="true" />
         <div className="header-top">
           <button 
             onClick={() => navigate(-1)}
@@ -71,15 +81,33 @@ function MatieresUniversite() {
         <div className="header-content">
           <h1 className="main-title">Matye yo</h1>
           <p className="university-subtitle">{universiteNom}</p>
+          
+          {/* Filtre depatman pou CHCL selman */}
+          {universiteNom === "CHCL" && (
+            <div className="department-filters">
+              <div className="filter-buttons">
+                {["Tout", "ST", "SH"].map((dept) => (
+                  <button
+                    key={dept}
+                    className={`filter-button ${selectedDepartement === dept ? 'active' : ''}`}
+                    onClick={() => setSelectedDepartement(dept)}
+                  >
+                    {dept}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="subjects-count">
-            {matieres.length} matye disponib
+            {filteredMatieres.length} matye disponib
           </div>
         </div>
       </div>
 
       {/* Main Content */}
       <div className="main-content">
-        {matieres.length === 0 ? (
+        {filteredMatieres.length === 0 ? (
           <div className="empty-state">
             <div className="empty-illustration">
               <div className="empty-circle">
@@ -88,15 +116,18 @@ function MatieresUniversite() {
             </div>
             <h3 className="empty-title">Pa gen matye ankò</h3>
             <p className="empty-description">
-              Pa gen matye ki disponib pou inivèsite sa a kounye a.
+              {matieres.length === 0 
+                ? "Pa gen matye ki disponib pou inivèsite sa a kounye a."
+                : "Pa gen matye nan depatman sa a."
+              }
               <br />
-              Kontakte administratè a pou ajoute matye yo.
+              {matieres.length === 0 && "Kontakte administratè a pou ajoute matye yo."}
             </p>
           </div>
         ) : (
           <div className="subjects-container">
             <div className="subjects-grid">
-              {matieres.map((matiere, index) => (
+              {filteredMatieres.map((matiere, index) => (
                 <div 
                   key={matiere.id} 
                   className="subject-card"

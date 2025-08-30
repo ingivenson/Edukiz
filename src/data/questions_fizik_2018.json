@@ -1,0 +1,149 @@
+[
+  {
+    "type": "qcm",
+    "texte": "Si on casse un aimant en deux, que se passe-t-il ?",
+    "choix": [
+      "On se retrouve avec le pôle sud dans une main et le pôle nord dans l'autre",
+      "On obtient de petits aimants avec chacun un pôle sud et un pôle nord",
+      "L'aimant perd ses propriétés magnétiques"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Classez l'intrus parmi cette liste",
+    "choix": [
+      "La calorie",
+      "Le kilowatt-heure",
+      "Le watt",
+      "Le joule"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Que signifie « 100 mégahertz » en bande FM sur un poste de radio ?",
+    "choix": [
+      "L'onde qui voyage dans l'air oscille 100 millions de fois par seconde",
+      "L'onde se déplace à 100 millions de mètres par seconde",
+      "Cela n'a aucune signification physique, il s'agit simplement d'un repère"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le filament à l'intérieur des lampes à incandescence est constitué de quel métal ?",
+    "choix": [
+      "Fer",
+      "Cuivre",
+      "Tungstène",
+      "Argent"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "La force d'Archimède dépend :",
+    "choix": [
+      "De la profondeur d'immersion et de la forme de l'objet",
+      "Du volume de l'objet et de la nature du liquide",
+      "De la masse de l'objet et de la quantité de liquide"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Pour voir les objets qui nous entourent, il faut que :",
+    "choix": [
+      "La lumière parte des objets pour arriver à nos yeux ?",
+      "Nos yeux envoient un rayon qui rebondit sur l'objet pour revenir ensuite vers nous ?",
+      "La lumière éclaire à la fois nos yeux et l'objet ?"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Sur une autoroute, en été, on a souvent l'impression de voir une étendue d'eau au loin, au ras de la route. De quoi s'agit-il ?",
+    "choix": [
+      "La vapeur d'eau se condense au niveau de la route, créant une couche d'eau sur le sol",
+      "Il s'agit d'un mirage, c'est-à-dire l'image du ciel sur la route",
+      "Il s'agit d'une hallucination due à la fatigue"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "En une seconde, la lumière est capable de parcourir dans le vide l'équivalent de :",
+    "choix": [
+      "300 000 km",
+      "300 000 m",
+      "300 000 cm"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Pourquoi un ballon gonflé à l'hélium éclate-t-il à une certaine altitude ?",
+    "choix": [
+      "Le ballon implose sous l'effet de la pression atmosphérique qui augmente",
+      "Le gaz à l'intérieur du ballon prend de plus en plus de place car la pression atmosphérique à l'extérieur diminue",
+      "Un oiseau vient le percer avec son bec"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'intensité du courant électrique",
+    "choix": [
+      "Correspond à la perte d'énergie pour les électrons",
+      "Correspond au débit de charge électrique dans un conducteur",
+      "Correspond à l'énergie perdue dans un appareil",
+      "Se mesure en volt"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un appareil demande une intensité de 12(A). L'appareil est branché sur une prise protégée par des fusibles de 10(A).",
+    "choix": [
+      "Les fusibles vont couper le courant",
+      "Les fusibles ne vont rien faire",
+      "L'appareil va bien fonctionner",
+      "L'appareil ira moins bien"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Dans les maisons, les appareils sont montés en ?",
+    "choix": [
+      "Série",
+      "Parallèle",
+      "Alternativement en série et parallèle",
+      "Fonction de leur intensité"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un système a un mouvement rectiligne et uniforme si :",
+    "choix": [
+      "sa trajectoire est une courbe et la valeur de sa vitesse augmente au cours du temps.",
+      "sa trajectoire est une courbe et la valeur de sa vitesse augmente ou reste constante.",
+      "sa trajectoire est une droite et la valeur de sa vitesse diminue ou augmente.",
+      "sa trajectoire est une droite et la valeur de sa vitesse diminue ou reste constante."
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "L'ensemble des positions successives occupées par un point d'un objet en mouvement se nomme :",
+    "choix": [
+      "le mouvement",
+      "le parcours",
+      "la trajectoire",
+      "la courbe"
+    ],
+    "reponsKorek": "2"
+  }
+]
