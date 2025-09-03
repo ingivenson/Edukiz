@@ -1,0 +1,120 @@
+[
+  {
+    "texte": "Donnez le titre de trois audiences (piécettes) de Maurice A. Sixto : a)",
+    "type": "konplete",
+    "reponsKorek": "Ti Sentaniz"
+  },
+  {
+    "texte": "Donnez le titre de trois audiences (piécettes) de Maurice A. Sixto : b)",
+    "type": "konplete",
+    "reponsKorek": "Grèv Ayisyen"
+  },
+  {
+    "texte": "Donnez le titre de trois audiences (piécettes) de Maurice A. Sixto : c)",
+    "type": "konplete",
+    "reponsKorek": "Enquête au Bel-Air"
+  },
+  {
+    "texte": "Quel est le cinéaste haïtien qui a réalisé, durant l'année 2017, le film documentaire 'I am not your negro' ?",
+    "type": "konplete",
+    "reponsKorek": "Raoul Peck"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Fort de la Crête-à-Pierrot ?",
+    "type": "konplete",
+    "reponsKorek": "Artibonite"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Palais de Sans Souci ?",
+    "type": "konplete",
+    "reponsKorek": "Nord"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Bassin Zim ?",
+    "type": "konplete",
+    "reponsKorek": "Centre"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Grotte Marie-Jeanne ?",
+    "type": "konplete",
+    "reponsKorek": "Sud"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Vertières ?",
+    "type": "konplete",
+    "reponsKorek": "Nord"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Thomonde ?",
+    "type": "konplete",
+    "reponsKorek": "Centre"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Lascahobas ?",
+    "type": "konplete",
+    "reponsKorek": "Centre"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Torbeck ?",
+    "type": "konplete",
+    "reponsKorek": "Sud"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Jacmel ?",
+    "type": "konplete",
+    "reponsKorek": "Sud-Est"
+  },
+  {
+    "texte": "Dans quel département d'Haïti se trouve Dame-Marie ?",
+    "type": "konplete",
+    "reponsKorek": "Grand'Anse"
+  },
+  {
+    "texte": "Indiquez le chef-lieu du département Centre.",
+    "type": "konplete",
+    "reponsKorek": "Hinche"
+  },
+  {
+    "texte": "Indiquez le chef-lieu du département Grand'Anse.",
+    "type": "konplete",
+    "reponsKorek": "Jérémie"
+  },
+  {
+    "texte": "Indiquez le chef-lieu du département Sud-Est.",
+    "type": "konplete",
+    "reponsKorek": "Jacmel"
+  },
+  {
+    "texte": "Indiquez le chef-lieu du département Artibonite.",
+    "type": "konplete",
+    "reponsKorek": "Gonaïves"
+  },
+  {
+    "texte": "Donnez le nom d'une île de la Caraïbe ravagée par l'ouragan Irma.",
+    "type": "konplete",
+    "reponsKorek": "Saint-Martin"
+  },
+  {
+    "texte": "Donnez le nom d'une île de la Caraïbe ravagée par l'ouragan Irma (autre).",
+    "type": "konplete",
+    "reponsKorek": "Les îles Vierges"
+  },
+  {
+    "texte": "Les femmes ont accédé au droit de vote en Haïti :",
+    "type": "qcm",
+    "choix": ["1986", "1950", "1970", "1934"],
+    "reponsKorek": "1"
+  },
+  {
+    "texte": "Le régime dictatorial des Duvalier a duré :",
+    "type": "qcm",
+    "choix": ["15 ans", "30 ans", "29 ans", "25 ans"],
+    "reponsKorek": "0"
+  },
+  {
+    "texte": "La première occupation américaine d'Haïti a duré :",
+    "type": "qcm",
+    "choix": ["10 ans", "4 ans", "19 ans"],
+    "reponsKorek": "2"
+  }
+]

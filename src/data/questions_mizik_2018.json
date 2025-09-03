@@ -1,0 +1,520 @@
+{
+  "universiteId": "universite_mizik_id",
+  "matiereId": "matiere_mizik_id", 
+  "nom": "Egzamen Mizik 2018",
+  "annee": 2018,
+  "duree": 90,
+  "questions": [
+  {
+    "type": "qcm",
+    "texte": "A votre avis combien faut-il de soupirs pour une blanche ?",
+    "choix": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "A votre avis, combien faut-il de blanches pour 8 demi-soupirs ?",
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Où place-t-on une armature ?",
+    "choix": [
+      "N'importe où dans le morceau",
+      "A l'intérieur de la mesure",
+      "A côté de la clé",
+      "Juste après la note"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Dans une mesure de 3/2, que signifie le chiffre 2 ?",
+    "choix": [
+      "Il indique le nombre de temps par mesure.",
+      "il indique la figure de note qui dure un temps.",
+      "il indique que l'on a 2 croches par mesure",
+      "Il indique que l'on a 2 mesures par portée"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "À quoi sert un dièse ?",
+    "choix": [
+      "A remettre la note à sa place naturelle",
+      "A descendre d'un demi-ton la note alternée",
+      "A augmenter la note d'un demi-ton",
+      "A prolonger la durée de la note"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "De combien de ligne se compose une portée ?",
+    "choix": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel silence remplace la noire ?",
+    "choix": [
+      "La demi-pause",
+      "le soupir",
+      "le quart de soupir",
+      "la croche"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une noire pointée est équivalente à :",
+    "choix": [
+      "Deux noires",
+      "une noire et une croche",
+      "une blanche et une croche"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Chaque mesure est séparée par :",
+    "choix": [
+      "Une flèche",
+      "3 interlignes",
+      "une double barre",
+      "un trait vertical"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Combien faut-il de quart de soupir pour une demi-pause ?",
+    "choix": [
+      "4",
+      "8",
+      "16",
+      "12"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La mesure est divisée en parties égales que l'on appelle :",
+    "choix": [
+      "Rythme",
+      "Noire",
+      "Tempo",
+      "Temps"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Comment est constituée une gamme pentatonique ?",
+    "choix": [
+      "Elle est constituée uniquement d'intervalle d'un ton.",
+      "Elle est constituée de cinq hauteurs de son.",
+      "Elle est constituée d'intervalles d'un demi-ton et d'un ton.",
+      "La gamme pentatonique n'existe pas"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel est le bon ordre des dièses ?",
+    "choix": [
+      "Si, mi, la, ré, sol, do, fa",
+      "Fa, do, la, mi, sol, si, ré.",
+      "Fa, do, sol, ré, la, mi, si,",
+      "Si, mi, la, ré, sol, fa, do."
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel le nom de la tonalité constituée de 5 dièses ?",
+    "choix": [
+      "Si",
+      "si bémol",
+      "la dièse",
+      "do bémol"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Que signifie « rit. » ?",
+    "choix": [
+      "En élargissant",
+      "En retardant",
+      "En retenant",
+      "En accélérant"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Que signifie « Moderato » ?",
+    "choix": [
+      "Pesant, lourd en renforçant le son",
+      "Plus rapide que « l'andante » mais moins rapide que « allegro »",
+      "En donnant plus de force",
+      "Détaché"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "parmi ces 4 gammes laquelle est une gamme mineure mélodique ?",
+    "choix": [
+      "1/2-1-1-1-1-1/2",
+      "1-1/2-1-1/2-1",
+      "1-1-1-1/2 - 1",
+      "1-1/2 - 1 - 1-1-1"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une croche pointée est équivalente à :",
+    "choix": [
+      "Deux noires",
+      "Une blanche et une noire",
+      "Trois doubles croches",
+      "0"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une pause pointée correspond à la même durée :",
+    "choix": [
+      "Qu'une noire et une croche",
+      "que trois noires",
+      "4",
+      "qu'une ronde et une blanche"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Que signifie « A capella » ?",
+    "choix": [
+      "Accord parfait à trois sons",
+      "Musique jouée dans une chapelle",
+      "reprise depuis le début",
+      "Musique vocale sans accompagnement instrumental."
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "seize doubles croches sont équivalentes à :",
+    "choix": [
+      "Douze croches",
+      "Deux blanches",
+      "Trois noires",
+      "Un soupir"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Que signifie intervalle en musique ?",
+    "choix": [
+      "Le rapprochement des altérations",
+      "Le lien entre les barres de mesures",
+      "L'écart de hauteur entre deux notes",
+      "distance entre deux points"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "quelle est la valeur de la note la plus courte ?",
+    "choix": [
+      "Blanche",
+      "Triolet",
+      "quadruple croche",
+      "une seconde"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Qu'est-ce-qui détermine les noms des lignes sur une portée ?",
+    "choix": [
+      "La mesure",
+      "La clé",
+      "L'armature",
+      "Le staccato"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "le bécarre...",
+    "choix": [
+      "Elève le son de la note",
+      "L'écart de hauteur entre deux notes",
+      "Abaisse le son de la note",
+      "Distance entre deux points"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une altération est un signe qui modifie la durée d'une note.",
+    "choix": [
+      "Toujours",
+      "jamais",
+      "parfois",
+      "allegro"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Un triolet de double croche équivaut à :",
+    "choix": [
+      "Une noire pointée",
+      "Une blanche",
+      "Une blanche pointée",
+      "Une croche"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le duolet est la division d'une durée de note pointée par :",
+    "choix": [
+      "2","3","4","7"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel nom donne-t-on à la distance entre C3 et C4 ?",
+    "choix": [
+      "Une suite",
+      "Une quinte",
+      "Une octave",
+      "un degré"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quel est le point commun de la suite La, Do, Mi en clé de sol, quand elles sont écrites sur la portée en clef de Fa ?",
+    "choix": [
+      "Elles sont toutes écrites dans des interlignes",
+      "Certains sont sur des lignes et d'autres dans des interlignes",
+      "Aucun point commun",
+      "Elles sont toutes écrites sur des lignes"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "voici l'ordre des bémols. Quelle est la suite la plus logique ?",
+    "choix": [
+      "La, Do, Mi, Sol",
+      "Si, Mi, La, Ré",
+      "Fa, La, Do, Mi",
+      "Do, Ré, Mi, Fa"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "La mesure est divisée en parties égales que l'on appelle :",
+    "choix": [
+      "Tempo",
+      "Rythme",
+      "Nuance",
+      "Pulsation"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le point de l'élongation se place...",
+    "choix": [
+      "Avant la note",
+      "Après la note",
+      "Au-dessus de la note",
+      "Au-dessous de la note"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Supposons : une noire liée à une croche. La note que vous allez jouer durera autant que...",
+    "choix": [
+      "Une noire pointée",
+      "une blanche pointée",
+      "deux noires",
+      "une blanche"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Pour transformer un intervalle majeur en intervalle augmenté,",
+    "choix": [
+      "Il faut ajouter un demi ton chromatique",
+      "Il faut ajouter un bécarre"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le redoublement d'une seconde est ...",
+    "choix": [
+      "Une tierce",
+      "une octave",
+      "une septième",
+      "une neuvième"
+    ],
+    "reponsKorek": "3"
+  },
+  {
+    "type": "qcm",
+    "texte": "La syncope permet de :",
+    "choix": [
+      "Changer le rythme",
+      "Accélérer l'exécution",
+      "Déplacer le temps fort de la mesure",
+      "Perdre connaissance"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une mesure 6/8 contient ...",
+    "choix": [
+      "Deux temps",
+      "trois temps",
+      "huit temps",
+      "0.75 temps"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le métronome indique...",
+    "choix": [
+      "Le nombre de pulsations par millième jour",
+      "Le nombre de pulsations par joules minute",
+      "Le nombre de pulsations par minute",
+      "Le nombre de pulsations par"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "La petite distance sonore commune (c'est à dire qui concerne à la fois les instruments tempérés et non-tempérés) est",
+    "choix": [
+      "L'unisson",
+      "Le ton",
+      "Le demi-ton",
+      "L'altération"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le degré VII de la gamme de Sib majeur est :",
+    "choix": [
+      "Mib",
+      "Sol#",
+      "La",
+      "Ré"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Quelle est la gamme relative mineure de « la bémol majeur » ?",
+    "choix": [
+      "Fa m.",
+      "Ré bémol m",
+      "Mi m",
+      "Do m"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Le triolet est :",
+    "choix": [
+      "Une division par trois d'une durée de note binaire",
+      "Un groupe de trois notes formant une note pointée",
+      "Une division par deux d'une durée de note ternaire",
+      "Aucune de ces réponses"
+    ],
+    "reponsKorek": "0"
+  },
+  {
+    "type": "qcm",
+    "texte": "Sauf cas particulier, combien existe-t-il de durée de silences ?",
+    "choix": [
+      "Deux fois moins que les figures de notes",
+      "Le même nombre que les figures de notes",
+      "Rien à voir avec les figures de notes",
+      "Deux fois plus que les figures de notes"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Les chiffres indicateurs de mesure définissent :",
+    "choix": [
+      "La valeur d'un groupe de quatre notes",
+      "Le nombre de temps par mesure ainsi que la durée de chaque temps",
+      "Le nombre de mesure par partition",
+      "Pas de réponse"
+    ],
+    "reponsKorek": "1"
+  },
+  {
+    "type": "qcm",
+    "texte": "Une sixte mineure est composée de :",
+    "choix": [
+      "3 tons",
+      "4 tons plus ½ ton diatonique",
+      "3 tons plus 2 ½ tons diatoniques",
+      "3 tons plus ½ ton diatonique"
+    ],
+    "reponsKorek": "2"
+  },
+  {
+    "type": "qcm",
+    "texte": "Comment s'appelle le support de l'écriture musicale ?",
+    "choix": [
+      "Papier",
+      "Potée",
+      "Pâtée",
+      "Portée"
+    ],
+    "reponsKorek": "3"
+  }
+  ]
+}

@@ -66,10 +66,19 @@ function FeQuiz() {
     fetchQuiz();
   }, [quizId]);
 
+  // Modifye fonksyon handleChange pou jere plizyè repons
   const handleChange = (value) => {
-    const newAnswers = [...answers];
-    newAnswers[current] = value;
-    setAnswers(newAnswers);
+    if (questions[current].type === "konplete" && questions[current].reponsKorek && Array.isArray(questions[current].reponsKorek)) {
+      // Si kesyon an gen plizyè repons posib
+      const newAnswers = [...answers];
+      newAnswers[current] = value;
+      setAnswers(newAnswers);
+    } else {
+      // Pou lòt tip kesyon yo
+      const newAnswers = [...answers];
+      newAnswers[current] = value;
+      setAnswers(newAnswers);
+    }
   };
 
   const handleMultipleChoice = (value) => {
@@ -115,9 +124,22 @@ function FeQuiz() {
         return;
       }
 
-      if (q.type === "vrai_faux" || q.type === "konplete") {
+      if (q.type === "vrai_faux") {
         if (answers[idx] && String(answers[idx]).toLowerCase().trim() === String(q.reponsKorek || "").toLowerCase().trim()) {
           sc++;
+        }
+      } else if (q.type === "konplete") {
+        const userAnswer = String(answers[idx] || "").toLowerCase().trim();
+        if (Array.isArray(q.reponsKorek)) {
+          // Verifye si repons itilizatè a koresponn ak youn nan repons posib yo
+          if (q.reponsKorek.some(repons => String(repons).toLowerCase().trim() === userAnswer)) {
+            sc++;
+          }
+        } else {
+          // Si gen yon sèl repons
+          if (userAnswer === String(q.reponsKorek || "").toLowerCase().trim()) {
+            sc++;
+          }
         }
       } else if (q.type === "qcm") {
         const userAnswer = String(answers[idx] || "").trim();
@@ -141,8 +163,17 @@ function FeQuiz() {
     const currentQuestion = questions[current];
     let isCorrect = false;
 
-    if (currentQuestion.type === "vrai_faux" || currentQuestion.type === "konplete") {
+    if (currentQuestion.type === "vrai_faux") {
       isCorrect = String(answers[current]).toLowerCase().trim() === String(currentQuestion.reponsKorek || "").toLowerCase().trim();
+    } else if (currentQuestion.type === "konplete") {
+      const userAnswer = String(answers[current] || "").toLowerCase().trim();
+      if (Array.isArray(currentQuestion.reponsKorek)) {
+        isCorrect = currentQuestion.reponsKorek.some(repons => 
+          String(repons).toLowerCase().trim() === userAnswer
+        );
+      } else {
+        isCorrect = userAnswer === String(currentQuestion.reponsKorek || "").toLowerCase().trim();
+      }
     } else if (currentQuestion.type === "qcm") {
       const userAnswer = String(answers[current] || "").trim();
       const correctAnswer = String(currentQuestion.reponsKorek || "").trim();
@@ -568,21 +599,33 @@ function FeQuiz() {
           )}
           {/* Complete & Open questions */}
           {q.type === "konplete" && (
-            <input
-              type="text"
-              value={answers[current]}
-              onChange={e => handleChange(e.target.value)}
-              placeholder="Repons ou"
-              style={{
-                width: '100%',
-                padding: 10,
-                fontSize: 15,
-                borderRadius: 9,
-                border: '1.5px solid #dfdfdf',
-                marginTop: 8,
-                outline: 'none'
-              }}
-            />
+            <div>
+              <input
+                type="text"
+                value={answers[current]}
+                onChange={e => handleChange(e.target.value)}
+                placeholder={Array.isArray(q.reponsKorek) ? "Antre youn nan repons posib yo" : "Repons ou"}
+                style={{
+                  width: '100%',
+                  padding: 10,
+                  fontSize: 15,
+                  borderRadius: 9,
+                  border: '1.5px solid #dfdfdf',
+                  marginTop: 8,
+                  outline: 'none'
+                }}
+              />
+              {Array.isArray(q.reponsKorek) && (
+                <div style={{
+                  fontSize: '13px',
+                  color: '#6b7280',
+                  marginTop: '8px',
+                  fontStyle: 'italic'
+                }}>
+                  Kesyon sa a gen {q.reponsKorek.length} repons posib
+                </div>
+              )}
+            </div>
           )}
           {q.type === "ouve" && (
             <textarea

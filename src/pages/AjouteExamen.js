@@ -1,4 +1,4 @@
- import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase/config";
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
@@ -19,6 +19,7 @@ import questionsFizik2018 from "../data/questions_fizik_2018.json";
 import questionsCultureGenerale2020 from "../data/questions_culture_generale_2020.json";
 import questionsCultureGenerale2018 from "../data/questions_culture_generale_2018.json";
 import questionsKonesans2017 from "../data/questions_konesans_2017.json";
+import questionsMizik2018 from "../data/questions_mizik_2018.json";
 
 // Fonksyon pou jere repons miltip yo
 const formatReponsKorek = (repons) => {
@@ -148,6 +149,19 @@ function AjouteExamen() {
     if (setArr.has(key)) setArr.delete(key); else setArr.add(key);
     updateQuestion(qIdx, { correct: Array.from(setArr).sort((a,b) => Number(a)-Number(b)) });
   };
+
+  const prefillMizik2018 = () => {
+    setUniversiteId("FAS");
+    setMatiereId("MIZ");
+    setNom("Egzamen Mizik 2018");
+    setAnnee("2018");
+    setDuree(90);
+    setQuestions(questionsMizik2018.questions.map(question => ({
+      ...question,
+      correct: formatReponsKorek(question.reponsKorek)
+    })));
+  };
+
 
   const validate = () => {
     if (!universiteId) return "Tanpri chwazi yon inivèsite.";
@@ -411,17 +425,19 @@ function AjouteExamen() {
 
   // NOUVO PREFILL 2017
   const prefillKonesans2017 = () => {
-    setUniversiteId("universite_kj_id");
-    setMatiereId("matiere_kj_id");
+    setUniversiteId("universite_konesans_id");
+    setMatiereId("matiere_konesans_id");
     setNom("Tès Konesans Jeneral 2017");
     setAnnee(2017);
     setQuestions(
       questionsKonesans2017.map((question) => ({
-        ...question
-        // Pa gen besoin de correct paske estrikti ou a ka gen konplete-multi, tabl, elatriye
+        ...question,
+        correct: formatReponsKorek(question.reponsKorek)
       }))
     );
   };
+
+
 
   const prefillFizik2018 = () => {
     setUniversiteId("universite_fizik_id");
@@ -701,6 +717,13 @@ function AjouteExamen() {
               style={{ background: "#fbbf24", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
             >
               Pré-remplir ak Culture Générale 2018
+            </button>
+            <button
+              type="button"
+              onClick={prefillMizik2018}
+              style={{ background: "#000000", color: "#fff", border: "none", borderRadius: 8, padding: "8px 14px", cursor: "pointer", fontWeight: 600 }}
+            >
+              Pré-remplir ak Egzamen Mizik 2018
             </button>
           </div>
 
